@@ -1,0 +1,76 @@
+[INFO] [1784712340.520599043]: [bridge_node] ArmBridgeNode disabled.
+[INFO] [1784712340.521221626]: [bridge_node] ImgSyncNode disabled.
+[INFO] [1784712340.527959962]: [pcl_sync_node] Init done (World Frame Mode).
+  Sub tgt: /pcl_from_pcd/tgt_pcl
+  Sub env: /pcl_from_pcd/env_pcl
+  Pub Sync: /sync_frame_pcl_world
+[INFO] [1784712340.527984005]: [bridge_node] PclSyncNode enabled.
+[INFO] [1784712340.816269]: [two_pillar_clouds] marker_only=True, pillar1=35397 pts -> env=True tgt=False, pillar2=35397 pts -> env=True tgt=False
+[31mWARNING: disk usage in log directory [/home/gwx/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+WARNING: Package name "key_to_camPos" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+... logging to /home/gwx/.ros/log/f7c4c7c6-8500-11f1-97d2-d3142ad76a68/roslaunch-gwx-Lenovo-Legion-Y7000P2020-2253608.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/launch/two_pillar_world.launch
+[1mstarted roslaunch server http://gwx-Lenovo-Legion-Y7000P2020:43717/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /bridge_node/enable_pcl_sync: True
+ * /bridge_node/env_topic: /pcl_from_pcd/env...
+ * /bridge_node/out_topic: /sync_frame_pcl_w...
+ * /bridge_node/queue_size: 20
+ * /bridge_node/slop: 0.2
+ * /bridge_node/tgt_topic: /pcl_from_pcd/tgt...
+ * /bridge_node/use_world_frame_pcl: True
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /two_pillar_clouds/env_include_pillar1: True
+ * /two_pillar_clouds/env_include_pillar2: True
+ * /two_pillar_clouds/env_topic: /pcl_from_pcd/env...
+ * /two_pillar_clouds/frame_id: world
+ * /two_pillar_clouds/goal_dtheta: [0.0, 0.0, 0.0]
+ * /two_pillar_clouds/goal_position: [3.5, 0.0, 1.2]
+ * /two_pillar_clouds/goal_theta: [0.6, -0.55, 0.0]
+ * /two_pillar_clouds/goal_yaw: 0.0
+ * /two_pillar_clouds/pillar1_center_xy: [-1.4, 0.0]
+ * /two_pillar_clouds/pillar1_rgb: [40, 180, 130]
+ * /two_pillar_clouds/pillar2_center_xy: [1.4, 0.0]
+ * /two_pillar_clouds/pillar2_rgb: [245, 135, 65]
+ * /two_pillar_clouds/pillar_radius: 0.3
+ * /two_pillar_clouds/pillar_resolution: 0.025
+ * /two_pillar_clouds/pillar_z_max: 2.0
+ * /two_pillar_clouds/pillar_z_min: 0.0
+ * /two_pillar_clouds/publish_point_clouds: False
+ * /two_pillar_clouds/reference_path: [[-3.5, 0.0, 1.2]...
+ * /two_pillar_clouds/republish_hz: 2.0
+ * /two_pillar_clouds/scene_settle_sec: 1.0
+ * /two_pillar_clouds/start_dtheta: [0.0, 0.0, 0.0]
+ * /two_pillar_clouds/start_position: [-3.5, 0.0, 1.2]
+ * /two_pillar_clouds/start_theta: [0.6, -0.55, 0.0]
+ * /two_pillar_clouds/start_yaw: 0.45
+ * /two_pillar_clouds/tgt_include_pillar1: False
+ * /two_pillar_clouds/tgt_include_pillar2: False
+ * /two_pillar_clouds/tgt_topic: /pcl_from_pcd/tgt...
+ * /two_pillar_clouds/waypoint_mode: True
+ * /two_pillar_clouds/waypoint_positions: [[-3.5, 0.0, 1.2]...
+ * /two_pillar_clouds/waypoint_reach_tolerance: 0.18
+ * /two_pillar_clouds/waypoint_yaws: [0.69, 0.64, 0.53...
+
+NODES
+  /
+    bridge_node (bridge_node/bridge_node)
+    two_pillar_clouds (airgrasp_minco_irl/two_pillar_clouds.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/launch/two_pillar_world.launch http://localhost:11311
+[1mprocess[two_pillar_clouds-1]: started with pid [2253740][0m
+[1mprocess[bridge_node-2]: started with pid [2253742][0m
+[bridge_node-2] killing on exit
+[two_pillar_clouds-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

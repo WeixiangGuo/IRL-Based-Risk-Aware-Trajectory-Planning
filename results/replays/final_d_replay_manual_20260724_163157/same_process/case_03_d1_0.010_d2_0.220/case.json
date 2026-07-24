@@ -1,0 +1,64 @@
+{
+  "case": {
+    "case_id": 3,
+    "d1": 0.01,
+    "d2": 0.22,
+    "sphere_radius": 0.25,
+    "success": true,
+    "duration_sec": 3.709336757659912,
+    "trajectory_selection": {
+      "selection_mode": "first",
+      "selected_trajectory_index": 0,
+      "selected_trajectory_id": 172,
+      "quality_pass": false,
+      "quality_score": 61.85212394623289,
+      "quality_reasons": "c1 0.0249 < 0.6000|c2 0.2369 < 0.2800",
+      "max_local_turn_deg": 2.4094906484376115,
+      "max_arc_turn_deg": 4.220100972563162,
+      "length_ratio": 1.0704911936727595,
+      "self_intersection_count": 0
+    }
+  },
+  "failures": [],
+  "planned_trajectories": [
+    {
+      "trajectory_id": 172,
+      "stamp": 1784881953.5835822,
+      "sample_dt": 0.01,
+      "total_duration": 16.091447542619495,
+      "point_count": 1611
+    }
+  ],
+  "trajectory_selection": {
+    "selection_mode": "first",
+    "selected_trajectory_index": 0,
+    "selected_trajectory_id": 172,
+    "quality_pass": false,
+    "quality_score": 61.85212394623289,
+    "quality_reasons": "c1 0.0249 < 0.6000|c2 0.2369 < 0.2800",
+    "max_local_turn_deg": 2.4094906484376115,
+    "max_arc_turn_deg": 4.220100972563162,
+    "length_ratio": 1.0704911936727595,
+    "self_intersection_count": 0
+  },
+  "quality_rows": [
+    {
+      "trajectory_index": 0,
+      "trajectory_id": 172,
+      "point_count": 1611,
+      "path_length": 9.145761184253288,
+      "chord_length": 8.54351837577944,
+      "length_ratio": 1.0704911936727595,
+      "min_clearance_1": 0.024912175206412757,
+      "min_clearance_2": 0.2368820923873634,
+      "min_margin_1": 0.014912175206412756,
+      "min_margin_2": 0.016882092387363407,
+      "max_local_turn_deg": 2.4094906484376115,
+      "max_arc_turn_deg": 4.220100972563162,
+      "self_intersection_count": 0,
+      "quality_pass": false,
+      "quality_score": 61.85212394623289,
+      "quality_reasons": "c1 0.0249 < 0.6000|c2 0.2369 < 0.2800"
+    }
+  ]
+}

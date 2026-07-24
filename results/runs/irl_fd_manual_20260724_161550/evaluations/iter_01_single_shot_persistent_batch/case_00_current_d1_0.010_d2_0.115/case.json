@@ -1,0 +1,66 @@
+{
+  "case": {
+    "case_id": 0,
+    "label": "current",
+    "d1": 0.01,
+    "d2": 0.115,
+    "sphere_radius": 0.25,
+    "success": true,
+    "duration_sec": 3.7156245708465576,
+    "trajectory_selection": {
+      "selection_mode": "first",
+      "selected_trajectory_index": 0,
+      "selected_trajectory_id": 286,
+      "quality_pass": false,
+      "quality_score": 72.37613073051008,
+      "quality_reasons": "c1 0.0249 < 0.6000|c2 0.1316 < 0.2800",
+      "max_local_turn_deg": 2.266020979220863,
+      "max_arc_turn_deg": 3.845123470081911,
+      "length_ratio": 1.0586098181993133,
+      "self_intersection_count": 0
+    },
+    "persistent_case_seq": 6
+  },
+  "failures": [],
+  "planned_trajectories": [
+    {
+      "trajectory_id": 286,
+      "stamp": 1784880993.799869,
+      "sample_dt": 0.01,
+      "total_duration": 16.04449976283609,
+      "point_count": 1606
+    }
+  ],
+  "trajectory_selection": {
+    "selection_mode": "first",
+    "selected_trajectory_index": 0,
+    "selected_trajectory_id": 286,
+    "quality_pass": false,
+    "quality_score": 72.37613073051008,
+    "quality_reasons": "c1 0.0249 < 0.6000|c2 0.1316 < 0.2800",
+    "max_local_turn_deg": 2.266020979220863,
+    "max_arc_turn_deg": 3.845123470081911,
+    "length_ratio": 1.0586098181993133,
+    "self_intersection_count": 0
+  },
+  "quality_rows": [
+    {
+      "trajectory_index": 0,
+      "trajectory_id": 286,
+      "point_count": 1606,
+      "path_length": 9.044252434566367,
+      "chord_length": 8.543518375779442,
+      "length_ratio": 1.0586098181993133,
+      "min_clearance_1": 0.02493930170260017,
+      "min_clearance_2": 0.13160249892997639,
+      "min_margin_1": 0.01493930170260017,
+      "min_margin_2": 0.01660249892997638,
+      "max_local_turn_deg": 2.266020979220863,
+      "max_arc_turn_deg": 3.845123470081911,
+      "self_intersection_count": 0,
+      "quality_pass": false,
+      "quality_score": 72.37613073051008,
+      "quality_reasons": "c1 0.0249 < 0.6000|c2 0.1316 < 0.2800"
+    }
+  ]
+}

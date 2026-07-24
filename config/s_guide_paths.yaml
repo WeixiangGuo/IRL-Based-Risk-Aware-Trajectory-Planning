@@ -1,0 +1,40 @@
+# Fixed S-guide path presets for the two-pillar IRL experiments.
+#
+# The planner currently treats an enabled S-guide as the front-end path skeleton
+# when s_guide_bypass_astar=true, so these paths are intentionally sparse.
+
+demo_original_gap:
+  description: Large-scene S guide for a demo with visibly different pillar clearances.
+  path: "-4.0,0.0,1.2;-3.0,1.1,1.2;-1.8,1.35,1.2;-0.55,1.1,1.2;0.0,0.0,1.2;0.85,-0.75,1.2;1.8,-0.93,1.2;2.75,-0.75,1.2;4.0,0.0,1.2"
+
+demo_quality_gate_smooth:
+  description: Smoother large-scene S guide for best-quality single-shot demo collection.
+  path: "-4.0,0.0,1.2;-3.55,0.38,1.2;-3.05,0.72,1.2;-2.45,1.02,1.2;-1.8,1.25,1.2;-1.1,1.08,1.2;-0.52,0.7,1.2;-0.16,0.28,1.2;0.0,0.0,1.2;0.25,-0.3,1.2;0.62,-0.68,1.2;1.05,-0.88,1.2;1.45,-1.02,1.2;1.8,-1.1,1.2;2.2,-1.03,1.2;2.6,-0.98,1.2;3.0,-0.82,1.2;3.35,-0.58,1.2;3.65,-0.3,1.2;3.85,-0.12,1.2;4.0,0.0,1.2"
+
+smooth_reference_demo:
+  description: Sparse 15-point guide sampled by arc length from sim_demo_large_scene_smooth_reference_c1_072_c2_035.
+  path: "-4.0,0.0,1.2;-3.483,0.432,1.2;-2.934,0.822,1.2;-2.344,1.149,1.2;-1.723,1.377,1.2;-1.11,1.107,1.2;-0.576,0.698,1.2;-0.132,0.192,1.2;0.285,-0.336,1.2;0.856,-0.687,1.2;1.504,-0.871,1.2;2.172,-0.857,1.2;2.798,-0.609,1.2;3.396,-0.298,1.2;4.0,0.0,1.2"
+
+medium_scene_smooth:
+  description: Medium-scene S guide with start/goal at +/-3.5 and pillars at +/-1.4.
+  path: "-3.5,0.0,1.2;-2.95,0.45,1.2;-2.35,0.86,1.2;-1.78,1.14,1.2;-1.4,1.25,1.2;-0.9,1.04,1.2;-0.48,0.62,1.2;-0.12,0.18,1.2;0.0,0.0,1.2;0.28,-0.36,1.2;0.7,-0.66,1.2;1.1,-0.84,1.2;1.4,-0.92,1.2;1.78,-0.86,1.2;2.18,-0.64,1.2;2.62,-0.34,1.2;3.08,-0.1,1.2;3.5,0.0,1.2"
+
+medium_scene_from_one_shot_demo:
+  description: Sparse 15-point guide sampled by arc length from sim_demo_medium_scene_one_shot_quality_gate.
+  path: "-3.5,0.0,1.2;-3.068,0.419,1.2;-2.575,0.762,1.2;-2.027,1.011,1.2;-1.436,1.116,1.2;-0.851,0.998,1.2;-0.41,0.6,1.2;-0.125,0.07,1.2;0.297,-0.356,1.2;0.786,-0.708,1.2;1.348,-0.898,1.2;1.935,-0.779,1.2;2.483,-0.53,1.2;2.913,-0.123,1.2;3.5,0.0,1.2"
+
+medium_scene_neutral_clearance_045:
+  description: Neutral medium-scene S guide with both pillar clearances near 0.45 m.
+  path: "-3.5,0.0,1.2;-3.0,0.35,1.2;-2.35,0.72,1.2;-1.75,1.0,1.2;-1.4,1.06,1.2;-0.95,0.94,1.2;-0.45,0.5,1.2;0.0,0.0,1.2;0.45,-0.5,1.2;0.95,-0.94,1.2;1.4,-1.06,1.2;1.75,-1.0,1.2;2.35,-0.72,1.2;3.0,-0.35,1.2;3.5,0.0,1.2"
+
+medium_scene_4_anchor_sparse:
+  description: Four intermediate anchors for medium-scene S topology; path includes start/goal for endpoint validation.
+  path: "-3.5,0.0,1.2;-2.8,0.45,1.2;-0.55,0.85,1.2;0.55,-0.85,1.2;2.8,-0.45,1.2;3.5,0.0,1.2"
+
+medium_scene_demo_v5_4_anchor_safe:
+  description: Four intermediate anchors sampled from one_shot_demo_c1_010_c2_070_smooth_v5_20260722 with arc-length shifts: guide1 earlier, guide2 later, guide3 earlier.
+  path: "-3.5,0.0,1.2;-1.880,0.659,1.200;-0.629,0.391,1.202;0.575,-1.109,1.197;2.866,-0.658,1.198;3.5,0.0,1.2"
+
+eval_probe_mid_gap:
+  description: Five-point medium-difference eval guide for the enlarged two-pillar scene.
+  path: "-4.0,0.0,1.2;-1.8,1.15,1.2;0.0,0.0,1.2;1.8,-0.80,1.2;4.0,0.0,1.2"

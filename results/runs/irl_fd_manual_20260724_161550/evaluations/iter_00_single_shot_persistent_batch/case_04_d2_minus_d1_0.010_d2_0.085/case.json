@@ -1,0 +1,66 @@
+{
+  "case": {
+    "case_id": 4,
+    "label": "d2_minus",
+    "d1": 0.01,
+    "d2": 0.085,
+    "sphere_radius": 0.25,
+    "success": true,
+    "duration_sec": 3.704050302505493,
+    "trajectory_selection": {
+      "selection_mode": "first",
+      "selected_trajectory_index": 0,
+      "selected_trajectory_id": 230,
+      "quality_pass": false,
+      "quality_score": 75.38144630535785,
+      "quality_reasons": "c1 0.0250 < 0.6000|c2 0.1015 < 0.2800",
+      "max_local_turn_deg": 2.2379311222385376,
+      "max_arc_turn_deg": 3.79272656681711,
+      "length_ratio": 1.055397154339794,
+      "self_intersection_count": 0
+    },
+    "persistent_case_seq": 5
+  },
+  "failures": [],
+  "planned_trajectories": [
+    {
+      "trajectory_id": 230,
+      "stamp": 1784880989.955177,
+      "sample_dt": 0.01,
+      "total_duration": 15.953147903033056,
+      "point_count": 1597
+    }
+  ],
+  "trajectory_selection": {
+    "selection_mode": "first",
+    "selected_trajectory_index": 0,
+    "selected_trajectory_id": 230,
+    "quality_pass": false,
+    "quality_score": 75.38144630535785,
+    "quality_reasons": "c1 0.0250 < 0.6000|c2 0.1015 < 0.2800",
+    "max_local_turn_deg": 2.2379311222385376,
+    "max_arc_turn_deg": 3.79272656681711,
+    "length_ratio": 1.055397154339794,
+    "self_intersection_count": 0
+  },
+  "quality_rows": [
+    {
+      "trajectory_index": 0,
+      "trajectory_id": 230,
+      "point_count": 1597,
+      "path_length": 9.01680498184736,
+      "chord_length": 8.54351837577944,
+      "length_ratio": 1.055397154339794,
+      "min_clearance_1": 0.025020950252394036,
+      "min_clearance_2": 0.1014655359474454,
+      "min_margin_1": 0.015020950252394036,
+      "min_margin_2": 0.01646553594744539,
+      "max_local_turn_deg": 2.2379311222385376,
+      "max_arc_turn_deg": 3.79272656681711,
+      "self_intersection_count": 0,
+      "quality_pass": false,
+      "quality_score": 75.38144630535785,
+      "quality_reasons": "c1 0.0250 < 0.6000|c2 0.1015 < 0.2800"
+    }
+  ]
+}

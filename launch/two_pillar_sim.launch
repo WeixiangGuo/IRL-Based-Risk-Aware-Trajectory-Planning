@@ -1,0 +1,46 @@
+<launch>
+  <arg name="with_planner" default="true"/>
+  <arg name="obstacles_inflation" default="0.40"/>
+  <arg name="rho_astar_waypoint_stage2" default="-1.0"/>
+  <arg name="minco_warm_start_cache" default="false"/>
+  <arg name="minco_warm_start_cache_force_reuse" default="false"/>
+  <arg name="irl_collision_weight_scale" default="3.0"/>
+  <arg name="irl_obs_optimization_margin" default="0.05"/>
+  <arg name="use_minco_final_trajectory_visualizer" default="true"/>
+
+  <include file="$(find airgrasp_minco_irl)/launch/two_pillar_world.launch"/>
+
+  <group if="$(arg with_planner)">
+    <include file="$(find airgrasp_minco_irl)/launch/two_pillar_planning.launch">
+      <arg name="obstacles_inflation" value="$(arg obstacles_inflation)"/>
+      <arg name="rho_astar_waypoint_stage2" value="$(arg rho_astar_waypoint_stage2)"/>
+      <arg name="minco_warm_start_cache" value="$(arg minco_warm_start_cache)"/>
+      <arg name="minco_warm_start_cache_force_reuse" value="$(arg minco_warm_start_cache_force_reuse)"/>
+      <arg name="irl_collision_weight_scale" value="$(arg irl_collision_weight_scale)"/>
+      <arg name="irl_obs_optimization_margin" value="$(arg irl_obs_optimization_margin)"/>
+    </include>
+  </group>
+
+  <group if="$(arg use_minco_final_trajectory_visualizer)">
+    <node pkg="airgrasp_minco_irl" type="minco_final_trajectory_visualizer.py" name="minco_final_trajectory_visualizer" output="screen">
+      <rosparam command="load" file="$(find airgrasp_minco_irl)/config/two_pillar_scene.yaml"/>
+      <param name="traj_topic" value="/drone0/planning/planned_position_command_trajectory"/>
+      <param name="marker_topic" value="/scene/planned_trajectory_segments"/>
+      <param name="sample_stride" value="1"/>
+      <param name="line_width" value="0.085"/>
+      <param name="alpha" value="1.0"/>
+      <param name="min_points" value="20"/>
+      <param name="min_path_length" value="0.10"/>
+      <param name="show_direction_ticks" value="false"/>
+    </node>
+  </group>
+
+  <include file="$(find airgrasp_urdf)/launch/display.launch"/>
+  <include file="$(find airgrasp_minco_irl)/launch/two_pillar_scene.launch">
+    <arg name="publish_mock_state" value="false"/>
+  </include>
+  <include file="$(find fake_mod)/launch/simulator.launch">
+    <arg name="use_joy" value="false"/>
+  </include>
+  <include file="$(find px4ctrl)/launch/run_ctrl_sim.launch"/>
+</launch>

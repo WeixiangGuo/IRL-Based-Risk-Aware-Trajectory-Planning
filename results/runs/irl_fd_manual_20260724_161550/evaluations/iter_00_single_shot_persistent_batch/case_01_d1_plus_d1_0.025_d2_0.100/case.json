@@ -1,0 +1,66 @@
+{
+  "case": {
+    "case_id": 1,
+    "label": "d1_plus",
+    "d1": 0.025,
+    "d2": 0.1,
+    "sphere_radius": 0.25,
+    "success": true,
+    "duration_sec": 3.803638458251953,
+    "trajectory_selection": {
+      "selection_mode": "first",
+      "selected_trajectory_index": 0,
+      "selected_trajectory_id": 60,
+      "quality_pass": false,
+      "quality_score": 72.32206660918472,
+      "quality_reasons": "c1 0.0404 < 0.6000|c2 0.1167 < 0.2800",
+      "max_local_turn_deg": 2.32340000228125,
+      "max_arc_turn_deg": 3.9255791645951352,
+      "length_ratio": 1.058188652306689,
+      "self_intersection_count": 0
+    },
+    "persistent_case_seq": 2
+  },
+  "failures": [],
+  "planned_trajectories": [
+    {
+      "trajectory_id": 60,
+      "stamp": 1784880978.655135,
+      "sample_dt": 0.01,
+      "total_duration": 15.99024980789207,
+      "point_count": 1601
+    }
+  ],
+  "trajectory_selection": {
+    "selection_mode": "first",
+    "selected_trajectory_index": 0,
+    "selected_trajectory_id": 60,
+    "quality_pass": false,
+    "quality_score": 72.32206660918472,
+    "quality_reasons": "c1 0.0404 < 0.6000|c2 0.1167 < 0.2800",
+    "max_local_turn_deg": 2.32340000228125,
+    "max_arc_turn_deg": 3.9255791645951352,
+    "length_ratio": 1.058188652306689,
+    "self_intersection_count": 0
+  },
+  "quality_rows": [
+    {
+      "trajectory_index": 0,
+      "trajectory_id": 60,
+      "point_count": 1601,
+      "path_length": 9.04065419602348,
+      "chord_length": 8.543518375779442,
+      "length_ratio": 1.058188652306689,
+      "min_clearance_1": 0.04042769358683673,
+      "min_clearance_2": 0.11665743298857406,
+      "min_margin_1": 0.015427693586836731,
+      "min_margin_2": 0.016657432988574056,
+      "max_local_turn_deg": 2.32340000228125,
+      "max_arc_turn_deg": 3.9255791645951352,
+      "self_intersection_count": 0,
+      "quality_pass": false,
+      "quality_score": 72.32206660918472,
+      "quality_reasons": "c1 0.0404 < 0.6000|c2 0.1167 < 0.2800"
+    }
+  ]
+}

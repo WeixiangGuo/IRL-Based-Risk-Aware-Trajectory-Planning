@@ -1,0 +1,66 @@
+{
+  "case": {
+    "case_id": 1,
+    "label": "d1_plus",
+    "d1": 0.025,
+    "d2": 0.13,
+    "sphere_radius": 0.25,
+    "success": true,
+    "duration_sec": 3.75840425491333,
+    "trajectory_selection": {
+      "selection_mode": "first",
+      "selected_trajectory_index": 0,
+      "selected_trajectory_id": 631,
+      "quality_pass": false,
+      "quality_score": 69.39894610596957,
+      "quality_reasons": "c1 0.0398 < 0.6000|c2 0.1465 < 0.2800",
+      "max_local_turn_deg": 2.226995509508727,
+      "max_arc_turn_deg": 3.8628546944465874,
+      "length_ratio": 1.061586526062869,
+      "self_intersection_count": 0
+    },
+    "persistent_case_seq": 12
+  },
+  "failures": [],
+  "planned_trajectories": [
+    {
+      "trajectory_id": 631,
+      "stamp": 1784881016.997501,
+      "sample_dt": 0.01,
+      "total_duration": 16.01470490433306,
+      "point_count": 1603
+    }
+  ],
+  "trajectory_selection": {
+    "selection_mode": "first",
+    "selected_trajectory_index": 0,
+    "selected_trajectory_id": 631,
+    "quality_pass": false,
+    "quality_score": 69.39894610596957,
+    "quality_reasons": "c1 0.0398 < 0.6000|c2 0.1465 < 0.2800",
+    "max_local_turn_deg": 2.226995509508727,
+    "max_arc_turn_deg": 3.8628546944465874,
+    "length_ratio": 1.061586526062869,
+    "self_intersection_count": 0
+  },
+  "quality_rows": [
+    {
+      "trajectory_index": 0,
+      "trajectory_id": 631,
+      "point_count": 1603,
+      "path_length": 9.069683992897982,
+      "chord_length": 8.543518375779442,
+      "length_ratio": 1.061586526062869,
+      "min_clearance_1": 0.03980392088114337,
+      "min_clearance_2": 0.146509808743098,
+      "min_margin_1": 0.014803920881143372,
+      "min_margin_2": 0.016509808743097987,
+      "max_local_turn_deg": 2.226995509508727,
+      "max_arc_turn_deg": 3.8628546944465874,
+      "self_intersection_count": 0,
+      "quality_pass": false,
+      "quality_score": 69.39894610596957,
+      "quality_reasons": "c1 0.0398 < 0.6000|c2 0.1465 < 0.2800"
+    }
+  ]
+}

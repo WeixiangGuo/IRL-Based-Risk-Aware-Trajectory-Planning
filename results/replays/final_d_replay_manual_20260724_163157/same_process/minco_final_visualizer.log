@@ -1,0 +1,7 @@
+[INFO] [1784881919.383539]: [minco_final_trajectory_visualizer] loaded reference trajectory points=1608 from /home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/runs/irl_fd_manual_20260724_161550/best_trajectory.csv
+[INFO] [1784881919.390896]: [minco_final_trajectory_visualizer] traj_topic=/drone0/planning/planned_position_command_trajectory marker_topic=/scene/planned_trajectory_segments line_width=0.120 reference=/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/runs/irl_fd_manual_20260724_161550/best_trajectory.csv
+[INFO] [1784881942.249712]: [minco_final_trajectory_visualizer] show MINCO final trajectory id=3 points=1611 length=9.146
+[INFO] [1784881946.036047]: [minco_final_trajectory_visualizer] show MINCO final trajectory id=59 points=1611 length=9.146
+[INFO] [1784881949.855093]: [minco_final_trajectory_visualizer] show MINCO final trajectory id=116 points=1611 length=9.146
+[INFO] [1784881953.618343]: [minco_final_trajectory_visualizer] show MINCO final trajectory id=172 points=1611 length=9.146
+[INFO] [1784881957.400714]: [minco_final_trajectory_visualizer] show MINCO final trajectory id=226 points=1611 length=9.146

@@ -1,0 +1,6 @@
+[fd_irl] persistent single_shot batch iter=1 cases=5
+[fd_irl] case 0 label=current d1=0.010000 d2=0.115000
+[fd_irl] case 1 label=d1_plus d1=0.025000 d2=0.115000
+[fd_irl] case 2 label=d1_minus d1=0.005000 d2=0.115000
+[fd_irl] case 3 label=d2_plus d1=0.010000 d2=0.130000
+[fd_irl] case 4 label=d2_minus d1=0.010000 d2=0.100000

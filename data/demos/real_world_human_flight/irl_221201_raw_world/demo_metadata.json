@@ -1,0 +1,41 @@
+{
+  "conversion": {
+    "airborne_duration_sec": 11.725775957107544,
+    "airborne_end_index": 3396,
+    "airborne_samples": 2346,
+    "airborne_start_index": 1051,
+    "airborne_z_threshold": 0.35,
+    "goal_xyz": [
+      8.280325408781712,
+      -0.15145464826241697,
+      0.3522915794466984
+    ],
+    "goal_yaw": 0.8177103670836536,
+    "raw_total_samples": 4113,
+    "resample_count": 300,
+    "start_xyz": [
+      -0.26195894511798196,
+      -0.006229940282709453,
+      0.3504881290445893
+    ],
+    "start_yaw": -0.03963900576829385
+  },
+  "coordinate_policy": "raw /drone0/odom world coordinates; no sim start-goal normalization",
+  "name": "irl_221201_raw_world",
+  "output_demo_csv": "/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/data/demos/real_world_human_flight/irl_221201_raw_world/demo_trajectory.csv",
+  "pcd_map": "/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/data/map/irl_221201_cloud_registered_raw_cropped.pcd",
+  "quality": {
+    "length_ratio_3d": 1.1910819236736845,
+    "max_turn_deg_xy": 9.31614936774899,
+    "path_length_3d": 10.176030944231714,
+    "path_length_xy": 9.624885064753856,
+    "turn95_deg_xy": 4.938056721898334,
+    "z_max": 1.2005950712635631,
+    "z_min": 0.3504881290445893,
+    "z_range": 0.8501069422189738
+  },
+  "raw_airborne_csv": "/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/data/demos/real_world_human_flight/irl_221201_raw_world/raw_airborne_trajectory.csv",
+  "source_bag": "/home/gwx/airgrasp_ws/bags/irl/irl_221201.bag",
+  "source_topic": "/drone0/odom",
+  "source_type": "real_world_human_flight_bag_raw_world_coordinates"
+}

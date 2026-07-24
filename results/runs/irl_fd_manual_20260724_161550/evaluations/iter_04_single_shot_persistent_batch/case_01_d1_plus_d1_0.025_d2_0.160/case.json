@@ -1,0 +1,66 @@
+{
+  "case": {
+    "case_id": 1,
+    "label": "d1_plus",
+    "d1": 0.025,
+    "d2": 0.16000000000000003,
+    "sphere_radius": 0.25,
+    "success": true,
+    "duration_sec": 3.7043066024780273,
+    "trajectory_selection": {
+      "selection_mode": "first",
+      "selected_trajectory_index": 0,
+      "selected_trajectory_id": 1205,
+      "quality_pass": false,
+      "quality_score": 66.26858874967527,
+      "quality_reasons": "c1 0.0404 < 0.6000|c2 0.1773 < 0.2800",
+      "max_local_turn_deg": 2.4126516603164454,
+      "max_arc_turn_deg": 4.285479662475092,
+      "length_ratio": 1.0639702158558657,
+      "self_intersection_count": 0
+    },
+    "persistent_case_seq": 22
+  },
+  "failures": [],
+  "planned_trajectories": [
+    {
+      "trajectory_id": 1205,
+      "stamp": 1784881055.721227,
+      "sample_dt": 0.01,
+      "total_duration": 16.17939126228625,
+      "point_count": 1619
+    }
+  ],
+  "trajectory_selection": {
+    "selection_mode": "first",
+    "selected_trajectory_index": 0,
+    "selected_trajectory_id": 1205,
+    "quality_pass": false,
+    "quality_score": 66.26858874967527,
+    "quality_reasons": "c1 0.0404 < 0.6000|c2 0.1773 < 0.2800",
+    "max_local_turn_deg": 2.4126516603164454,
+    "max_arc_turn_deg": 4.285479662475092,
+    "length_ratio": 1.0639702158558657,
+    "self_intersection_count": 0
+  },
+  "quality_rows": [
+    {
+      "trajectory_index": 0,
+      "trajectory_id": 1205,
+      "point_count": 1619,
+      "path_length": 9.090049090446609,
+      "chord_length": 8.543518375779442,
+      "length_ratio": 1.0639702158558657,
+      "min_clearance_1": 0.04036632009483343,
+      "min_clearance_2": 0.17726355601667848,
+      "min_margin_1": 0.015366320094833429,
+      "min_margin_2": 0.01726355601667845,
+      "max_local_turn_deg": 2.4126516603164454,
+      "max_arc_turn_deg": 4.285479662475092,
+      "self_intersection_count": 0,
+      "quality_pass": false,
+      "quality_score": 66.26858874967527,
+      "quality_reasons": "c1 0.0404 < 0.6000|c2 0.1773 < 0.2800"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[WARN] [1784881940.446495]: [single_shot] /sdf_map/esdf did not arrive before timeout.
+[INFO] [1784881919.008952]: [single_shot] cleared legacy two-pillar scene markers on /scene/two_pillar_start_goal_markers.
+[INFO] [1784881919.110718]: [single_shot] cleared legacy eight applied trajectory marker on /visualization/applied_trajectory.
+[INFO] [1784881919.212281]: [single_shot] cleared legacy eight waypoints marker on /visualization/waypoints.
+[INFO] [1784881919.314525]: [single_shot] cleared legacy eight route marker on /visualization/route.
+[INFO] [1784881919.416882]: [single_shot] cleared native planner traj path on /drone0/planning/traj.
+[INFO] [1784881919.519199]: [single_shot] cleared native planner traj waypoints point cloud on /drone0/planning/traj_wayPts.
+[INFO] [1784881919.721518]: [single_shot] cleared native planner traj yaws markers on /drone0/planning/traj_yaws.
+[INFO] [1784881919.926947]: [single_shot] cleared stale MINCO final/reference markers on /scene/planned_trajectory_segments.
+[INFO] [1784881920.133315]: [single_shot] cleared stale FD optimizer markers on /scene/irl_fd_optimizer_markers.
+[INFO] [1784881940.447266]: [single_shot] case 1/5: d1=0.010 d2=0.220
+[INFO] [1784881944.309686]: [single_shot] case 2/5: d1=0.010 d2=0.220
+[INFO] [1784881948.129573]: [single_shot] case 3/5: d1=0.010 d2=0.220
+[INFO] [1784881951.941785]: [single_shot] case 4/5: d1=0.010 d2=0.220
+[INFO] [1784881955.709572]: [single_shot] case 5/5: d1=0.010 d2=0.220
+[INFO] [1784881959.549732]: [single_shot] done. summary_csv=/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/replays/final_d_replay_manual_20260724_163157/same_process/summary.csv summary_json=/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/replays/final_d_replay_manual_20260724_163157/same_process/summary.json
+Results written to: /home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/replays/final_d_replay_manual_20260724_163157/same_process
+Summary CSV: /home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/replays/final_d_replay_manual_20260724_163157/same_process/summary.csv
+Summary JSON: /home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/replays/final_d_replay_manual_20260724_163157/same_process/summary.json

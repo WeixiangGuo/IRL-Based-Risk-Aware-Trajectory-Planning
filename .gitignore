@@ -1,0 +1,35 @@
+# Runtime caches
+__pycache__/
+*.py[cod]
+
+# Keep generated result roots tidy by default.
+results/*
+!results/.gitkeep
+
+!results/figures/
+results/figures/*
+!results/figures/.gitkeep
+
+!results/scratch/
+results/scratch/*
+!results/scratch/.gitkeep
+
+!results/archive/
+results/archive/*
+!results/archive/.gitkeep
+
+!results/runs/
+results/runs/*
+!results/runs/.gitkeep
+!results/runs/irl_fd_manual_20260724_161550/
+!results/runs/irl_fd_manual_20260724_161550/**
+
+!results/replays/
+results/replays/*
+!results/replays/.gitkeep
+!results/replays/final_d_replay_manual_20260724_163157/
+!results/replays/final_d_replay_manual_20260724_163157/**
+
+# Legacy test scratch space should stay local.
+test/results/*
+!test/results/.gitkeep

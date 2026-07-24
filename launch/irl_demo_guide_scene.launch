@@ -1,0 +1,36 @@
+<launch>
+  <arg name="scene_config" default="$(find airgrasp_minco_irl)/config/irl_221201_scene.yaml"/>
+  <arg name="demo_csv" default="$(find airgrasp_minco_irl)/data/demos/real_world_human_flight/irl_221201_raw_world/demo_trajectory.csv"/>
+  <arg name="frame_id" default="world"/>
+  <arg name="marker_topic" default="/scene/irl_demo_guide_markers"/>
+  <arg name="sphere_radius" default="0.25"/>
+  <arg name="initial_d1" default="0.01"/>
+  <arg name="initial_d2" default="0.10"/>
+  <arg name="safety_zone_visualization" default="true"/>
+  <arg name="demo_flatten_z" default="false"/>
+  <arg name="guide_flatten_z" default="false"/>
+  <arg name="flat_z" default="1.2"/>
+
+  <include file="$(find airgrasp_minco_irl)/launch/two_pillar_world.launch">
+    <arg name="scene_config" value="$(arg scene_config)"/>
+    <arg name="publish_point_clouds" value="false"/>
+    <arg name="safety_zone_visualization" value="$(arg safety_zone_visualization)"/>
+    <arg name="sphere_radius" value="$(arg sphere_radius)"/>
+    <arg name="initial_d1" value="$(arg initial_d1)"/>
+    <arg name="initial_d2" value="$(arg initial_d2)"/>
+  </include>
+
+  <node pkg="airgrasp_minco_irl" type="visualize_demo_guide.py" name="visualize_demo_guide" output="screen">
+    <param name="scene_config" value="$(arg scene_config)"/>
+    <param name="demo_csv" value="$(arg demo_csv)"/>
+    <param name="frame_id" value="$(arg frame_id)"/>
+    <param name="marker_topic" value="$(arg marker_topic)"/>
+    <param name="demo_flatten_z" value="$(arg demo_flatten_z)" type="bool"/>
+    <param name="guide_flatten_z" value="$(arg guide_flatten_z)" type="bool"/>
+    <param name="flat_z" value="$(arg flat_z)"/>
+    <param name="demo_line_width" value="0.055"/>
+    <param name="guide_line_width" value="0.035"/>
+    <param name="guide_point_diameter" value="0.13"/>
+    <param name="start_goal_diameter" value="0.20"/>
+  </node>
+</launch>

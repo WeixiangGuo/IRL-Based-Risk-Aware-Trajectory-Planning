@@ -1,0 +1,150 @@
+<launch>
+  <arg name="syncframe_topic" default="/sync_frame_pcl_world"/>
+
+  <arg name="map_resolution" default="0.05"/>
+  <arg name="map_size_x" default="9.0"/>
+  <arg name="map_size_y" default="6.0"/>
+  <arg name="map_size_z" default="3.0"/>
+  <arg name="map_center_x" default="0.0"/>
+  <arg name="map_center_y" default="0.0"/>
+  <arg name="map_center_z" default="1.0"/>
+  <arg name="obstacles_inflation" default="0.40"/>
+  <arg name="s_guide_path_enable" default="false"/>
+  <arg name="s_guide_bypass_astar" default="false"/>
+  <arg name="s_guide_endpoint_tolerance" default="0.45"/>
+  <arg name="s_guide_path" default="-3.5,0.0,1.2;-3.0,0.3,1.2;-2.35,0.62,1.2;-1.75,0.82,1.2;-1.4,0.8,1.2;-0.95,0.74,1.2;-0.45,0.42,1.2;0.0,0.0,1.2;0.45,-0.5,1.2;0.95,-0.94,1.2;1.4,-1.06,1.2;1.75,-1.0,1.2;2.35,-0.72,1.2;3.0,-0.35,1.2;3.5,0.0,1.2"/>
+  <arg name="rho_astar_waypoint" default="0.0"/>
+  <arg name="rho_astar_waypoint_stage2" default="-1.0"/>
+  <arg name="enable_tail_constraint" default="false"/>
+  <arg name="minco_warm_start_cache" default="false"/>
+  <arg name="minco_warm_start_cache_force_reuse" default="false"/>
+  <arg name="irl_collision_weight_scale" default="3.0"/>
+  <arg name="irl_obs_optimization_margin" default="0.05"/>
+  <arg name="irl_analytic_cylinder_enable" default="true"/>
+  <arg name="irl_cylinder_1_x" default="-1.4"/>
+  <arg name="irl_cylinder_1_y" default="0.0"/>
+  <arg name="irl_cylinder_2_x" default="1.4"/>
+  <arg name="irl_cylinder_2_y" default="0.0"/>
+  <arg name="irl_cylinder_radius" default="0.30"/>
+  <arg name="irl_cylinder_1_radius" default="$(arg irl_cylinder_radius)"/>
+  <arg name="irl_cylinder_2_radius" default="$(arg irl_cylinder_radius)"/>
+  <arg name="irl_cylinder_z_min" default="0.0"/>
+  <arg name="irl_cylinder_z_max" default="2.0"/>
+  <arg name="irl_minco_debug_enable" default="true"/>
+  <arg name="irl_minco_debug_print_stride" default="2"/>
+  <arg name="irl_minco_debug_marker_stride" default="2"/>
+  <arg name="irl_minco_debug_max_markers" default="80"/>
+  <arg name="irl_minco_debug_sample_dt" default="0.06"/>
+  <arg name="hide_native_planning_traj" default="true"/>
+
+  <group ns="drone0">
+    <node pkg="odom_visualization" name="odom_visualization" type="odom_visualization" output="screen">
+      <rosparam command="load" file="$(find ch_rc_sdf)/config/params.yaml"/>
+      <remap from="~odom" to="/drone0/odom"/>
+      <param name="robot_scale" value="1.0"/>
+    </node>
+
+    <node pkg="planning" name="planning" type="planning" output="screen">
+      <rosparam command="load" file="$(find ch_rc_sdf)/config/params.yaml"/>
+
+      <remap from="~odom" to="/drone0/odom"/>
+      <remap from="~goal" to="/move_base_simple/goal"/>
+      <remap from="~uam_state_goal_vis" to="~uam_state_goal_vis"/>
+      <remap from="~uam_state_goal_cmd" to="~uam_state_goal_cmd"/>
+      <remap from="~joint_state_est" to="/joint_state_est_sim"/>
+      <remap from="~stick_ring_pose" to="/stick_ring_pose"/>
+      <remap if="$(arg hide_native_planning_traj)" from="~traj" to="~traj_hidden"/>
+      <remap if="$(arg hide_native_planning_traj)" from="~traj_wayPts" to="~traj_wayPts_hidden"/>
+      <remap if="$(arg hide_native_planning_traj)" from="~traj_yaws" to="~traj_yaws_hidden"/>
+
+      <param name="use_world_pcl" value="true"/>
+      <param name="syncframe_topic" value="$(arg syncframe_topic)"/>
+      <param name="clear_tgt_from_env_map" value="false"/>
+      <param name="merge_tgt_into_env_map" value="false"/>
+      <param name="irl_groups_from_world_pcl" value="true"/>
+      <param name="irl_split_env_pcl_by_x" value="true"/>
+      <param name="irl_split_x" value="0.0"/>
+      <param name="clear_traj_robot_markers_before_publish" value="true"/>
+      <param name="s_guide_path_enable" value="$(arg s_guide_path_enable)" type="bool"/>
+      <param name="s_guide_bypass_astar" value="$(arg s_guide_bypass_astar)" type="bool"/>
+      <param name="s_guide_endpoint_tolerance" value="$(arg s_guide_endpoint_tolerance)"/>
+      <param name="s_guide_path" value="$(arg s_guide_path)"/>
+      <param name="rhoAstarWaypoint" value="$(arg rho_astar_waypoint)"/>
+      <param name="rhoAstarWaypointStage2" value="$(arg rho_astar_waypoint_stage2)"/>
+      <param name="enable_tail_constraint" value="$(arg enable_tail_constraint)" type="bool"/>
+      <param name="mincoWarmStartCacheEnable" value="$(arg minco_warm_start_cache)" type="bool"/>
+      <param name="mincoWarmStartCacheForceReuse" value="$(arg minco_warm_start_cache_force_reuse)" type="bool"/>
+      <param name="irl_collision_weight_scale" value="$(arg irl_collision_weight_scale)"/>
+      <param name="irl_obs_optimization_margin" value="$(arg irl_obs_optimization_margin)"/>
+      <param name="irl_analytic_cylinder_enable" value="$(arg irl_analytic_cylinder_enable)" type="bool"/>
+      <param name="irl_cylinder_1_x" value="$(arg irl_cylinder_1_x)"/>
+      <param name="irl_cylinder_1_y" value="$(arg irl_cylinder_1_y)"/>
+      <param name="irl_cylinder_2_x" value="$(arg irl_cylinder_2_x)"/>
+      <param name="irl_cylinder_2_y" value="$(arg irl_cylinder_2_y)"/>
+      <param name="irl_cylinder_radius" value="$(arg irl_cylinder_radius)"/>
+      <param name="irl_cylinder_1_radius" value="$(arg irl_cylinder_1_radius)"/>
+      <param name="irl_cylinder_2_radius" value="$(arg irl_cylinder_2_radius)"/>
+      <param name="irl_cylinder_z_min" value="$(arg irl_cylinder_z_min)"/>
+      <param name="irl_cylinder_z_max" value="$(arg irl_cylinder_z_max)"/>
+      <param name="irl_minco_debug_enable" value="$(arg irl_minco_debug_enable)" type="bool"/>
+      <param name="irl_minco_debug_print_stride" value="$(arg irl_minco_debug_print_stride)"/>
+      <param name="irl_minco_debug_marker_stride" value="$(arg irl_minco_debug_marker_stride)"/>
+      <param name="irl_minco_debug_max_markers" value="$(arg irl_minco_debug_max_markers)"/>
+      <param name="irl_minco_debug_sample_dt" value="$(arg irl_minco_debug_sample_dt)"/>
+
+      <param name="sdf_map/ground_height" value="-1.0"/>
+
+      <param name="tgt_map/resolution" value="$(arg map_resolution)"/>
+      <param name="tgt_map/map_size_x" value="$(arg map_size_x)"/>
+      <param name="tgt_map/map_size_y" value="$(arg map_size_y)"/>
+      <param name="tgt_map/map_size_z" value="$(arg map_size_z)"/>
+      <param name="tgt_map/map_center_x" value="$(arg map_center_x)"/>
+      <param name="tgt_map/map_center_y" value="$(arg map_center_y)"/>
+      <param name="tgt_map/map_center_z" value="$(arg map_center_z)"/>
+
+      <param name="env_map/resolution" value="$(arg map_resolution)"/>
+      <param name="env_map/map_size_x" value="$(arg map_size_x)"/>
+      <param name="env_map/map_size_y" value="$(arg map_size_y)"/>
+      <param name="env_map/map_size_z" value="$(arg map_size_z)"/>
+      <param name="env_map/map_center_x" value="$(arg map_center_x)"/>
+      <param name="env_map/map_center_y" value="$(arg map_center_y)"/>
+      <param name="env_map/map_center_z" value="$(arg map_center_z)"/>
+
+      <param name="sdf_map/obstacles_inflation" value="$(arg obstacles_inflation)"/>
+      <param name="sdf_map/local_bound_inflate" value="0.5"/>
+      <param name="sdf_map/local_map_margin" value="50"/>
+      <param name="sdf_map/default_dist" value="5.0"/>
+
+      <param name="sdf_map/p_hit" value="0.65"/>
+      <param name="sdf_map/p_miss" value="0.35"/>
+      <param name="sdf_map/p_min" value="0.12"/>
+      <param name="sdf_map/p_max" value="0.90"/>
+      <param name="sdf_map/p_occ" value="0.80"/>
+      <param name="sdf_map/min_ray_length" value="0.2"/>
+      <param name="sdf_map/max_ray_length" value="3.0"/>
+      <param name="sdf_map/virtual_ceil_height" value="-10"/>
+      <param name="sdf_map/optimistic" value="true" type="bool"/>
+      <param name="sdf_map/signed_dist" value="true" type="bool"/>
+
+      <param name="map_ros/fx" value="240"/>
+      <param name="map_ros/fy" value="240"/>
+      <param name="map_ros/cx" value="320"/>
+      <param name="map_ros/cy" value="240"/>
+
+      <param name="map_ros/depth_filter_maxdist" value="3.0"/>
+      <param name="map_ros/depth_filter_mindist" value="0.2"/>
+      <param name="map_ros/depth_filter_margin" value="2"/>
+      <param name="map_ros/k_depth_scaling_factor" value="1.0"/>
+      <param name="map_ros/skip_pixel" value="2"/>
+      <param name="map_ros/esdf_slice_height" value="0.7"/>
+      <param name="map_ros/visualization_truncate_height" value="3.0"/>
+      <param name="map_ros/visualization_truncate_low" value="-0.1"/>
+      <param name="map_ros/show_occ_time" value="false"/>
+      <param name="map_ros/show_esdf_time" value="false"/>
+      <param name="map_ros/show_all_map" value="true"/>
+      <param name="map_ros/frame_id" value="world"/>
+
+      <param name="map_ros/input_cam_pose" value="false"/>
+    </node>
+  </group>
+</launch>

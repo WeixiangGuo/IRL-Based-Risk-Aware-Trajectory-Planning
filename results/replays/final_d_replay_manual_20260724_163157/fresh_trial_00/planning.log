@@ -1,0 +1,2031 @@
+... logging to /home/gwx/.ros/log/aeb428d0-8689-11f1-97d2-d3142ad76a68/roslaunch-gwx-Lenovo-Legion-Y7000P2020-3623645.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/launch/two_pillar_planning.launch
+[1mstarted roslaunch server http://gwx-Lenovo-Legion-Y7000P2020:39407/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /drone0/odom_visualization/ch_rc_sdf/box0/Ang_2_last/ang_id: 0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/Ang_2_last/init_ang: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/T_2_last/x: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/T_2_last/y: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/T_2_last/z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/disk0/pitch: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/disk0/radius: 0.17
+ * /drone0/odom_visualization/ch_rc_sdf/box0/disk0/roll: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/disk0/x: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/disk0/y: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/disk0/yaw: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/disk0/z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/disk_num: 1
+ * /drone0/odom_visualization/ch_rc_sdf/box0/line0/length: 0.15
+ * /drone0/odom_visualization/ch_rc_sdf/box0/line0/pitch: 90.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/line0/roll: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/line0/x: -0.015
+ * /drone0/odom_visualization/ch_rc_sdf/box0/line0/y: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/line0/yaw: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/line0/z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/line_num: 1
+ * /drone0/odom_visualization/ch_rc_sdf/box0/ori_x: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/ori_y: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/ori_z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/shell_thickness: 0.05
+ * /drone0/odom_visualization/ch_rc_sdf/box0/size_x: 1.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/size_y: 1.0
+ * /drone0/odom_visualization/ch_rc_sdf/box0/size_z: 0.5
+ * /drone0/odom_visualization/ch_rc_sdf/box1/Ang_2_last/ang_id: 1
+ * /drone0/odom_visualization/ch_rc_sdf/box1/Ang_2_last/init_ang: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/T_2_last/x: -0.015
+ * /drone0/odom_visualization/ch_rc_sdf/box1/T_2_last/y: 0.001
+ * /drone0/odom_visualization/ch_rc_sdf/box1/T_2_last/z: -0.096
+ * /drone0/odom_visualization/ch_rc_sdf/box1/disk_num: 0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line0/length: 0.3
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line0/pitch: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line0/roll: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line0/x: -0.1
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line0/y: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line0/yaw: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line0/z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line1/length: 0.12
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line1/pitch: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line1/roll: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line1/x: -0.065
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line1/y: -0.06
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line1/yaw: 90.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line1/z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/line_num: 2
+ * /drone0/odom_visualization/ch_rc_sdf/box1/ori_x: -0.15
+ * /drone0/odom_visualization/ch_rc_sdf/box1/ori_y: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/ori_z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box1/shell_thickness: 0.025
+ * /drone0/odom_visualization/ch_rc_sdf/box1/size_x: 1.2
+ * /drone0/odom_visualization/ch_rc_sdf/box1/size_y: 0.4
+ * /drone0/odom_visualization/ch_rc_sdf/box1/size_z: 0.4
+ * /drone0/odom_visualization/ch_rc_sdf/box2/Ang_2_last/ang_id: 1
+ * /drone0/odom_visualization/ch_rc_sdf/box2/Ang_2_last/init_ang: -0.2
+ * /drone0/odom_visualization/ch_rc_sdf/box2/T_2_last/x: 0.15
+ * /drone0/odom_visualization/ch_rc_sdf/box2/T_2_last/y: -0.0012
+ * /drone0/odom_visualization/ch_rc_sdf/box2/T_2_last/z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/disk_num: 0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/line0/length: 0.08
+ * /drone0/odom_visualization/ch_rc_sdf/box2/line0/pitch: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/line0/roll: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/line0/x: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/line0/y: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/line0/yaw: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/line0/z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/line_num: 1
+ * /drone0/odom_visualization/ch_rc_sdf/box2/ori_x: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/ori_y: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/ori_z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box2/shell_thickness: 0.04
+ * /drone0/odom_visualization/ch_rc_sdf/box2/size_x: 0.4
+ * /drone0/odom_visualization/ch_rc_sdf/box2/size_y: 0.4
+ * /drone0/odom_visualization/ch_rc_sdf/box2/size_z: 0.4
+ * /drone0/odom_visualization/ch_rc_sdf/box3/Ang_2_last/ang_id: 0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/Ang_2_last/init_ang: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/T_2_last/x: 0.12
+ * /drone0/odom_visualization/ch_rc_sdf/box3/T_2_last/y: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/T_2_last/z: 0.0006
+ * /drone0/odom_visualization/ch_rc_sdf/box3/disk_num: 0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line0/length: 0.1
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line0/pitch: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line0/roll: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line0/x: -0.0420000000000009
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line0/y: 0.05
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line0/yaw: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line0/z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line1/length: 0.1
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line1/pitch: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line1/roll: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line1/x: -0.0420000000000009
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line1/y: -0.05
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line1/yaw: 90.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line1/z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line2/length: 0.1
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line2/pitch: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line2/roll: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line2/x: -0.0420000000000009
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line2/y: -0.05
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line2/yaw: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line2/z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/line_num: 3
+ * /drone0/odom_visualization/ch_rc_sdf/box3/ori_x: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/ori_y: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/ori_z: 0.0
+ * /drone0/odom_visualization/ch_rc_sdf/box3/shell_thickness: 0.002
+ * /drone0/odom_visualization/ch_rc_sdf/box3/size_x: 0.5
+ * /drone0/odom_visualization/ch_rc_sdf/box3/size_y: 0.5
+ * /drone0/odom_visualization/ch_rc_sdf/box3/size_z: 0.5
+ * /drone0/odom_visualization/ch_rc_sdf/box_num: 4
+ * /drone0/odom_visualization/ch_rc_sdf/col_check_map_size/x: 1.5
+ * /drone0/odom_visualization/ch_rc_sdf/col_check_map_size/y: 1.5
+ * /drone0/odom_visualization/ch_rc_sdf/col_check_map_size/z: 3.0
+ * /drone0/odom_visualization/ch_rc_sdf/default_dist: 5.0
+ * /drone0/odom_visualization/ch_rc_sdf/resolution: 0.01
+ * /drone0/odom_visualization/robot_scale: 1.0
+ * /drone0/planning/ch_rc_sdf/box0/Ang_2_last/ang_id: 0
+ * /drone0/planning/ch_rc_sdf/box0/Ang_2_last/init_ang: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/T_2_last/x: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/T_2_last/y: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/T_2_last/z: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/disk0/pitch: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/disk0/radius: 0.17
+ * /drone0/planning/ch_rc_sdf/box0/disk0/roll: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/disk0/x: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/disk0/y: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/disk0/yaw: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/disk0/z: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/disk_num: 1
+ * /drone0/planning/ch_rc_sdf/box0/line0/length: 0.15
+ * /drone0/planning/ch_rc_sdf/box0/line0/pitch: 90.0
+ * /drone0/planning/ch_rc_sdf/box0/line0/roll: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/line0/x: -0.015
+ * /drone0/planning/ch_rc_sdf/box0/line0/y: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/line0/yaw: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/line0/z: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/line_num: 1
+ * /drone0/planning/ch_rc_sdf/box0/ori_x: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/ori_y: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/ori_z: 0.0
+ * /drone0/planning/ch_rc_sdf/box0/shell_thickness: 0.05
+ * /drone0/planning/ch_rc_sdf/box0/size_x: 1.0
+ * /drone0/planning/ch_rc_sdf/box0/size_y: 1.0
+ * /drone0/planning/ch_rc_sdf/box0/size_z: 0.5
+ * /drone0/planning/ch_rc_sdf/box1/Ang_2_last/ang_id: 1
+ * /drone0/planning/ch_rc_sdf/box1/Ang_2_last/init_ang: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/T_2_last/x: -0.015
+ * /drone0/planning/ch_rc_sdf/box1/T_2_last/y: 0.001
+ * /drone0/planning/ch_rc_sdf/box1/T_2_last/z: -0.096
+ * /drone0/planning/ch_rc_sdf/box1/disk_num: 0
+ * /drone0/planning/ch_rc_sdf/box1/line0/length: 0.3
+ * /drone0/planning/ch_rc_sdf/box1/line0/pitch: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/line0/roll: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/line0/x: -0.1
+ * /drone0/planning/ch_rc_sdf/box1/line0/y: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/line0/yaw: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/line0/z: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/line1/length: 0.12
+ * /drone0/planning/ch_rc_sdf/box1/line1/pitch: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/line1/roll: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/line1/x: -0.065
+ * /drone0/planning/ch_rc_sdf/box1/line1/y: -0.06
+ * /drone0/planning/ch_rc_sdf/box1/line1/yaw: 90.0
+ * /drone0/planning/ch_rc_sdf/box1/line1/z: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/line_num: 2
+ * /drone0/planning/ch_rc_sdf/box1/ori_x: -0.15
+ * /drone0/planning/ch_rc_sdf/box1/ori_y: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/ori_z: 0.0
+ * /drone0/planning/ch_rc_sdf/box1/shell_thickness: 0.025
+ * /drone0/planning/ch_rc_sdf/box1/size_x: 1.2
+ * /drone0/planning/ch_rc_sdf/box1/size_y: 0.4
+ * /drone0/planning/ch_rc_sdf/box1/size_z: 0.4
+ * /drone0/planning/ch_rc_sdf/box2/Ang_2_last/ang_id: 1
+ * /drone0/planning/ch_rc_sdf/box2/Ang_2_last/init_ang: -0.2
+ * /drone0/planning/ch_rc_sdf/box2/T_2_last/x: 0.15
+ * /drone0/planning/ch_rc_sdf/box2/T_2_last/y: -0.0012
+ * /drone0/planning/ch_rc_sdf/box2/T_2_last/z: 0.0
+ * /drone0/planning/ch_rc_sdf/box2/disk_num: 0
+ * /drone0/planning/ch_rc_sdf/box2/line0/length: 0.08
+ * /drone0/planning/ch_rc_sdf/box2/line0/pitch: 0.0
+ * /drone0/planning/ch_rc_sdf/box2/line0/roll: 0.0
+ * /drone0/planning/ch_rc_sdf/box2/line0/x: 0.0
+ * /drone0/planning/ch_rc_sdf/box2/line0/y: 0.0
+ * /drone0/planning/ch_rc_sdf/box2/line0/yaw: 0.0
+ * /drone0/planning/ch_rc_sdf/box2/line0/z: 0.0
+ * /drone0/planning/ch_rc_sdf/box2/line_num: 1
+ * /drone0/planning/ch_rc_sdf/box2/ori_x: 0.0
+ * /drone0/planning/ch_rc_sdf/box2/ori_y: 0.0
+ * /drone0/planning/ch_rc_sdf/box2/ori_z: 0.0
+ * /drone0/planning/ch_rc_sdf/box2/shell_thickness: 0.04
+ * /drone0/planning/ch_rc_sdf/box2/size_x: 0.4
+ * /drone0/planning/ch_rc_sdf/box2/size_y: 0.4
+ * /drone0/planning/ch_rc_sdf/box2/size_z: 0.4
+ * /drone0/planning/ch_rc_sdf/box3/Ang_2_last/ang_id: 0
+ * /drone0/planning/ch_rc_sdf/box3/Ang_2_last/init_ang: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/T_2_last/x: 0.12
+ * /drone0/planning/ch_rc_sdf/box3/T_2_last/y: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/T_2_last/z: 0.0006
+ * /drone0/planning/ch_rc_sdf/box3/disk_num: 0
+ * /drone0/planning/ch_rc_sdf/box3/line0/length: 0.1
+ * /drone0/planning/ch_rc_sdf/box3/line0/pitch: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line0/roll: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line0/x: -0.0420000000000009
+ * /drone0/planning/ch_rc_sdf/box3/line0/y: 0.05
+ * /drone0/planning/ch_rc_sdf/box3/line0/yaw: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line0/z: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line1/length: 0.1
+ * /drone0/planning/ch_rc_sdf/box3/line1/pitch: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line1/roll: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line1/x: -0.0420000000000009
+ * /drone0/planning/ch_rc_sdf/box3/line1/y: -0.05
+ * /drone0/planning/ch_rc_sdf/box3/line1/yaw: 90.0
+ * /drone0/planning/ch_rc_sdf/box3/line1/z: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line2/length: 0.1
+ * /drone0/planning/ch_rc_sdf/box3/line2/pitch: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line2/roll: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line2/x: -0.0420000000000009
+ * /drone0/planning/ch_rc_sdf/box3/line2/y: -0.05
+ * /drone0/planning/ch_rc_sdf/box3/line2/yaw: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line2/z: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/line_num: 3
+ * /drone0/planning/ch_rc_sdf/box3/ori_x: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/ori_y: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/ori_z: 0.0
+ * /drone0/planning/ch_rc_sdf/box3/shell_thickness: 0.002
+ * /drone0/planning/ch_rc_sdf/box3/size_x: 0.5
+ * /drone0/planning/ch_rc_sdf/box3/size_y: 0.5
+ * /drone0/planning/ch_rc_sdf/box3/size_z: 0.5
+ * /drone0/planning/ch_rc_sdf/box_num: 4
+ * /drone0/planning/ch_rc_sdf/col_check_map_size/x: 1.5
+ * /drone0/planning/ch_rc_sdf/col_check_map_size/y: 1.5
+ * /drone0/planning/ch_rc_sdf/col_check_map_size/z: 3.0
+ * /drone0/planning/ch_rc_sdf/default_dist: 5.0
+ * /drone0/planning/ch_rc_sdf/resolution: 0.01
+ * /drone0/planning/clear_tgt_from_env_map: False
+ * /drone0/planning/clear_traj_robot_markers_before_publish: True
+ * /drone0/planning/enable_tail_constraint: False
+ * /drone0/planning/env_map/map_center_x: 0.0
+ * /drone0/planning/env_map/map_center_y: 0.0
+ * /drone0/planning/env_map/map_center_z: 1.0
+ * /drone0/planning/env_map/map_size_x: 9.0
+ * /drone0/planning/env_map/map_size_y: 6.0
+ * /drone0/planning/env_map/map_size_z: 3.0
+ * /drone0/planning/env_map/resolution: 0.05
+ * /drone0/planning/irl_analytic_cylinder_enable: True
+ * /drone0/planning/irl_collision_weight_scale: 5.0
+ * /drone0/planning/irl_cylinder_1_radius: 0.291937
+ * /drone0/planning/irl_cylinder_1_x: 3.231
+ * /drone0/planning/irl_cylinder_1_y: -0.274
+ * /drone0/planning/irl_cylinder_2_radius: 0.42432
+ * /drone0/planning/irl_cylinder_2_x: 6.072419
+ * /drone0/planning/irl_cylinder_2_y: -0.164998
+ * /drone0/planning/irl_cylinder_radius: 0.3
+ * /drone0/planning/irl_cylinder_z_max: 2.0
+ * /drone0/planning/irl_cylinder_z_min: -0.3
+ * /drone0/planning/irl_groups_from_world_pcl: True
+ * /drone0/planning/irl_minco_debug_enable: True
+ * /drone0/planning/irl_minco_debug_marker_stride: 2
+ * /drone0/planning/irl_minco_debug_max_markers: 80
+ * /drone0/planning/irl_minco_debug_print_stride: 2
+ * /drone0/planning/irl_minco_debug_sample_dt: 0.06
+ * /drone0/planning/irl_obs_optimization_margin: 0.02
+ * /drone0/planning/irl_split_env_pcl_by_x: True
+ * /drone0/planning/irl_split_x: 0.0
+ * /drone0/planning/map_ros/cx: 320
+ * /drone0/planning/map_ros/cy: 240
+ * /drone0/planning/map_ros/depth_filter_margin: 2
+ * /drone0/planning/map_ros/depth_filter_maxdist: 3.0
+ * /drone0/planning/map_ros/depth_filter_mindist: 0.2
+ * /drone0/planning/map_ros/esdf_slice_height: 0.7
+ * /drone0/planning/map_ros/frame_id: world
+ * /drone0/planning/map_ros/fx: 240
+ * /drone0/planning/map_ros/fy: 240
+ * /drone0/planning/map_ros/input_cam_pose: False
+ * /drone0/planning/map_ros/k_depth_scaling_factor: 1.0
+ * /drone0/planning/map_ros/show_all_map: True
+ * /drone0/planning/map_ros/show_esdf_time: False
+ * /drone0/planning/map_ros/show_occ_time: False
+ * /drone0/planning/map_ros/skip_pixel: 2
+ * /drone0/planning/map_ros/visualization_truncate_height: 3.0
+ * /drone0/planning/map_ros/visualization_truncate_low: -0.1
+ * /drone0/planning/merge_tgt_into_env_map: False
+ * /drone0/planning/mincoWarmStartCacheEnable: True
+ * /drone0/planning/mincoWarmStartCacheForceReuse: True
+ * /drone0/planning/rhoAstarWaypoint: 100000.0
+ * /drone0/planning/rhoAstarWaypointStage2: 0.0
+ * /drone0/planning/s_guide_bypass_astar: True
+ * /drone0/planning/s_guide_endpoint_tolerance: 0.45
+ * /drone0/planning/s_guide_path: -0.261959,-0.0062...
+ * /drone0/planning/s_guide_path_enable: True
+ * /drone0/planning/sdf_map/default_dist: 5.0
+ * /drone0/planning/sdf_map/ground_height: -1.0
+ * /drone0/planning/sdf_map/local_bound_inflate: 0.5
+ * /drone0/planning/sdf_map/local_map_margin: 50
+ * /drone0/planning/sdf_map/max_ray_length: 3.0
+ * /drone0/planning/sdf_map/min_ray_length: 0.2
+ * /drone0/planning/sdf_map/obstacles_inflation: 0.4
+ * /drone0/planning/sdf_map/optimistic: True
+ * /drone0/planning/sdf_map/p_hit: 0.65
+ * /drone0/planning/sdf_map/p_max: 0.9
+ * /drone0/planning/sdf_map/p_min: 0.12
+ * /drone0/planning/sdf_map/p_miss: 0.35
+ * /drone0/planning/sdf_map/p_occ: 0.8
+ * /drone0/planning/sdf_map/signed_dist: True
+ * /drone0/planning/sdf_map/virtual_ceil_height: -10
+ * /drone0/planning/syncframe_topic: /sync_frame_pcl_w...
+ * /drone0/planning/tgt_map/map_center_x: 0.0
+ * /drone0/planning/tgt_map/map_center_y: 0.0
+ * /drone0/planning/tgt_map/map_center_z: 1.0
+ * /drone0/planning/tgt_map/map_size_x: 9.0
+ * /drone0/planning/tgt_map/map_size_y: 6.0
+ * /drone0/planning/tgt_map/map_size_z: 3.0
+ * /drone0/planning/tgt_map/resolution: 0.05
+ * /drone0/planning/use_world_pcl: True
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /drone0/
+    odom_visualization (odom_visualization/odom_visualization)
+    planning (planning/planning)
+odom_visualization node started
+[Parameter Server] Parameter file path: /home/gwx/airgrasp_ws/src/airgrasp_planning/Single-Drone-Planner/planning/planning/config/config.yaml
+[Parameter Server] Get prediction/omega_max: 0.6
+[Parameter Server] Get prediction/omega_filter_t: 0.5
+[Parameter Server] Get prediction/acc_max: 2.5
+[Parameter Server] Get prediction/acc_filter_t: 1
+[Parameter Server] Get EKF/Qx: 20
+[Parameter Server] Get EKF/Qy: 20
+[Parameter Server] Get EKF/Qz: 20
+[Parameter Server] Get EKF/Qvx: 10
+[Parameter Server] Get EKF/Qvy: 10
+[Parameter Server] Get EKF/Qvz: 10
+[Parameter Server] Get EKF/Qroll: 1
+[Parameter Server] Get EKF/Qpitch: 1
+[Parameter Server] Get EKF/Qyaw: 1
+[Parameter Server] Get EKF/Rx: 0.2
+[Parameter Server] Get EKF/Ry: 0.2
+[Parameter Server] Get EKF/Rz: 0.2
+[Parameter Server] Get EKF/Rvx: 0.1
+[Parameter Server] Get EKF/Rvy: 0.1
+[Parameter Server] Get EKF/Rvz: 0.1
+[Parameter Server] Get EKF/Rroll: 0.01
+[Parameter Server] Get EKF/Rpitch: 0.01
+[Parameter Server] Get EKF/Ryaw: 0.01
+[Parameter Server] Get EKF/filtered_v_k_track: 1
+[Parameter Server] Get EKF/filtered_v_k_land: 0.75
+[Parameter Server] Get EKF/filtered_q_k: 1
+[Parameter Server] Get EKF/filtered_q_diff_k: 0.6
+[Parameter Server] Get tracking_height_expect: 2
+[Parameter Server] Get tracking_dis_expect: 3
+[Parameter Server] Get tracking_angle_expect: -3.14
+[Parameter Server] Get PD_Ctrl/Kp_horiz: 2
+[Parameter Server] Get PD_Ctrl/Kd_horiz: 0
+[Parameter Server] Get PD_Ctrl/Kp_vert: 2
+[Parameter Server] Get PD_Ctrl/Kd_vert: 0
+[Parameter Server] Get TrajServer/dyaw_max: 10.5
+[Parameter Server] Get fsm_mode: 1
+[Parameter Server] Get land_p_x: 0
+[Parameter Server] Get land_p_y: 0
+[Parameter Server] Get land_p_z: 0
+[Parameter Server] Get plan_hz: 15
+[Parameter Server] Get plan_estimated_duration: 0.01
+[Parameter Server] Get local_horizon: 12
+[Parameter Server] Get vmax: 0.12
+[CH_RC_SDF]: col_check_map_size: 2 2 2
+[CH_RC_SDF]: box_num: 4
+[CH_RC_SDF]: resolution: 0.01
+[CH_RC_SDF]: default_dist: 5
+[SDFMap]: box_0 size:   1   1 0.5
+[SDFMap]: box_0 ori_pos: 0 0 0
+[SDFMap]: box_0 loaded 1 disks
+[SDFMap]: box_0 loaded 1 lines
+[SDFMap]: Computing SDF for box_0
+[SDFMap]: box_1 size: 1.2 0.4 0.4
+[SDFMap]: box_1 ori_pos: -0.15     0     0
+[SDFMap]: box_1 loaded 2 lines
+[SDFMap]: Computing SDF for box_1
+[SDFMap]: box_2 size: 0.4 0.4 0.4
+[SDFMap]: box_2 ori_pos: 0 0 0
+[SDFMap]: box_2 loaded 1 lines
+[SDFMap]: Computing SDF for box_2
+[SDFMap]: box_3 size: 0.5 0.5 0.5
+[SDFMap]: box_3 ori_pos: 0 0 0
+[SDFMap]: box_3 loaded 3 lines
+[SDFMap]: Computing SDF for box_3
+[SDFMap]: All 4 SDF boxes initialized.
+[CH_RC_SDF]: box_1 init_ang: 0
+[CH_RC_SDF]: box_2 init_ang: -0.2
+[CH_RC_SDF]: box_3 init_ang: 0
+[RobotKinematics]: box_0 T_2_last: 0 0 0
+[RobotKinematics]: box_0 ang_id: 0
+[RobotKinematics]: box_1 T_2_last: -0.015  0.001 -0.096
+[RobotKinematics]: box_1 ang_id: 1
+[RobotKinematics]: box_2 T_2_last:    0.15 -0.0012       0
+[RobotKinematics]: box_2 ang_id: 1
+[RobotKinematics]: box_3 T_2_last:   0.12      0 0.0006
+[RobotKinematics]: box_3 ang_id: 0
+[CH_RC_SDF]: Kinematics module initialized.
+[Parameter Server] Get goal_method: 1
+[Parameter Server] Get K: 8
+[Parameter Server] Get max_iter: 1000
+[Parameter Server] Get vmax: 0.12
+[Parameter Server] Get amax: 0.12
+[Parameter Server] Get dyaw_max: 0.5
+[Parameter Server] Get thrust_max: 17
+[Parameter Server] Get thrust_min: 5
+[Parameter Server] Get omega_max: 1
+[Parameter Server] Get omega_yaw_max: 1
+[Parameter Server] Get rhoT: 5000
+[Parameter Server] Get rhoWP: 2e+06
+[Parameter Server] Get rhoRotFactor: 0.5
+[Parameter Server] Get rhoP: 50000
+[Parameter Server] Get rhoV: 10000
+[Parameter Server] Get rhoA: 10000
+[Parameter Server] Get rhoThrust: 10000
+[Parameter Server] Get rhoOmega: 1000
+[Parameter Server] Get rhoPerchingCollision: 1e+10
+[Parameter Server] Get rhoPerchingPreception: 0.1
+[Parameter Server] Get rhoYaw: 1000
+rhoYaw: 1000
+[Parameter Server] Get rhoDyaw: 10000
+[Parameter Server] Get theta_0_min: 0
+[Parameter Server] Get theta_0_max: 1.57
+[Parameter Server] Get theta_1_min: -1.57
+[Parameter Server] Get theta_1_max: 1.57
+[Parameter Server] Get theta_2_min: -1.57
+[Parameter Server] Get theta_2_max: 1.57
+[Parameter Server] Get dtheta_0_max: 0.5
+[Parameter Server] Get dtheta_1_max: 1
+[Parameter Server] Get dtheta_2_max: 1
+[Parameter Server] Get rhoTheta: 50000
+[Parameter Server] Get rhoDtheta: 10000
+[Parameter Server] Get astar_waypoint_tracking_enable: 1
+[Parameter Server] Get rhoAstarWaypoint: 100000
+[0m[INFO] [1784881965.605519188]: [TrajOpt] A* waypoint tracking enable=1 rho_stage1=100000.000 rho_stage2=0.000[0m
+[0m[INFO] [1784881965.606935829]: [TrajOpt] warm-start cache enable=1 force_reuse=1 tol=1.000e-05[0m
+[Parameter Server] Get pause_debug: 0
+[Parameter Server] Get short_mode_time: 0.2
+[Parameter Server] Get eps_pz: 0.35
+[Parameter Server] Get dist_threshold: 0.07
+[Parameter Server] Get dist_threshold_end: 0.03
+[Parameter Server] Get dist_threshold_end_range: 0.15
+[Parameter Server] Get irl_sphere_collision_enable: 1
+[Parameter Server] Get irl_uam_sphere_radius: 0.25
+[Parameter Server] Get irl_safety_distance_1: 0.07
+[Parameter Server] Get irl_safety_distance_2: 0.07
+[0m[INFO] [1784881965.608017047]: [TrajOpt][IRL] collision weight scale=5.000[0m
+[0m[INFO] [1784881965.608362475]: [TrajOpt][IRL] obs optimization margin=0.020 hard check margin=0.000[0m
+[Parameter Server] Get irl_analytic_cylinder_enable: 0
+[Parameter Server] Get irl_cylinder_1_x: -1.25
+[Parameter Server] Get irl_cylinder_1_y: 0
+[Parameter Server] Get irl_cylinder_2_x: 1.25
+[Parameter Server] Get irl_cylinder_2_y: 0
+[Parameter Server] Get irl_cylinder_radius: 0.3
+[Parameter Server] Get irl_cylinder_1_radius: 0.3
+[Parameter Server] Get irl_cylinder_2_radius: 0.3
+[Parameter Server] Get irl_cylinder_z_min: 0
+[Parameter Server] Get irl_cylinder_z_max: 2
+[0m[INFO] [1784881965.612340867]: [TrajOpt][IRL] analytic cylinder enable=1 c1=(3.231, -0.274) r1=0.292 c2=(6.072, -0.165) r2=0.424 z=[-0.300, 2.000][0m
+[0m[INFO] [1784881965.614054018]: [TrajOpt][IRL] minco debug enable=1 print_stride=2 marker_stride=2 max_markers=80 sample_dt=0.060[0m
+[Parameter Server] Get enable_tail_constraint: 1
+[0m[INFO] [1784881965.614471548]: [TrajOpt] enable_tail_constraint override: config=1 ros=0[0m
+[Parameter Server] Get tail_offset: 0.2
+[Parameter Server] Get v_max_tail: 0.03
+[Parameter Server] Get a_max_tail: 0.03
+[Parameter Server] Get rhoV_tail: 100000
+[Parameter Server] Get rhoA_tail: 100000
+[Parameter Server] Get Webvis_hz: 10
+[Parameter Server] Get is_use_viewpoint: 0
+[Parameter Server] Get plan_estimated_duration: 0.01
+[Parameter Server] Get plan_horizon_len: 0.5
+[Parameter Server] Get s_guide_path_enable: 0
+[Parameter Server] Get s_guide_endpoint_tolerance: 0.45
+[Parameter Server] Get s_guide_path: -2.3,0.0,1.2;-1.75,1.10,1.2;-0.95,1.10,1.2;0.0,0.0,1.2;0.95,-1.10,1.2;1.75,-1.10,1.2;2.3,0.0,1.2
+[0m[INFO] [1784881965.616838175]: [tlplanner] S guide path enabled, points=11, endpoint_tol=0.450, bypass_astar=true[0m
+[0m[INFO] [1784881965.616852331]: [MapInterface] initializing[0m
+Initializing tgt_map
+Setting parameters for tgt_map
+tgt_map res: 0.05
+tgt_map map_size: 9 6 3
+tgt_map map_center: 0 0 1
+Map size: 9 6 3
+Map voxel num: 180 120  60
+Map origin: -4.5   -3 -0.5
+hit: 0.619039, miss: -0.619039, min: -1.99243, max: 2.19722, thresh: 1.38629
+[0m[INFO] [1784881965.666379521]: [MapInterface] tgt_map initialized[0m
+Initializing env_map
+Setting parameters for env_map
+env_map res: 0.05
+env_map map_size: 9 6 3
+env_map map_center: 0 0 1
+Map size: 9 6 3
+Map voxel num: 180 120  60
+Map origin: -4.5   -3 -0.5
+hit: 0.619039, miss: -0.619039, min: -1.99243, max: 2.19722, thresh: 1.38629
+[0m[INFO] [1784881965.715650948]: [MapInterface] env_map initialized[0m
+[Parameter Server] Get tracking_dis_expect: 3
+[Parameter Server] Get track_angle_vmax: 0.5
+[Parameter Server] Get tolerance_d_astar: 0.3
+[Parameter Server] Get theta_clearance: 0.8
+[32m[CH_PLAN] ptr init done[0m
+[32m[CH_PLAN] vis_ptr init done[0m
+[Parameter Server] Get en_through_ring: 0
+[32m[plan node] Planner Init Done.[0m
+------------------- Plan Thread(IDLE) -----------------------
+init thread
+Fail to set thread priority 1
+Fail to set thread priority 2
+Fail to set thread priority 2
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881965.944882535]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[33m[data_callback] Planner hold active: reset to HOVER and wait for next goal.[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881968.206922258]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881970.208304218]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881972.707027162]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881974.708752769]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881977.208841529]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881979.706754839]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881981.707095548]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881984.206984155]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[33m[data_callback] Planner hold active: reset to HOVER and wait for next goal.[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881986.706394511]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881987.589468077]: [TrajOpt][IRL] sphere collision d1=0.010 d2=0.220 radius=0.250[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881987.689684813]: [TrajOpt][IRL] sphere collision d1=0.010 d2=0.220 radius=0.250[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881987.854609465]: [TrajOpt][IRL] sphere collision d1=0.010 d2=0.220 radius=0.250[0m
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881987.890064524]: [TrajOpt][IRL] sphere collision d1=0.010 d2=0.220 radius=0.250[0m
+------------------- Plan Thread(IDLE) -----------------------
+[0m[INFO] [1784881987.990616948]: [TrajOpt][IRL] sphere collision d1=0.010 d2=0.220 radius=0.250[0m
+------------------- Plan Thread(IDLE) -----------------------
+------------------- Plan Thread(IDLE) -----------------------
+receive goal full state callback
+[33m[FSM] IDLE -> HOVER[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m[pub_cmd] Error! pos jump, please adjust the plan_hz and plan_estimated_time.[0m
+[31mlast_pos_cmd_:0 0 0 p:-0.261959  -0.00623       1.2[0m
+[31m/traj/1[0m
+[33m[data_callback] Planner hold released: next goal may enter GOAL mode.[0m
+[33m[FSM] HOVER -> GOAL[0m
+------------------- Plan Thread(GOAL) -----------------------
+[31m[ERROR] [1784881988.209952677]: last traj not valid, plan from current odom[0m
+init_p:-0.261959  -0.00623       1.2
+[plan node] get init state
+[plan node] get new goal:   8.28032 -0.151455       1.2
+init p: -0.261959  -0.00623       1.2
+init v: 0 0 0
+init a: 0 0 0
+init j: 0 0 0
+init yaw: -0.039639         0
+init thetas:   0.6 -0.55     0
+init d_thetas: 0 0 0
+tar p:   8.28032 -0.151455       1.2
+tar v: 0 0 0
+tar a: 0 0 0
+tar thetas: 0.785398 -0.785398         0
+tar d_thetas:0 0 0
+[48;5;2m----- Skip A*: use fixed S guide path[0m
+[32m[tlplanner] use S guide path, points=11[0m
+init p: -0.261959  -0.00623       1.2
+end p:   8.28032 -0.151455       1.2
+init yaw: -0.039639
+end yaw: 0
+[48;5;2m----- Start gen traj[0m
+init_thetas:   0.6     0
+-0.55     0
+    0     0
+final_thetas:  0.785398         0
+-0.785398         0
+        0         0
+[48;5;2m[GenTraj] 1 Params set done[0m
+extract start
+ego_path.size = 11
+ego_path[0]:-0.261959  -0.00623       1.2
+ego_path[1]:0.681 0.153   1.2
+ego_path[2]:1.622 0.334   1.2
+ego_path[3]:2.67851 0.27934     1.2
+ego_path[4]: 3.52683 0.295709      1.2
+ego_path[5]: 4.231 -0.311    1.2
+ego_path[6]:  4.85 -1.012    1.2
+ego_path[7]:  5.84753 -0.989186       1.2
+ego_path[8]:   6.5489 -0.898073       1.2
+ego_path[9]:7.636 -0.86   1.2
+ego_path[10]:  8.28032 -0.151455       1.2
+-------------
+mid_Q_vec[0]:-0.261959  -0.00623       1.2
+mid_Q_vec[1]: 4.231 -0.311    1.2
+-------------
+mid_Q_vec[1]: 4.231 -0.311    1.2
+mid_Q_vec[2]:  4.85 -1.012    1.2
+-------------
+mid_Q_vec[2]:  4.85 -1.012    1.2
+mid_Q_vec[3]:  5.84753 -0.989186       1.2
+-------------
+mid_Q_vec[3]:  5.84753 -0.989186       1.2
+mid_Q_vec[4]:   6.5489 -0.898073       1.2
+-------------
+mid_Q_vec[4]:   6.5489 -0.898073       1.2
+mid_Q_vec[5]:7.636 -0.86   1.2
+-------------
+mid_Q_vec[5]:7.636 -0.86   1.2
+mid_Q_vec[6]:  8.28032 -0.151455       1.2
+extract end N_ret = 11
+mid_q_vec[0]: 0.486868 -0.057025       1.2
+mid_q_vec[1]: 1.23569 -0.10782      1.2
+mid_q_vec[2]:  1.98452 -0.158615       1.2
+mid_q_vec[3]: 2.73335 -0.20941      1.2
+mid_q_vec[4]:  3.48217 -0.260205       1.2
+mid_q_vec[5]: 4.231 -0.311    1.2
+mid_q_vec[6]:  4.85 -1.012    1.2
+mid_q_vec[7]:  5.84753 -0.989186       1.2
+mid_q_vec[8]:   6.5489 -0.898073       1.2
+mid_q_vec[9]:7.636 -0.86   1.2
+[0m[INFO] [1784881988.216275209]: [TrajOpt] A* waypoint tracking path points=11[0m
+[trajopt] Pieces: 11
+[48;5;2m[GenTraj] 2 Extract mid points done[0m
+yaw_in: -0.039639, yaw_out: 0
+yaw_in:-0.039639, yaw_out:0
+yaw: -0.0360355  -0.0324319  -0.0288284  -0.0252248  -0.0216213  -0.0180177  -0.0144142  -0.0108106 -0.00720709 -0.00360355
+thetas_in: 
+  0.6 -0.55     0
+    0     0     0
+thetas_out: 
+ 0.785398 -0.785398         0
+        0         0         0
+thetas(0): 0.616854 0.633709 0.650563 0.667417 0.684272 0.701126 0.717981 0.734835 0.751689 0.768544
+thetas(1):   -0.5714   -0.5928 -0.614199 -0.635599 -0.656999 -0.678399 -0.699799 -0.721199 -0.742598 -0.763998
+thetas(2): 0 0 0 0 0 0 0 0 0 0
+P(0):  0.486868 -0.057025       1.2
+P(1):  1.23569 -0.10782      1.2
+P(2):   1.98452 -0.158615       1.2
+P(3):  2.73335 -0.20941      1.2
+P(4):   3.48217 -0.260205       1.2
+P(5):  4.231 -0.311    1.2
+P(6):   4.85 -1.012    1.2
+P(7):   5.84753 -0.989186       1.2
+P(8):    6.5489 -0.898073       1.2
+P(9): 7.636 -0.86   1.2
+iniState:
+-0.261959         0         0         0
+ -0.00623         0         0         0
+      1.2         0         0         0
+finState:
+  8.28032         0         0         0
+-0.151455         0         0         0
+      1.2         0         0         0
+[48;5;2m[GenTraj] 3 Value init done[0m
+getAABBPoints full traj
+getAABBPoints cached group1/group2: 0 / 0 pts
+[32m[GenTraj] Begin opt (stage1_no_sdf)[0m
+[31miter: 1[0m
+[32mtime generate: 0.288159ms[0m
+[32mtime int penalty: 0.691733ms[0m
+[31miter: 2[0m
+[32mtime generate: 0.237606ms[0m
+[32mtime int penalty: 0.611953ms[0m
+[33m[WARN] [1784881988.238779747]: [MINCO-IRL] stage=stage1_no_sdf iter=1 eval=2 fx=882556.0086 step=0.0000 ls=1 d=(0.0100,0.2200) cost{snap=0.0000, coll=0.0000, guide=31661.4027, yaw=0.0000, dyaw=0.0000} clearance=(-0.029,0.044) margin=(-0.039,-0.176) len=9.2191 chord=8.5435 ratio=1.0791 reverse=0 self_cross=0 worst_group=2 status=running[0m
+[31miter: 3[0m
+[32mtime generate: 0.058204ms[0m
+[32mtime int penalty: 0.125959ms[0m
+[33m[WARN] [1784881988.245637058]: [MINCO-IRL] stage=stage1_no_sdf iter=2 eval=3 fx=857498.2398 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=0.0000, coll=0.0000, guide=12161.2734, yaw=0.0000, dyaw=0.0000} clearance=(-0.006,0.074) margin=(-0.016,-0.146) len=9.3541 chord=8.5435 ratio=1.0949 reverse=0 self_cross=0 worst_group=2 status=running[0m
+[31miter: 4[0m
+[32mtime generate: 0.057085ms[0m
+[32mtime int penalty: 0.106136ms[0m
+[31miter: 5[0m
+[32mtime generate: 0.039837ms[0m
+[32mtime int penalty: 0.103812ms[0m
+[33m[WARN] [1784881988.251181961]: [MINCO-IRL] stage=stage1_no_sdf iter=4 eval=5 fx=823024.8767 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=0.0000, coll=0.0000, guide=9668.7859, yaw=0.0000, dyaw=0.0000} clearance=(0.007,0.090) margin=(-0.003,-0.130) len=9.3465 chord=8.5435 ratio=1.0940 reverse=0 self_cross=0 worst_group=2 status=running[0m
+[31miter: 6[0m
+[32mtime generate: 0.044393ms[0m
+[32mtime int penalty: 0.095327ms[0m
+[31miter: 7[0m
+[32mtime generate: 0.034774ms[0m
+[32mtime int penalty: 0.096166ms[0m
+[33m[WARN] [1784881988.254525234]: [MINCO-IRL] stage=stage1_no_sdf iter=6 eval=7 fx=672998.0224 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=0.0001, coll=0.0000, guide=49480.6212, yaw=0.0000, dyaw=0.0000} clearance=(-0.073,0.160) margin=(-0.083,-0.060) len=9.6936 chord=8.5435 ratio=1.1346 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 8[0m
+[32mtime generate: 0.038554ms[0m
+[32mtime int penalty: 0.120677ms[0m
+[31miter: 9[0m
+[32mtime generate: 0.031325ms[0m
+[32mtime int penalty: 0.090487ms[0m
+[31miter: 10[0m
+[32mtime generate: 0.030504ms[0m
+[32mtime int penalty: 0.082813ms[0m
+[31miter: 11[0m
+[32mtime generate: 0.030412ms[0m
+[32mtime int penalty: 0.086697ms[0m
+[33m[WARN] [1784881988.255830943]: [MINCO-IRL] stage=stage1_no_sdf iter=8 eval=11 fx=394597.4240 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=0.2572, coll=0.0000, guide=82608.2721, yaw=1002.1890, dyaw=0.0000} clearance=(-0.293,0.206) margin=(-0.303,-0.014) len=14.1440 chord=8.5435 ratio=1.6555 reverse=0 self_cross=1 worst_group=1 status=running[0m
+[31miter: 12[0m
+[32mtime generate: 0.042516ms[0m
+[32mtime int penalty: 0.089614ms[0m
+[31miter: 13[0m
+[32mtime generate: 0.031192ms[0m
+[32mtime int penalty: 0.088034ms[0m
+[33m[WARN] [1784881988.256405208]: [MINCO-IRL] stage=stage1_no_sdf iter=10 eval=13 fx=256816.5837 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=3.2433, coll=0.0000, guide=21750.3469, yaw=719.8387, dyaw=0.0000} clearance=(-0.280,0.151) margin=(-0.290,-0.069) len=11.0334 chord=8.5435 ratio=1.2914 reverse=0 self_cross=1 worst_group=1 status=running[0m
+[31miter: 14[0m
+[32mtime generate: 0.052793ms[0m
+[32mtime int penalty: 0.07857ms[0m
+[31miter: 15[0m
+[32mtime generate: 0.026783ms[0m
+[32mtime int penalty: 0.075598ms[0m
+[31miter: 16[0m
+[32mtime generate: 0.026331ms[0m
+[32mtime int penalty: 0.078488ms[0m
+[31miter: 17[0m
+[32mtime generate: 0.026234ms[0m
+[32mtime int penalty: 0.076835ms[0m
+[33m[WARN] [1784881988.257105324]: [MINCO-IRL] stage=stage1_no_sdf iter=12 eval=17 fx=172617.6230 step=0.5000 ls=2 d=(0.0100,0.2200) cost{snap=25.5474, coll=0.0000, guide=13581.6530, yaw=1018.3987, dyaw=0.0000} clearance=(-0.100,0.167) margin=(-0.110,-0.053) len=9.1621 chord=8.5435 ratio=1.0724 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 18[0m
+[32mtime generate: 0.034499ms[0m
+[32mtime int penalty: 0.078199ms[0m
+[31miter: 19[0m
+[32mtime generate: 0.026409ms[0m
+[32mtime int penalty: 0.112938ms[0m
+[31miter: 20[0m
+[32mtime generate: 0.026236ms[0m
+[32mtime int penalty: 0.077122ms[0m
+[33m[WARN] [1784881988.257714590]: [MINCO-IRL] stage=stage1_no_sdf iter=14 eval=20 fx=161369.1949 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=6.6664, coll=0.0000, guide=11329.9630, yaw=864.2551, dyaw=0.0000} clearance=(-0.063,0.185) margin=(-0.073,-0.035) len=9.0954 chord=8.5435 ratio=1.0646 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 21[0m
+[32mtime generate: 0.034674ms[0m
+[32mtime int penalty: 0.077837ms[0m
+[31miter: 22[0m
+[32mtime generate: 0.026357ms[0m
+[32mtime int penalty: 0.078099ms[0m
+[33m[WARN] [1784881988.258111353]: [MINCO-IRL] stage=stage1_no_sdf iter=16 eval=22 fx=151225.6976 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=15.4925, coll=0.0000, guide=5336.5588, yaw=825.9474, dyaw=0.0000} clearance=(0.001,0.169) margin=(-0.009,-0.051) len=9.1205 chord=8.5435 ratio=1.0675 reverse=0 self_cross=0 worst_group=2 status=running[0m
+[31miter: 23[0m
+[32mtime generate: 0.034184ms[0m
+[32mtime int penalty: 0.08028ms[0m
+[31miter: 24[0m
+[32mtime generate: 0.026581ms[0m
+[32mtime int penalty: 0.079712ms[0m
+[31miter: 25[0m
+[32mtime generate: 0.026029ms[0m
+[32mtime int penalty: 0.079801ms[0m
+[33m[WARN] [1784881988.258635943]: [MINCO-IRL] stage=stage1_no_sdf iter=18 eval=25 fx=146024.2616 step=0.5000 ls=2 d=(0.0100,0.2200) cost{snap=28.9166, coll=0.0000, guide=3066.4873, yaw=650.2579, dyaw=0.0000} clearance=(0.004,0.141) margin=(-0.006,-0.079) len=9.1509 chord=8.5435 ratio=1.0711 reverse=0 self_cross=0 worst_group=2 status=running[0m
+[31miter: 26[0m
+[32mtime generate: 0.034081ms[0m
+[32mtime int penalty: 0.087074ms[0m
+[31miter: 27[0m
+[32mtime generate: 0.026613ms[0m
+[32mtime int penalty: 0.098504ms[0m
+[33m[WARN] [1784881988.259058685]: [MINCO-IRL] stage=stage1_no_sdf iter=20 eval=27 fx=144106.1313 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=21.6534, coll=0.0000, guide=2737.4525, yaw=666.2703, dyaw=0.0000} clearance=(-0.031,0.131) margin=(-0.041,-0.089) len=9.1328 chord=8.5435 ratio=1.0690 reverse=0 self_cross=0 worst_group=2 status=running[0m
+[31miter: 28[0m
+[32mtime generate: 0.033388ms[0m
+[32mtime int penalty: 0.082524ms[0m
+[31miter: 29[0m
+[32mtime generate: 0.027493ms[0m
+[32mtime int penalty: 0.081199ms[0m
+[33m[WARN] [1784881988.259461693]: [MINCO-IRL] stage=stage1_no_sdf iter=22 eval=29 fx=143507.8348 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=26.0618, coll=0.0000, guide=2927.1321, yaw=554.5860, dyaw=0.0000} clearance=(-0.075,0.124) margin=(-0.085,-0.096) len=9.1174 chord=8.5435 ratio=1.0672 reverse=0 self_cross=0 worst_group=2 status=running[0m
+[31miter: 30[0m
+[32mtime generate: 0.035559ms[0m
+[32mtime int penalty: 0.08244ms[0m
+[31miter: 31[0m
+[32mtime generate: 0.027124ms[0m
+[32mtime int penalty: 0.081504ms[0m
+[33m[WARN] [1784881988.259875497]: [MINCO-IRL] stage=stage1_no_sdf iter=24 eval=31 fx=143280.4587 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=24.1793, coll=0.0000, guide=2863.3424, yaw=523.6112, dyaw=0.0000} clearance=(-0.078,0.133) margin=(-0.088,-0.087) len=9.1153 chord=8.5435 ratio=1.0669 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 32[0m
+[32mtime generate: 0.035714ms[0m
+[32mtime int penalty: 0.082447ms[0m
+[31miter: 33[0m
+[32mtime generate: 0.027151ms[0m
+[32mtime int penalty: 0.082202ms[0m
+[33m[WARN] [1784881988.260278475]: [MINCO-IRL] stage=stage1_no_sdf iter=26 eval=33 fx=142966.2260 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=18.8622, coll=0.0000, guide=3093.7491, yaw=419.5363, dyaw=0.0000} clearance=(-0.091,0.145) margin=(-0.101,-0.075) len=9.1057 chord=8.5435 ratio=1.0658 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 34[0m
+[32mtime generate: 0.035423ms[0m
+[32mtime int penalty: 0.082455ms[0m
+[31miter: 35[0m
+[32mtime generate: 0.027004ms[0m
+[32mtime int penalty: 0.081011ms[0m
+[33m[WARN] [1784881988.260678553]: [MINCO-IRL] stage=stage1_no_sdf iter=28 eval=35 fx=142848.0877 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=19.9381, coll=0.0000, guide=3093.5425, yaw=374.8973, dyaw=0.0000} clearance=(-0.092,0.143) margin=(-0.102,-0.077) len=9.1064 chord=8.5435 ratio=1.0659 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 36[0m
+[32mtime generate: 0.038581ms[0m
+[32mtime int penalty: 0.082595ms[0m
+[31miter: 37[0m
+[32mtime generate: 0.02734ms[0m
+[32mtime int penalty: 0.081661ms[0m
+[33m[WARN] [1784881988.261090929]: [MINCO-IRL] stage=stage1_no_sdf iter=30 eval=37 fx=142675.4378 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=19.7964, coll=0.0000, guide=3051.6516, yaw=254.8974, dyaw=0.0000} clearance=(-0.086,0.137) margin=(-0.096,-0.083) len=9.1096 chord=8.5435 ratio=1.0663 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 38[0m
+[32mtime generate: 0.037826ms[0m
+[32mtime int penalty: 0.083354ms[0m
+[31miter: 39[0m
+[32mtime generate: 0.027157ms[0m
+[32mtime int penalty: 0.081436ms[0m
+[33m[WARN] [1784881988.261501981]: [MINCO-IRL] stage=stage1_no_sdf iter=32 eval=39 fx=142522.5625 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=21.3725, coll=0.0000, guide=2852.1232, yaw=137.7230, dyaw=0.0000} clearance=(-0.088,0.141) margin=(-0.098,-0.079) len=9.1191 chord=8.5435 ratio=1.0674 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 40[0m
+[32mtime generate: 0.037462ms[0m
+[32mtime int penalty: 0.08226ms[0m
+[31miter: 41[0m
+[32mtime generate: 0.026903ms[0m
+[32mtime int penalty: 0.081751ms[0m
+[31miter: 42[0m
+[32mtime generate: 0.026655ms[0m
+[32mtime int penalty: 0.081085ms[0m
+[31miter: 43[0m
+[32mtime generate: 0.026554ms[0m
+[32mtime int penalty: 0.080647ms[0m
+[31miter: 44[0m
+[32mtime generate: 0.026624ms[0m
+[32mtime int penalty: 0.081113ms[0m
+[31miter: 45[0m
+[32mtime generate: 0.026499ms[0m
+[32mtime int penalty: 0.081282ms[0m
+[31miter: 46[0m
+[32mtime generate: 0.026687ms[0m
+[32mtime int penalty: 0.081129ms[0m
+[31miter: 47[0m
+[32mtime generate: 0.026561ms[0m
+[32mtime int penalty: 0.08112ms[0m
+[31miter: 48[0m
+[32mtime generate: 0.026513ms[0m
+[32mtime int penalty: 0.081689ms[0m
+[31miter: 49[0m
+[32mtime generate: 0.026656ms[0m
+[32mtime int penalty: 0.081075ms[0m
+[31miter: 50[0m
+[32mtime generate: 0.02655ms[0m
+[32mtime int penalty: 0.083863ms[0m
+[31miter: 51[0m
+[32mtime generate: 0.026672ms[0m
+[32mtime int penalty: 0.081082ms[0m
+[31miter: 52[0m
+[32mtime generate: 0.026507ms[0m
+[32mtime int penalty: 0.081141ms[0m
+[31miter: 53[0m
+[32mtime generate: 0.026447ms[0m
+[32mtime int penalty: 0.08183ms[0m
+[31miter: 54[0m
+[32mtime generate: 0.026492ms[0m
+[32mtime int penalty: 0.080821ms[0m
+[31miter: 55[0m
+[32mtime generate: 0.026601ms[0m
+[32mtime int penalty: 0.081658ms[0m
+[31miter: 56[0m
+[32mtime generate: 0.036106ms[0m
+[32mtime int penalty: 0.081906ms[0m
+[31miter: 57[0m
+[32mtime generate: 0.026991ms[0m
+[32mtime int penalty: 0.081011ms[0m
+[31miter: 58[0m
+[32mtime generate: 0.026525ms[0m
+[32mtime int penalty: 0.081547ms[0m
+[31miter: 59[0m
+[32mtime generate: 0.026623ms[0m
+[32mtime int penalty: 0.081012ms[0m
+[31miter: 60[0m
+[32mtime generate: 0.026554ms[0m
+[32mtime int penalty: 0.08066ms[0m
+[31miter: 61[0m
+[32mtime generate: 0.026558ms[0m
+[32mtime int penalty: 0.081726ms[0m
+[31miter: 62[0m
+[32mtime generate: 0.026513ms[0m
+[32mtime int penalty: 0.081028ms[0m
+[31miter: 63[0m
+[32mtime generate: 0.026451ms[0m
+[32mtime int penalty: 0.081439ms[0m
+[31miter: 64[0m
+[32mtime generate: 0.026451ms[0m
+[32mtime int penalty: 0.081187ms[0m
+[31miter: 65[0m
+[32mtime generate: 0.026544ms[0m
+[32mtime int penalty: 0.080987ms[0m
+[31miter: 66[0m
+[32mtime generate: 0.026433ms[0m
+[32mtime int penalty: 0.081202ms[0m
+[31miter: 67[0m
+[32mtime generate: 0.026509ms[0m
+[32mtime int penalty: 0.081106ms[0m
+[31miter: 68[0m
+[32mtime generate: 0.026516ms[0m
+[32mtime int penalty: 0.080916ms[0m
+[31miter: 69[0m
+[32mtime generate: 0.026616ms[0m
+[32mtime int penalty: 0.080863ms[0m
+[31miter: 70[0m
+[32mtime generate: 0.026507ms[0m
+[32mtime int penalty: 0.081061ms[0m
+[31miter: 71[0m
+[32mtime generate: 0.026589ms[0m
+[32mtime int penalty: 0.08098ms[0m
+[31miter: 72[0m
+[32mtime generate: 0.026395ms[0m
+[32mtime int penalty: 0.081144ms[0m
+[31miter: 73[0m
+[32mtime generate: 0.026611ms[0m
+[32mtime int penalty: 0.116777ms[0m
+[31miter: 74[0m
+[32mtime generate: 0.026611ms[0m
+[32mtime int penalty: 0.08121ms[0m
+[31miter: 75[0m
+[32mtime generate: 0.026958ms[0m
+[32mtime int penalty: 0.080822ms[0m
+[31miter: 76[0m
+[32mtime generate: 0.026642ms[0m
+[32mtime int penalty: 0.081039ms[0m
+[31miter: 77[0m
+[32mtime generate: 0.026596ms[0m
+[32mtime int penalty: 0.081142ms[0m
+[31miter: 78[0m
+[32mtime generate: 0.02679ms[0m
+[32mtime int penalty: 0.081068ms[0m
+[31miter: 79[0m
+[32mtime generate: 0.026784ms[0m
+[32mtime int penalty: 0.081259ms[0m
+[31miter: 80[0m
+[32mtime generate: 0.026588ms[0m
+[32mtime int penalty: 0.081666ms[0m
+[31miter: 81[0m
+[32mtime generate: 0.026561ms[0m
+[32mtime int penalty: 0.081531ms[0m
+[31miter: 82[0m
+[32mtime generate: 0.0266ms[0m
+[32mtime int penalty: 0.080744ms[0m
+[31miter: 83[0m
+[32mtime generate: 0.026734ms[0m
+[32mtime int penalty: 0.080825ms[0m
+[31miter: 84[0m
+[32mtime generate: 0.026583ms[0m
+[32mtime int penalty: 0.081058ms[0m
+[31miter: 85[0m
+[32mtime generate: 0.028766ms[0m
+[32mtime int penalty: 0.081535ms[0m
+[31miter: 86[0m
+[32mtime generate: 0.026657ms[0m
+[32mtime int penalty: 0.081079ms[0m
+[31miter: 87[0m
+[32mtime generate: 0.026574ms[0m
+[32mtime int penalty: 0.081392ms[0m
+[31miter: 88[0m
+[32mtime generate: 0.02659ms[0m
+[32mtime int penalty: 0.081607ms[0m
+[31miter: 89[0m
+[32mtime generate: 0.026592ms[0m
+[32mtime int penalty: 0.080795ms[0m
+[31miter: 90[0m
+[32mtime generate: 0.026463ms[0m
+[32mtime int penalty: 0.081083ms[0m
+[31miter: 91[0m
+[32mtime generate: 0.026774ms[0m
+[32mtime int penalty: 0.081027ms[0m
+[31miter: 92[0m
+[32mtime generate: 0.026674ms[0m
+[32mtime int penalty: 0.08096ms[0m
+[31miter: 93[0m
+[32mtime generate: 0.0266ms[0m
+[32mtime int penalty: 0.081071ms[0m
+[31miter: 94[0m
+[32mtime generate: 0.026623ms[0m
+[32mtime int penalty: 0.081464ms[0m
+[31miter: 95[0m
+[32mtime generate: 0.026444ms[0m
+[32mtime int penalty: 0.081726ms[0m
+[31miter: 96[0m
+[32mtime generate: 0.026499ms[0m
+[32mtime int penalty: 0.081072ms[0m
+[31miter: 97[0m
+[32mtime generate: 0.026633ms[0m
+[32mtime int penalty: 0.081736ms[0m
+[31miter: 98[0m
+[32mtime generate: 0.026605ms[0m
+[32mtime int penalty: 0.081765ms[0m
+[31miter: 99[0m
+[32mtime generate: 0.026529ms[0m
+[32mtime int penalty: 0.08161ms[0m
+[31miter: 100[0m
+[32mtime generate: 0.026501ms[0m
+[32mtime int penalty: 0.081703ms[0m
+[31miter: 101[0m
+[32mtime generate: 0.026484ms[0m
+[32mtime int penalty: 0.081957ms[0m
+[31miter: 102[0m
+[32mtime generate: 0.026896ms[0m
+[32mtime int penalty: 0.081828ms[0m
+[31miter: 103[0m
+[32mtime generate: 0.027093ms[0m
+[32mtime int penalty: 0.08187ms[0m
+[31miter: 104[0m
+[32mtime generate: 0.026662ms[0m
+[32mtime int penalty: 0.082306ms[0m
+[31miter: 105[0m
+[32mtime generate: 0.02651ms[0m
+[32mtime int penalty: 0.081697ms[0m
+[31miter: 106[0m
+[32mtime generate: 0.026698ms[0m
+[32mtime int penalty: 0.082197ms[0m
+[31miter: 107[0m
+[32mtime generate: 0.026656ms[0m
+[32mtime int penalty: 0.081672ms[0m
+[31miter: 108[0m
+[32mtime generate: 0.026618ms[0m
+[32mtime int penalty: 0.081751ms[0m
+[31miter: 109[0m
+[32mtime generate: 0.026586ms[0m
+[32mtime int penalty: 0.081681ms[0m
+[31miter: 110[0m
+[32mtime generate: 0.026469ms[0m
+[32mtime int penalty: 0.081591ms[0m
+[31miter: 111[0m
+[32mtime generate: 0.026472ms[0m
+[32mtime int penalty: 0.081537ms[0m
+[31miter: 112[0m
+[32mtime generate: 0.027164ms[0m
+[32mtime int penalty: 0.081912ms[0m
+[31miter: 113[0m
+[32mtime generate: 0.026419ms[0m
+[32mtime int penalty: 0.081518ms[0m
+[31miter: 114[0m
+[32mtime generate: 0.041108ms[0m
+[32mtime int penalty: 0.078524ms[0m
+[31miter: 115[0m
+[32mtime generate: 0.025892ms[0m
+[32mtime int penalty: 0.098362ms[0m
+[31miter: 116[0m
+[32mtime generate: 0.026505ms[0m
+[32mtime int penalty: 0.094019ms[0m
+[31miter: 117[0m
+[32mtime generate: 0.025351ms[0m
+[32mtime int penalty: 0.100338ms[0m
+[31miter: 118[0m
+[32mtime generate: 0.025305ms[0m
+[32mtime int penalty: 0.07774ms[0m
+[31miter: 119[0m
+[32mtime generate: 0.025335ms[0m
+[32mtime int penalty: 0.077721ms[0m
+[31miter: 120[0m
+[32mtime generate: 0.025569ms[0m
+[32mtime int penalty: 0.078387ms[0m
+[31miter: 121[0m
+[32mtime generate: 0.030856ms[0m
+[32mtime int penalty: 0.101065ms[0m
+[31miter: 122[0m
+[32mtime generate: 0.025977ms[0m
+[32mtime int penalty: 0.078044ms[0m
+[31miter: 123[0m
+[32mtime generate: 0.025367ms[0m
+[32mtime int penalty: 0.077774ms[0m
+[31miter: 124[0m
+[32mtime generate: 0.025333ms[0m
+[32mtime int penalty: 0.078251ms[0m
+[31miter: 125[0m
+[32mtime generate: 0.026454ms[0m
+[32mtime int penalty: 0.09259ms[0m
+[31miter: 126[0m
+[32mtime generate: 0.025448ms[0m
+[32mtime int penalty: 0.077715ms[0m
+[31miter: 127[0m
+[32mtime generate: 0.025263ms[0m
+[32mtime int penalty: 0.077667ms[0m
+[31miter: 128[0m
+[32mtime generate: 0.025405ms[0m
+[32mtime int penalty: 0.077905ms[0m
+[31miter: 129[0m
+[32mtime generate: 0.025449ms[0m
+[32mtime int penalty: 0.077759ms[0m
+[31miter: 130[0m
+[32mtime generate: 0.026664ms[0m
+[32mtime int penalty: 0.081821ms[0m
+[31miter: 131[0m
+[32mtime generate: 0.02671ms[0m
+[32mtime int penalty: 0.081483ms[0m
+[31miter: 132[0m
+[32mtime generate: 0.026513ms[0m
+[32mtime int penalty: 0.081513ms[0m
+[31miter: 133[0m
+[32mtime generate: 0.026529ms[0m
+[32mtime int penalty: 0.081617ms[0m
+[31miter: 134[0m
+[32mtime generate: 0.026651ms[0m
+[32mtime int penalty: 0.081264ms[0m
+[31miter: 135[0m
+[32mtime generate: 0.026493ms[0m
+[32mtime int penalty: 0.081468ms[0m
+[31miter: 136[0m
+[32mtime generate: 0.026478ms[0m
+[32mtime int penalty: 0.081543ms[0m
+[31miter: 137[0m
+[32mtime generate: 0.026454ms[0m
+[32mtime int penalty: 0.081715ms[0m
+[31miter: 138[0m
+[32mtime generate: 0.026534ms[0m
+[32mtime int penalty: 0.081299ms[0m
+[31miter: 139[0m
+[32mtime generate: 0.026373ms[0m
+[32mtime int penalty: 0.081353ms[0m
+[31miter: 140[0m
+[32mtime generate: 0.026444ms[0m
+[32mtime int penalty: 0.081644ms[0m
+[31miter: 141[0m
+[32mtime generate: 0.026427ms[0m
+[32mtime int penalty: 0.081592ms[0m
+[31miter: 142[0m
+[32mtime generate: 0.032419ms[0m
+[32mtime int penalty: 0.082904ms[0m
+[31miter: 143[0m
+[32mtime generate: 0.026894ms[0m
+[32mtime int penalty: 0.081788ms[0m
+[31miter: 144[0m
+[32mtime generate: 0.026625ms[0m
+[32mtime int penalty: 0.081326ms[0m
+[31miter: 145[0m
+[32mtime generate: 0.026408ms[0m
+[32mtime int penalty: 0.081619ms[0m
+[31miter: 146[0m
+[32mtime generate: 0.026558ms[0m
+[32mtime int penalty: 0.0815ms[0m
+[31miter: 147[0m
+[32mtime generate: 0.026422ms[0m
+[32mtime int penalty: 0.081271ms[0m
+[31miter: 148[0m
+[32mtime generate: 0.026528ms[0m
+[32mtime int penalty: 0.116053ms[0m
+[31miter: 149[0m
+[32mtime generate: 0.062444ms[0m
+[32mtime int penalty: 0.081589ms[0m
+[31miter: 150[0m
+[32mtime generate: 0.027075ms[0m
+[32mtime int penalty: 0.081869ms[0m
+[31miter: 151[0m
+[32mtime generate: 0.026594ms[0m
+[32mtime int penalty: 0.081915ms[0m
+[31miter: 152[0m
+[32mtime generate: 0.026723ms[0m
+[32mtime int penalty: 0.081359ms[0m
+[31miter: 153[0m
+[32mtime generate: 0.02674ms[0m
+[32mtime int penalty: 0.081358ms[0m
+[31miter: 154[0m
+[32mtime generate: 0.026497ms[0m
+[32mtime int penalty: 0.081807ms[0m
+[31miter: 155[0m
+[32mtime generate: 0.026596ms[0m
+[32mtime int penalty: 0.081693ms[0m
+[31miter: 156[0m
+[32mtime generate: 0.02648ms[0m
+[32mtime int penalty: 0.081446ms[0m
+[31miter: 157[0m
+[32mtime generate: 0.026391ms[0m
+[32mtime int penalty: 0.081435ms[0m
+[31miter: 158[0m
+[32mtime generate: 0.026417ms[0m
+[32mtime int penalty: 0.081549ms[0m
+[31miter: 159[0m
+[32mtime generate: 0.026566ms[0m
+[32mtime int penalty: 0.081189ms[0m
+[31mRevert to the previous point[0m
+[48;5;2m[GenTraj] Opt (stage1_no_sdf) done, ret=-1004, objective=142519, elapsed=58.7239ms, collision_cost=0[0m
+[0m[INFO] [1784881988.278329059]: [TrajOpt] stored stage-1 warm-start cache: N=11 dim=81 path_pts=11[0m
+[32m[GenTraj] Begin opt (stage2_with_sdf)[0m
+[31miter: 1[0m
+[32mtime generate: 0.028205ms[0m
+[32mtime int penalty: 0.097291ms[0m
+[31miter: 2[0m
+[32mtime generate: 0.02779ms[0m
+[32mtime int penalty: 0.077246ms[0m
+[31miter: 3[0m
+[32mtime generate: 0.027003ms[0m
+[32mtime int penalty: 0.077492ms[0m
+[0m[INFO] [1784881988.278876332]: [MINCO-IRL] stage=stage2_with_sdf iter=1 eval=3 fx=170929.4551 step=0.0000 ls=2 d=(0.0100,0.2200) cost{snap=106.0423, coll=0.0000, guide=0.0000, yaw=699.1773, dyaw=0.0000} clearance=(0.176,0.411) margin=(0.166,0.191) len=9.6030 chord=8.5435 ratio=1.1240 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 4[0m
+[32mtime generate: 0.039318ms[0m
+[32mtime int penalty: 0.080576ms[0m
+[0m[INFO] [1784881988.279137828]: [MINCO-IRL] stage=stage2_with_sdf iter=2 eval=4 fx=154725.4325 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=16.2177, coll=0.0000, guide=0.0000, yaw=752.7170, dyaw=0.0000} clearance=(0.171,0.385) margin=(0.161,0.165) len=9.6236 chord=8.5435 ratio=1.1264 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 5[0m
+[32mtime generate: 0.038132ms[0m
+[32mtime int penalty: 0.080342ms[0m
+[31miter: 6[0m
+[32mtime generate: 0.02763ms[0m
+[32mtime int penalty: 0.077488ms[0m
+[0m[INFO] [1784881988.279529499]: [MINCO-IRL] stage=stage2_with_sdf iter=4 eval=6 fx=144926.0159 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=24.3799, coll=0.0000, guide=0.0000, yaw=241.8153, dyaw=0.0000} clearance=(0.081,0.373) margin=(0.071,0.153) len=9.3645 chord=8.5435 ratio=1.0961 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 7[0m
+[32mtime generate: 0.03482ms[0m
+[32mtime int penalty: 0.080193ms[0m
+[31miter: 8[0m
+[32mtime generate: 0.027183ms[0m
+[32mtime int penalty: 0.087294ms[0m
+[0m[INFO] [1784881988.279931445]: [MINCO-IRL] stage=stage2_with_sdf iter=6 eval=8 fx=143381.0515 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=20.6497, coll=0.0000, guide=0.0000, yaw=250.8202, dyaw=0.0000} clearance=(0.062,0.350) margin=(0.052,0.130) len=9.3172 chord=8.5435 ratio=1.0906 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 9[0m
+[32mtime generate: 0.028222ms[0m
+[32mtime int penalty: 0.078554ms[0m
+[31miter: 10[0m
+[32mtime generate: 0.026906ms[0m
+[32mtime int penalty: 0.079222ms[0m
+[0m[INFO] [1784881988.280309032]: [MINCO-IRL] stage=stage2_with_sdf iter=8 eval=10 fx=142515.5257 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=21.3914, coll=821.9601, guide=0.0000, yaw=231.8839, dyaw=0.0000} clearance=(0.014,0.270) margin=(0.004,0.050) len=9.2349 chord=8.5435 ratio=1.0809 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 11[0m
+[32mtime generate: 0.027817ms[0m
+[32mtime int penalty: 0.079381ms[0m
+[31miter: 12[0m
+[32mtime generate: 0.026897ms[0m
+[32mtime int penalty: 0.078673ms[0m
+[31miter: 13[0m
+[32mtime generate: 0.026819ms[0m
+[32mtime int penalty: 0.078001ms[0m
+[0m[INFO] [1784881988.280832032]: [MINCO-IRL] stage=stage2_with_sdf iter=10 eval=13 fx=141402.3091 step=2.1000 ls=2 d=(0.0100,0.2200) cost{snap=20.8613, coll=6.5560, guide=0.0000, yaw=189.8795, dyaw=0.0000} clearance=(0.026,0.265) margin=(0.016,0.045) len=9.2244 chord=8.5435 ratio=1.0797 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 14[0m
+[32mtime generate: 0.026493ms[0m
+[32mtime int penalty: 0.076111ms[0m
+[31miter: 15[0m
+[32mtime generate: 0.025502ms[0m
+[32mtime int penalty: 0.075778ms[0m
+[31miter: 16[0m
+[32mtime generate: 0.025297ms[0m
+[32mtime int penalty: 0.075381ms[0m
+[31miter: 17[0m
+[32mtime generate: 0.025508ms[0m
+[32mtime int penalty: 0.074747ms[0m
+[0m[INFO] [1784881988.281448561]: [MINCO-IRL] stage=stage2_with_sdf iter=12 eval=17 fx=140903.5665 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=20.7607, coll=52.8424, guide=0.0000, yaw=134.0982, dyaw=0.0000} clearance=(0.024,0.245) margin=(0.014,0.025) len=9.1987 chord=8.5435 ratio=1.0767 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 18[0m
+[32mtime generate: 0.026776ms[0m
+[32mtime int penalty: 0.075943ms[0m
+[31miter: 19[0m
+[32mtime generate: 0.025488ms[0m
+[32mtime int penalty: 0.075269ms[0m
+[31miter: 20[0m
+[32mtime generate: 0.025395ms[0m
+[32mtime int penalty: 0.074695ms[0m
+[31miter: 21[0m
+[32mtime generate: 0.025603ms[0m
+[32mtime int penalty: 0.075134ms[0m
+[31miter: 22[0m
+[32mtime generate: 0.025435ms[0m
+[32mtime int penalty: 0.074849ms[0m
+[0m[INFO] [1784881988.282198920]: [MINCO-IRL] stage=stage2_with_sdf iter=14 eval=22 fx=140711.2983 step=0.2500 ls=3 d=(0.0100,0.2200) cost{snap=20.5856, coll=57.1916, guide=0.0000, yaw=119.6233, dyaw=0.0000} clearance=(0.026,0.235) margin=(0.016,0.015) len=9.1879 chord=8.5435 ratio=1.0754 reverse=0 self_cross=0 worst_group=2 status=running[0m
+[31miter: 23[0m
+[32mtime generate: 0.026549ms[0m
+[32mtime int penalty: 0.095432ms[0m
+[31miter: 24[0m
+[32mtime generate: 0.042493ms[0m
+[32mtime int penalty: 0.0746ms[0m
+[0m[INFO] [1784881988.282608742]: [MINCO-IRL] stage=stage2_with_sdf iter=16 eval=24 fx=140534.8072 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=20.8652, coll=23.5818, guide=0.0000, yaw=106.6456, dyaw=0.0000} clearance=(0.027,0.237) margin=(0.017,0.017) len=9.1780 chord=8.5435 ratio=1.0743 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 25[0m
+[32mtime generate: 0.026303ms[0m
+[32mtime int penalty: 0.075426ms[0m
+[31miter: 26[0m
+[32mtime generate: 0.025768ms[0m
+[32mtime int penalty: 0.07472ms[0m
+[0m[INFO] [1784881988.282975039]: [MINCO-IRL] stage=stage2_with_sdf iter=18 eval=26 fx=140193.8423 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=17.5992, coll=5.7226, guide=0.0000, yaw=127.8012, dyaw=0.0000} clearance=(0.028,0.238) margin=(0.018,0.018) len=9.1562 chord=8.5435 ratio=1.0717 reverse=0 self_cross=0 worst_group=2 status=running[0m
+[31miter: 27[0m
+[32mtime generate: 0.026621ms[0m
+[32mtime int penalty: 0.075612ms[0m
+[31miter: 28[0m
+[32mtime generate: 0.025636ms[0m
+[32mtime int penalty: 0.07463ms[0m
+[0m[INFO] [1784881988.283338074]: [MINCO-IRL] stage=stage2_with_sdf iter=20 eval=28 fx=140091.1642 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=18.7057, coll=38.2798, guide=0.0000, yaw=128.9697, dyaw=0.0000} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1446 chord=8.5435 ratio=1.0704 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 29[0m
+[32mtime generate: 0.026406ms[0m
+[32mtime int penalty: 0.075028ms[0m
+[31miter: 30[0m
+[32mtime generate: 0.025617ms[0m
+[32mtime int penalty: 0.075101ms[0m
+[0m[INFO] [1784881988.283720507]: [MINCO-IRL] stage=stage2_with_sdf iter=22 eval=30 fx=140079.1662 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=19.3676, coll=26.6969, guide=0.0000, yaw=127.2505, dyaw=0.0000} clearance=(0.026,0.237) margin=(0.016,0.017) len=9.1444 chord=8.5435 ratio=1.0703 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 31[0m
+[32mtime generate: 0.038591ms[0m
+[32mtime int penalty: 0.079766ms[0m
+[31miter: 32[0m
+[32mtime generate: 0.027361ms[0m
+[32mtime int penalty: 0.078159ms[0m
+[0m[INFO] [1784881988.284116310]: [MINCO-IRL] stage=stage2_with_sdf iter=24 eval=32 fx=140063.2498 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=19.7136, coll=22.8094, guide=0.0000, yaw=122.7547, dyaw=0.0000} clearance=(0.026,0.237) margin=(0.016,0.017) len=9.1432 chord=8.5435 ratio=1.0702 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 33[0m
+[32mtime generate: 0.042561ms[0m
+[32mtime int penalty: 0.075448ms[0m
+[31miter: 34[0m
+[32mtime generate: 0.025662ms[0m
+[32mtime int penalty: 0.074617ms[0m
+[0m[INFO] [1784881988.284499726]: [MINCO-IRL] stage=stage2_with_sdf iter=26 eval=34 fx=140032.3845 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=20.6489, coll=19.8622, guide=0.0000, yaw=106.3370, dyaw=0.0000} clearance=(0.026,0.237) margin=(0.016,0.017) len=9.1384 chord=8.5435 ratio=1.0696 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 35[0m
+[32mtime generate: 0.027726ms[0m
+[32mtime int penalty: 0.078819ms[0m
+[31miter: 36[0m
+[32mtime generate: 0.026861ms[0m
+[32mtime int penalty: 0.077898ms[0m
+[0m[INFO] [1784881988.284895324]: [MINCO-IRL] stage=stage2_with_sdf iter=28 eval=36 fx=139996.2365 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=21.6904, coll=22.8462, guide=0.0000, yaw=78.6245, dyaw=0.0000} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1380 chord=8.5435 ratio=1.0696 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 37[0m
+[32mtime generate: 0.027661ms[0m
+[32mtime int penalty: 0.079408ms[0m
+[31miter: 38[0m
+[32mtime generate: 0.026925ms[0m
+[32mtime int penalty: 0.07775ms[0m
+[0m[INFO] [1784881988.285282928]: [MINCO-IRL] stage=stage2_with_sdf iter=30 eval=38 fx=139944.7409 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=22.0758, coll=25.7513, guide=0.0000, yaw=47.9859, dyaw=0.0000} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1370 chord=8.5435 ratio=1.0695 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 39[0m
+[32mtime generate: 0.027672ms[0m
+[32mtime int penalty: 0.078674ms[0m
+[31miter: 40[0m
+[32mtime generate: 0.026811ms[0m
+[32mtime int penalty: 0.077673ms[0m
+[31miter: 41[0m
+[32mtime generate: 0.026478ms[0m
+[32mtime int penalty: 0.077233ms[0m
+[0m[INFO] [1784881988.285798311]: [MINCO-IRL] stage=stage2_with_sdf iter=32 eval=41 fx=139850.1078 step=0.5000 ls=2 d=(0.0100,0.2200) cost{snap=21.7174, coll=50.3481, guide=0.0000, yaw=5.9147, dyaw=0.0000} clearance=(0.025,0.236) margin=(0.015,0.016) len=9.1377 chord=8.5435 ratio=1.0695 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 42[0m
+[32mtime generate: 0.027534ms[0m
+[32mtime int penalty: 0.078648ms[0m
+[31miter: 43[0m
+[32mtime generate: 0.026758ms[0m
+[32mtime int penalty: 0.077684ms[0m
+[0m[INFO] [1784881988.286176961]: [MINCO-IRL] stage=stage2_with_sdf iter=34 eval=43 fx=139764.2062 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=22.3475, coll=21.7111, guide=0.0000, yaw=3.0686, dyaw=0.0000} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1391 chord=8.5435 ratio=1.0697 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 44[0m
+[32mtime generate: 0.028551ms[0m
+[32mtime int penalty: 0.091839ms[0m
+[31miter: 45[0m
+[32mtime generate: 0.025684ms[0m
+[32mtime int penalty: 0.073526ms[0m
+[0m[INFO] [1784881988.286574695]: [MINCO-IRL] stage=stage2_with_sdf iter=36 eval=45 fx=139704.7884 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=21.4281, coll=25.1274, guide=0.0000, yaw=0.6577, dyaw=0.0000} clearance=(0.027,0.236) margin=(0.017,0.016) len=9.1387 chord=8.5435 ratio=1.0697 reverse=0 self_cross=0 worst_group=2 status=running[0m
+[31miter: 46[0m
+[32mtime generate: 0.026548ms[0m
+[32mtime int penalty: 0.074016ms[0m
+[31miter: 47[0m
+[32mtime generate: 0.025666ms[0m
+[32mtime int penalty: 0.095261ms[0m
+[0m[INFO] [1784881988.286977716]: [MINCO-IRL] stage=stage2_with_sdf iter=38 eval=47 fx=139651.9117 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=23.4382, coll=29.2027, guide=0.0000, yaw=0.0076, dyaw=5.6287} clearance=(0.026,0.236) margin=(0.016,0.016) len=9.1388 chord=8.5435 ratio=1.0697 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 48[0m
+[32mtime generate: 0.026912ms[0m
+[32mtime int penalty: 0.074338ms[0m
+[31miter: 49[0m
+[32mtime generate: 0.025576ms[0m
+[32mtime int penalty: 0.074125ms[0m
+[0m[INFO] [1784881988.287340003]: [MINCO-IRL] stage=stage2_with_sdf iter=40 eval=49 fx=139620.5354 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=23.8884, coll=21.6973, guide=0.0000, yaw=0.0016, dyaw=0.3519} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1418 chord=8.5435 ratio=1.0700 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 50[0m
+[32mtime generate: 0.026982ms[0m
+[32mtime int penalty: 0.074848ms[0m
+[31miter: 51[0m
+[32mtime generate: 0.04653ms[0m
+[32mtime int penalty: 0.077409ms[0m
+[0m[INFO] [1784881988.287731274]: [MINCO-IRL] stage=stage2_with_sdf iter=42 eval=51 fx=139582.8942 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=24.8359, coll=17.8678, guide=0.0000, yaw=0.0000, dyaw=0.0000} clearance=(0.025,0.238) margin=(0.015,0.018) len=9.1437 chord=8.5435 ratio=1.0702 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 52[0m
+[32mtime generate: 0.038238ms[0m
+[32mtime int penalty: 0.077536ms[0m
+[31miter: 53[0m
+[32mtime generate: 0.026871ms[0m
+[32mtime int penalty: 0.076473ms[0m
+[0m[INFO] [1784881988.288126501]: [MINCO-IRL] stage=stage2_with_sdf iter=44 eval=53 fx=139534.6017 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=27.9220, coll=28.3806, guide=0.0000, yaw=0.0000, dyaw=0.0000} clearance=(0.026,0.237) margin=(0.016,0.017) len=9.1400 chord=8.5435 ratio=1.0698 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 54[0m
+[32mtime generate: 0.027855ms[0m
+[32mtime int penalty: 0.076842ms[0m
+[31miter: 55[0m
+[32mtime generate: 0.026824ms[0m
+[32mtime int penalty: 0.076704ms[0m
+[0m[INFO] [1784881988.288502887]: [MINCO-IRL] stage=stage2_with_sdf iter=46 eval=55 fx=139498.2818 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=30.3537, coll=35.0703, guide=0.0000, yaw=0.0000, dyaw=0.0000} clearance=(0.026,0.237) margin=(0.016,0.017) len=9.1361 chord=8.5435 ratio=1.0694 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 56[0m
+[32mtime generate: 0.02793ms[0m
+[32mtime int penalty: 0.077614ms[0m
+[31miter: 57[0m
+[32mtime generate: 0.026909ms[0m
+[32mtime int penalty: 0.076669ms[0m
+[0m[INFO] [1784881988.288881119]: [MINCO-IRL] stage=stage2_with_sdf iter=48 eval=57 fx=139424.2400 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=33.2102, coll=57.9274, guide=0.0000, yaw=0.2390, dyaw=0.0000} clearance=(0.025,0.236) margin=(0.015,0.016) len=9.1351 chord=8.5435 ratio=1.0692 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 58[0m
+[32mtime generate: 0.03303ms[0m
+[32mtime int penalty: 0.113185ms[0m
+[31miter: 59[0m
+[32mtime generate: 0.027784ms[0m
+[32mtime int penalty: 0.077875ms[0m
+[0m[INFO] [1784881988.289309414]: [MINCO-IRL] stage=stage2_with_sdf iter=50 eval=59 fx=139389.9469 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=34.4900, coll=45.7192, guide=0.0000, yaw=9.4313, dyaw=4.7496} clearance=(0.025,0.236) margin=(0.015,0.016) len=9.1391 chord=8.5435 ratio=1.0697 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 60[0m
+[32mtime generate: 0.038695ms[0m
+[32mtime int penalty: 0.077902ms[0m
+[31miter: 61[0m
+[32mtime generate: 0.027374ms[0m
+[32mtime int penalty: 0.077251ms[0m
+[0m[INFO] [1784881988.289705606]: [MINCO-IRL] stage=stage2_with_sdf iter=52 eval=61 fx=139351.7973 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=35.6233, coll=11.9791, guide=0.0000, yaw=0.0015, dyaw=0.0000} clearance=(0.026,0.238) margin=(0.016,0.018) len=9.1426 chord=8.5435 ratio=1.0701 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 62[0m
+[32mtime generate: 0.035141ms[0m
+[32mtime int penalty: 0.078056ms[0m
+[31miter: 63[0m
+[32mtime generate: 0.026927ms[0m
+[32mtime int penalty: 0.076749ms[0m
+[0m[INFO] [1784881988.290094828]: [MINCO-IRL] stage=stage2_with_sdf iter=54 eval=63 fx=139312.9335 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=38.4404, coll=42.2216, guide=0.0000, yaw=1.3539, dyaw=0.0000} clearance=(0.025,0.236) margin=(0.015,0.016) len=9.1431 chord=8.5435 ratio=1.0702 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 64[0m
+[32mtime generate: 0.02788ms[0m
+[32mtime int penalty: 0.078675ms[0m
+[31miter: 65[0m
+[32mtime generate: 0.027009ms[0m
+[32mtime int penalty: 0.077087ms[0m
+[0m[INFO] [1784881988.290475411]: [MINCO-IRL] stage=stage2_with_sdf iter=56 eval=65 fx=139269.6788 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=39.3041, coll=22.4163, guide=0.0000, yaw=1.8657, dyaw=0.0000} clearance=(0.026,0.237) margin=(0.016,0.017) len=9.1452 chord=8.5435 ratio=1.0704 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 66[0m
+[32mtime generate: 0.027853ms[0m
+[32mtime int penalty: 0.077757ms[0m
+[31miter: 67[0m
+[32mtime generate: 0.026967ms[0m
+[32mtime int penalty: 0.07717ms[0m
+[0m[INFO] [1784881988.290853329]: [MINCO-IRL] stage=stage2_with_sdf iter=58 eval=67 fx=139231.5441 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=41.1277, coll=10.3003, guide=0.0000, yaw=2.0753, dyaw=0.0001} clearance=(0.027,0.238) margin=(0.017,0.018) len=9.1461 chord=8.5435 ratio=1.0705 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 68[0m
+[32mtime generate: 0.027694ms[0m
+[32mtime int penalty: 0.077748ms[0m
+[31miter: 69[0m
+[32mtime generate: 0.027213ms[0m
+[32mtime int penalty: 0.077665ms[0m
+[0m[INFO] [1784881988.291247008]: [MINCO-IRL] stage=stage2_with_sdf iter=60 eval=69 fx=139149.6470 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=46.6984, coll=30.6216, guide=0.0000, yaw=6.3878, dyaw=0.0000} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1361 chord=8.5435 ratio=1.0694 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 70[0m
+[32mtime generate: 0.026584ms[0m
+[32mtime int penalty: 0.074008ms[0m
+[31miter: 71[0m
+[32mtime generate: 0.025651ms[0m
+[32mtime int penalty: 0.074315ms[0m
+[0m[INFO] [1784881988.291607325]: [MINCO-IRL] stage=stage2_with_sdf iter=62 eval=71 fx=139124.2350 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=47.1948, coll=22.0897, guide=0.0000, yaw=8.4108, dyaw=0.0000} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1345 chord=8.5435 ratio=1.0692 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 72[0m
+[32mtime generate: 0.026383ms[0m
+[32mtime int penalty: 0.07496ms[0m
+[31miter: 73[0m
+[32mtime generate: 0.057635ms[0m
+[32mtime int penalty: 0.087975ms[0m
+[0m[INFO] [1784881988.292017139]: [MINCO-IRL] stage=stage2_with_sdf iter=64 eval=73 fx=139092.5711 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=46.5676, coll=33.8264, guide=0.0000, yaw=21.1872, dyaw=3.3123} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1369 chord=8.5435 ratio=1.0694 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 74[0m
+[32mtime generate: 0.026481ms[0m
+[32mtime int penalty: 0.074135ms[0m
+[31miter: 75[0m
+[32mtime generate: 0.02562ms[0m
+[32mtime int penalty: 0.074077ms[0m
+[0m[INFO] [1784881988.292377464]: [MINCO-IRL] stage=stage2_with_sdf iter=66 eval=75 fx=139064.3414 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=49.6943, coll=23.2366, guide=0.0000, yaw=22.2976, dyaw=0.0152} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1382 chord=8.5435 ratio=1.0696 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 76[0m
+[32mtime generate: 0.026412ms[0m
+[32mtime int penalty: 0.074217ms[0m
+[31miter: 77[0m
+[32mtime generate: 0.025577ms[0m
+[32mtime int penalty: 0.073614ms[0m
+[0m[INFO] [1784881988.292736731]: [MINCO-IRL] stage=stage2_with_sdf iter=68 eval=77 fx=139047.2825 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=51.7982, coll=17.4903, guide=0.0000, yaw=24.3746, dyaw=0.4944} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1406 chord=8.5435 ratio=1.0699 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 78[0m
+[32mtime generate: 0.026249ms[0m
+[32mtime int penalty: 0.111639ms[0m
+[31miter: 79[0m
+[32mtime generate: 0.041069ms[0m
+[32mtime int penalty: 0.07421ms[0m
+[0m[INFO] [1784881988.293195907]: [MINCO-IRL] stage=stage2_with_sdf iter=70 eval=79 fx=139017.6357 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=54.9754, coll=21.1490, guide=0.0000, yaw=28.4691, dyaw=0.8691} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1404 chord=8.5435 ratio=1.0699 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 80[0m
+[32mtime generate: 0.027538ms[0m
+[32mtime int penalty: 0.091982ms[0m
+[31miter: 81[0m
+[32mtime generate: 0.025517ms[0m
+[32mtime int penalty: 0.073517ms[0m
+[0m[INFO] [1784881988.293595191]: [MINCO-IRL] stage=stage2_with_sdf iter=72 eval=81 fx=138992.9574 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=57.3941, coll=19.8381, guide=0.0000, yaw=34.5524, dyaw=1.7686} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1411 chord=8.5435 ratio=1.0699 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 82[0m
+[32mtime generate: 0.041982ms[0m
+[32mtime int penalty: 0.075049ms[0m
+[31miter: 83[0m
+[32mtime generate: 0.025557ms[0m
+[32mtime int penalty: 0.074071ms[0m
+[0m[INFO] [1784881988.293988581]: [MINCO-IRL] stage=stage2_with_sdf iter=74 eval=83 fx=138966.6369 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=57.8705, coll=31.0454, guide=0.0000, yaw=38.1523, dyaw=0.3984} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1388 chord=8.5435 ratio=1.0697 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 84[0m
+[32mtime generate: 0.030604ms[0m
+[32mtime int penalty: 0.162137ms[0m
+[31miter: 85[0m
+[32mtime generate: 0.031025ms[0m
+[32mtime int penalty: 0.081486ms[0m
+[0m[INFO] [1784881988.294514205]: [MINCO-IRL] stage=stage2_with_sdf iter=76 eval=85 fx=138941.7102 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=58.9198, coll=21.9682, guide=0.0000, yaw=43.4406, dyaw=0.1529} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1382 chord=8.5435 ratio=1.0696 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 86[0m
+[32mtime generate: 0.028381ms[0m
+[32mtime int penalty: 0.078145ms[0m
+[31miter: 87[0m
+[32mtime generate: 0.026959ms[0m
+[32mtime int penalty: 0.077415ms[0m
+[0m[INFO] [1784881988.294897444]: [MINCO-IRL] stage=stage2_with_sdf iter=78 eval=87 fx=138927.0949 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=58.7514, coll=26.5379, guide=0.0000, yaw=50.0913, dyaw=1.3717} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1406 chord=8.5435 ratio=1.0699 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 88[0m
+[32mtime generate: 0.027951ms[0m
+[32mtime int penalty: 0.077994ms[0m
+[31miter: 89[0m
+[32mtime generate: 0.026936ms[0m
+[32mtime int penalty: 0.090413ms[0m
+[0m[INFO] [1784881988.295297554]: [MINCO-IRL] stage=stage2_with_sdf iter=80 eval=89 fx=138916.0942 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=58.5216, coll=21.2313, guide=0.0000, yaw=49.7207, dyaw=0.7094} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1428 chord=8.5435 ratio=1.0701 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 90[0m
+[32mtime generate: 0.026746ms[0m
+[32mtime int penalty: 0.080397ms[0m
+[31miter: 91[0m
+[32mtime generate: 0.025988ms[0m
+[32mtime int penalty: 0.074721ms[0m
+[0m[INFO] [1784881988.295708072]: [MINCO-IRL] stage=stage2_with_sdf iter=82 eval=91 fx=138904.4447 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=56.1710, coll=20.6677, guide=0.0000, yaw=50.2363, dyaw=0.6637} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1428 chord=8.5435 ratio=1.0701 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 92[0m
+[32mtime generate: 0.03726ms[0m
+[32mtime int penalty: 0.090964ms[0m
+[31miter: 93[0m
+[32mtime generate: 0.025958ms[0m
+[32mtime int penalty: 0.073676ms[0m
+[0m[INFO] [1784881988.296111567]: [MINCO-IRL] stage=stage2_with_sdf iter=84 eval=93 fx=138895.1318 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=55.9157, coll=26.3809, guide=0.0000, yaw=47.2626, dyaw=0.1642} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1438 chord=8.5435 ratio=1.0703 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 94[0m
+[32mtime generate: 0.028133ms[0m
+[32mtime int penalty: 0.090158ms[0m
+[31miter: 95[0m
+[32mtime generate: 0.025636ms[0m
+[32mtime int penalty: 0.074061ms[0m
+[0m[INFO] [1784881988.296516283]: [MINCO-IRL] stage=stage2_with_sdf iter=86 eval=95 fx=138879.2742 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=59.7870, coll=25.8262, guide=0.0000, yaw=48.2116, dyaw=0.0000} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1462 chord=8.5435 ratio=1.0705 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 96[0m
+[32mtime generate: 0.02806ms[0m
+[32mtime int penalty: 0.089403ms[0m
+[31miter: 97[0m
+[32mtime generate: 0.025566ms[0m
+[32mtime int penalty: 0.073618ms[0m
+[31miter: 98[0m
+[32mtime generate: 0.025357ms[0m
+[32mtime int penalty: 0.074025ms[0m
+[31miter: 99[0m
+[32mtime generate: 0.025239ms[0m
+[32mtime int penalty: 0.073497ms[0m
+[31miter: 100[0m
+[32mtime generate: 0.025353ms[0m
+[32mtime int penalty: 0.073794ms[0m
+[0m[INFO] [1784881988.297295791]: [MINCO-IRL] stage=stage2_with_sdf iter=88 eval=100 fx=138868.0224 step=0.1250 ls=4 d=(0.0100,0.2200) cost{snap=64.7241, coll=19.3702, guide=0.0000, yaw=47.6114, dyaw=5.5991} clearance=(0.026,0.237) margin=(0.016,0.017) len=9.1488 chord=8.5435 ratio=1.0708 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 101[0m
+[32mtime generate: 0.027669ms[0m
+[32mtime int penalty: 0.088476ms[0m
+[31miter: 102[0m
+[32mtime generate: 0.025761ms[0m
+[32mtime int penalty: 0.073823ms[0m
+[0m[INFO] [1784881988.297695998]: [MINCO-IRL] stage=stage2_with_sdf iter=90 eval=102 fx=138854.8779 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=64.6524, coll=17.3215, guide=0.0000, yaw=45.1045, dyaw=0.7363} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1463 chord=8.5435 ratio=1.0706 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[31miter: 103[0m
+[32mtime generate: 0.026759ms[0m
+[32mtime int penalty: 0.074193ms[0m
+[31miter: 104[0m
+[32mtime generate: 0.025703ms[0m
+[32mtime int penalty: 0.073722ms[0m
+[0m[INFO] [1784881988.298090917]: [MINCO-IRL] stage=stage2_with_sdf iter=92 eval=104 fx=138849.9109 step=1.0000 ls=1 d=(0.0100,0.2200) cost{snap=64.8650, coll=21.9106, guide=0.0000, yaw=41.3961, dyaw=1.0013} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1457 chord=8.5435 ratio=1.0705 reverse=0 self_cross=0 worst_group=1 status=running[0m
+[48;5;2m[GenTraj] Opt (stage2_with_sdf) done, ret=1, objective=138850, elapsed=19.7701ms, collision_cost=21.9106[0m
+[48;5;2m[GenTraj] 5 Opt done[0m
+innerloop costs: 2.18712ms
+integral costs: 8.28019ms
+[32m>ret(stage2): 1[0m
+iter: 104
+[0m[INFO] [1784881988.298201867]: [TrajOpt][IRL] sphere hard check pass, min_margin=0.015, group=1[0m
+[0m[INFO] [1784881988.298267313]: [MINCO-IRL] stage=final iter=104 eval=104 fx=129.1730 step=0.0000 ls=0 d=(0.0100,0.2200) cost{snap=64.8650, coll=21.9106, guide=0.0000, yaw=41.3961, dyaw=1.0013} clearance=(0.025,0.237) margin=(0.015,0.017) len=9.1457 chord=8.5435 ratio=1.0705 reverse=0 self_cross=0 worst_group=1 status=success[0m
+[33mtraj_cur duration: 16.0914[0m
+[31m[plan node] Plan Time Exceed: 0.0906375[0m
+[31m[plan node] Plan Time Exceed Cause Replan Fail.[0m
+[plan node] plan done
+------------valid check
+[32m[plan node] REPLAN SUCCESS.[0m
+[31m[plan node] Error! thread time exceed! 90.7787ms[0m
+------------------- Plan Thread(GOAL) -----------------------
+[plan node] get init state
+[plan node] plan done
+[32m[plan node] NO NEED TO REPLAN.[0m
+[31m[exe_traj] Error! pos jump, please adjust the plan_hz and plan_estimated_time.[0m
+[31mlast_pos_cmd_:0 0 0 p:-0.261959  -0.00623       1.2[0m
+[32m[traj_server] Planned terminal state published. traj_id=2[0m
+[32m[traj_server] Planned MINCO trajectory published. traj_id=2 pieces=11 order=7[0m
+[32m[traj_server] Planned trajectory samples published. traj_id=2 points=1611[0m
+[31m/traj/2[0m
+------------------- Plan Thread(GOAL) -----------------------
+[plan node] get init state
+[plan node] plan done
+[32m[plan node] NO NEED TO REPLAN.[0m
+[33m[data_callback] Planner hold active: reset to HOVER and wait for next goal.[0m
+[33m[FSM] GOAL -> HOVER (scene planner hold)[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/3[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/4[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/5[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/6[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/7[0m
+[0m[INFO] [1784881988.707001372]: [MapInterface][IRL] split env_pcl by x=0.000 into group1/group2: 0 / 0 pts[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/8[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/9[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/10[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/11[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/12[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/13[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/14[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/15[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/16[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/17[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/18[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/19[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/20[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/21[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/22[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/23[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/24[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/25[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/26[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/27[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/28[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/29[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/30[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/31[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/32[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/33[0m
+[33m[data_callback] Planner hold active: reset to HOVER and wait for next goal.[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/34[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/35[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/36[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/37[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/38[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/39[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/40[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/41[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/42[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/43[0m
+------------------- Plan Thread(HOVER) -----------------------
+[plan node] hovering...
+[31m/traj/44[0m
+[31m[FSM] Thread Exit.[0m
+[31m[plan node] Thread Exit.[0m
+[31m[traj_server] Thread Exit.[0m
+[31m[Main node] Exit![0m
+clean up done
+[31mWARNING: disk usage in log directory [/home/gwx/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+WARNING: Package name "key_to_camPos" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/launch/two_pillar_planning.launch http://localhost:11311
+[1mprocess[drone0/odom_visualization-1]: started with pid [3623748][0m
+[1mprocess[drone0/planning-2]: started with pid [3623753][0m
+[drone0/planning-2] killing on exit
+[drone0/odom_visualization-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

@@ -1,0 +1,189 @@
+{
+  "downsample": false,
+  "export_mode": "raw_cloud_registered_compat_x_y_z_padding4",
+  "first_stamp": 1784815941.45224,
+  "frame_id": "world",
+  "frame_stride": 1,
+  "frames_seen_in_window": 206,
+  "frames_used": 206,
+  "input_bag": "/home/gwx/airgrasp_ws/bags/irl/irl_221201.bag",
+  "input_pointcloud2_fields": [
+    {
+      "count": 1,
+      "datatype": 7,
+      "name": "x",
+      "offset": 0
+    },
+    {
+      "count": 1,
+      "datatype": 7,
+      "name": "y",
+      "offset": 4
+    },
+    {
+      "count": 1,
+      "datatype": 7,
+      "name": "z",
+      "offset": 8
+    },
+    {
+      "count": 1,
+      "datatype": 7,
+      "name": "intensity",
+      "offset": 32
+    },
+    {
+      "count": 1,
+      "datatype": 7,
+      "name": "normal_x",
+      "offset": 16
+    },
+    {
+      "count": 1,
+      "datatype": 7,
+      "name": "normal_y",
+      "offset": 20
+    },
+    {
+      "count": 1,
+      "datatype": 7,
+      "name": "normal_z",
+      "offset": 24
+    },
+    {
+      "count": 1,
+      "datatype": 7,
+      "name": "curvature",
+      "offset": 36
+    }
+  ],
+  "last_stamp": 1784815961.9538727,
+  "output": "/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/data/map/irl_221201_cloud_registered_raw.pcd",
+  "pcd_header": {
+    "COUNT": [
+      1,
+      1,
+      1,
+      4
+    ],
+    "DATA": "binary",
+    "FIELDS": [
+      "x",
+      "y",
+      "z",
+      "_"
+    ],
+    "POINTS": 656304,
+    "SIZE": [
+      4,
+      4,
+      4,
+      1
+    ],
+    "TYPE": [
+      "F",
+      "F",
+      "F",
+      "U"
+    ]
+  },
+  "radius_outlier": {
+    "min_neighbors": 0,
+    "radius": 0.0
+  },
+  "roi_max": null,
+  "roi_min": null,
+  "stats_final": {
+    "count": 656304,
+    "max": [
+      33.31189727783203,
+      10.676642417907715,
+      4.068646430969238
+    ],
+    "min": [
+      -14.496759414672852,
+      -8.5867280960083,
+      -2.37737774848938
+    ],
+    "percentiles_1_5_50_95_99_sampled": [
+      [
+        -5.147953028678894,
+        -2.2756828546524046,
+        -0.21411337941884995
+      ],
+      [
+        -2.132192850112915,
+        -1.608945941925049,
+        -0.15773255079984663
+      ],
+      [
+        3.7142395973205566,
+        -0.06740563735365868,
+        1.415805697441101
+      ],
+      [
+        11.179654884338378,
+        1.4744278728961941,
+        2.4041828393936155
+      ],
+      [
+        17.50067974090575,
+        1.5540282523632047,
+        2.4373742604255675
+      ]
+    ]
+  },
+  "stats_raw_stream": {
+    "count": 656304,
+    "max": [
+      33.31189727783203,
+      10.676642417907715,
+      4.068646430969238
+    ],
+    "min": [
+      -14.496759414672852,
+      -8.5867280960083,
+      -2.37737774848938
+    ],
+    "percentiles_1_5_50_95_99_sampled": [
+      [
+        -5.147953028678894,
+        -2.2756828546524046,
+        -0.21411337941884995
+      ],
+      [
+        -2.132192850112915,
+        -1.608945941925049,
+        -0.15773255079984663
+      ],
+      [
+        3.7142395973205566,
+        -0.06740563735365868,
+        1.415805697441101
+      ],
+      [
+        11.179654884338378,
+        1.4744278728961941,
+        2.4041828393936155
+      ],
+      [
+        17.50067974090575,
+        1.5540282523632047,
+        2.4373742604255675
+      ]
+    ]
+  },
+  "topic": "/cloud_registered",
+  "transform_quat_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "transform_xyz": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "voxel_size": 0.0
+}

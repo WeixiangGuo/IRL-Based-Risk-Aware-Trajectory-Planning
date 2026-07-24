@@ -1,0 +1,94 @@
+[0m[INFO] [1784881965.432404642]: [bridge_node] ArmBridgeNode disabled.[0m
+[0m[INFO] [1784881965.433112325]: [bridge_node] ImgSyncNode disabled.[0m
+[0m[INFO] [1784881965.440237871]: [pcl_sync_node] Init done (World Frame Mode).
+  Sub tgt: /pcl_from_pcd/tgt_pcl
+  Sub env: /pcl_from_pcd/env_pcl
+  Pub Sync: /sync_frame_pcl_world[0m
+[0m[INFO] [1784881965.440261282]: [bridge_node] PclSyncNode enabled.[0m
+[INFO] [1784881965.797837]: [pcd_map_visualization_filter] /home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/data/map/irl_221201_cloud_registered_raw_cropped.pcd raw=527545 filtered=121656 z_min=-0.300 z_max=2.000 max_points=180000 topic=/scene/irl_221201_map_vis_no_ceiling
+[INFO] [1784881965.705784]: [two_pillar_clouds] marker_only=True, front_end_safety_obstacles=false, safety_zone_visualization=True, pillar_radius=(0.292, 0.424), safety_topic=/drone0/planning/irl_safety_distances
+[INFO] [1784881965.706472]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.894 (d1=0.010 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[31mWARNING: disk usage in log directory [/home/gwx/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+WARNING: Package name "key_to_camPos" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+... logging to /home/gwx/.ros/log/aeb428d0-8689-11f1-97d2-d3142ad76a68/roslaunch-gwx-Lenovo-Legion-Y7000P2020-3623644.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/launch/irl_221201_pcd_replay_world.launch
+[1mstarted roslaunch server http://gwx-Lenovo-Legion-Y7000P2020:43515/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /bridge_node/enable_pcl_sync: True
+ * /bridge_node/env_topic: /pcl_from_pcd/env...
+ * /bridge_node/out_topic: /sync_frame_pcl_w...
+ * /bridge_node/queue_size: 20
+ * /bridge_node/slop: 0.2
+ * /bridge_node/tgt_topic: /pcl_from_pcd/tgt...
+ * /bridge_node/use_world_frame_pcl: True
+ * /irl_221201_map_visualization_filter/frame_id: world
+ * /irl_221201_map_visualization_filter/hz: 1.0
+ * /irl_221201_map_visualization_filter/latch: True
+ * /irl_221201_map_visualization_filter/loop: True
+ * /irl_221201_map_visualization_filter/max_points: 180000
+ * /irl_221201_map_visualization_filter/pcd_path: /home/gwx/airgras...
+ * /irl_221201_map_visualization_filter/topic: /scene/irl_221201...
+ * /irl_221201_map_visualization_filter/z_max: 2.0
+ * /irl_221201_map_visualization_filter/z_min: -0.3
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /two_pillar_clouds/env_include_pillar1: True
+ * /two_pillar_clouds/env_include_pillar2: True
+ * /two_pillar_clouds/env_topic: /pcl_from_pcd/env...
+ * /two_pillar_clouds/frame_id: world
+ * /two_pillar_clouds/goal_dtheta: [0.0, 0.0, 0.0]
+ * /two_pillar_clouds/goal_position: [8.280325, -0.151...
+ * /two_pillar_clouds/goal_theta: [0.785398, -0.785...
+ * /two_pillar_clouds/goal_yaw: 0.0
+ * /two_pillar_clouds/initial_d1: 0.01
+ * /two_pillar_clouds/initial_d2: 0.22
+ * /two_pillar_clouds/pillar1_center_xy: [3.231, -0.274]
+ * /two_pillar_clouds/pillar1_radius: 0.291937
+ * /two_pillar_clouds/pillar1_rgb: [40, 180, 130]
+ * /two_pillar_clouds/pillar2_center_xy: [6.072419, -0.164...
+ * /two_pillar_clouds/pillar2_radius: 0.42432
+ * /two_pillar_clouds/pillar2_rgb: [245, 135, 65]
+ * /two_pillar_clouds/pillar_radius: 0.3
+ * /two_pillar_clouds/pillar_resolution: 0.025
+ * /two_pillar_clouds/pillar_z_max: 2.0
+ * /two_pillar_clouds/pillar_z_min: -0.3
+ * /two_pillar_clouds/publish_point_clouds: False
+ * /two_pillar_clouds/reference_path: [[-0.261959, -0.0...
+ * /two_pillar_clouds/republish_hz: 2.0
+ * /two_pillar_clouds/safety_topic: /drone0/planning/...
+ * /two_pillar_clouds/safety_zone_buffer: 0.0
+ * /two_pillar_clouds/safety_zone_visualization: True
+ * /two_pillar_clouds/scene_settle_sec: 1.0
+ * /two_pillar_clouds/sphere_radius: 0.25
+ * /two_pillar_clouds/start_dtheta: [0.0, 0.0, 0.0]
+ * /two_pillar_clouds/start_position: [-0.261959, -0.00...
+ * /two_pillar_clouds/start_theta: [0.6, -0.55, 0.0]
+ * /two_pillar_clouds/start_yaw: -0.039639
+ * /two_pillar_clouds/tgt_include_pillar1: False
+ * /two_pillar_clouds/tgt_include_pillar2: False
+ * /two_pillar_clouds/tgt_topic: /pcl_from_pcd/tgt...
+
+NODES
+  /
+    bridge_node (bridge_node/bridge_node)
+    irl_221201_map_visualization_filter (airgrasp_minco_irl/pcd_map_visualization_filter.py)
+    two_pillar_clouds (airgrasp_minco_irl/two_pillar_clouds.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/launch/irl_221201_pcd_replay_world.launch http://localhost:11311
+[1mprocess[two_pillar_clouds-1]: started with pid [3623735][0m
+[1mprocess[bridge_node-2]: started with pid [3623738][0m
+[1mprocess[irl_221201_map_visualization_filter-3]: started with pid [3623749][0m
+[bridge_node-2] killing on exit
+[irl_221201_map_visualization_filter-3] killing on exit
+[two_pillar_clouds-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

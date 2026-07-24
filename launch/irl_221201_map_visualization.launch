@@ -1,0 +1,21 @@
+<launch>
+  <arg name="pcd_path" default="$(find airgrasp_minco_irl)/data/map/irl_221201_cloud_registered_raw_cropped.pcd"/>
+  <arg name="topic" default="/scene/irl_221201_map_vis_no_ceiling"/>
+  <arg name="frame_id" default="world"/>
+  <arg name="z_min" default="-0.30"/>
+  <arg name="z_max" default="2.00"/>
+  <arg name="max_points" default="180000"/>
+  <arg name="hz" default="1.0"/>
+
+  <node pkg="airgrasp_minco_irl" type="pcd_map_visualization_filter.py" name="irl_221201_map_visualization_filter" output="screen">
+    <param name="pcd_path" value="$(arg pcd_path)"/>
+    <param name="topic" value="$(arg topic)"/>
+    <param name="frame_id" value="$(arg frame_id)"/>
+    <param name="z_min" value="$(arg z_min)"/>
+    <param name="z_max" value="$(arg z_max)"/>
+    <param name="max_points" value="$(arg max_points)"/>
+    <param name="hz" value="$(arg hz)"/>
+    <param name="latch" value="true"/>
+    <param name="loop" value="true"/>
+  </node>
+</launch>

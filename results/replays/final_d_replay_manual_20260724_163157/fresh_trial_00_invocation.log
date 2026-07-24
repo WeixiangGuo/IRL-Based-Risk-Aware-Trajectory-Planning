@@ -1,0 +1,15 @@
+[WARN] [1784881986.586904]: [single_shot] /sdf_map/esdf did not arrive before timeout.
+[INFO] [1784881965.144635]: [single_shot] cleared legacy two-pillar scene markers on /scene/two_pillar_start_goal_markers.
+[INFO] [1784881965.246723]: [single_shot] cleared legacy eight applied trajectory marker on /visualization/applied_trajectory.
+[INFO] [1784881965.349059]: [single_shot] cleared legacy eight waypoints marker on /visualization/waypoints.
+[INFO] [1784881965.451236]: [single_shot] cleared legacy eight route marker on /visualization/route.
+[INFO] [1784881965.553453]: [single_shot] cleared native planner traj path on /drone0/planning/traj.
+[INFO] [1784881965.655606]: [single_shot] cleared native planner traj waypoints point cloud on /drone0/planning/traj_wayPts.
+[INFO] [1784881965.858611]: [single_shot] cleared native planner traj yaws markers on /drone0/planning/traj_yaws.
+[INFO] [1784881966.064425]: [single_shot] cleared stale MINCO final/reference markers on /scene/planned_trajectory_segments.
+[INFO] [1784881966.266426]: [single_shot] cleared stale FD optimizer markers on /scene/irl_fd_optimizer_markers.
+[INFO] [1784881986.587617]: [single_shot] case 1/1: d1=0.010 d2=0.220
+[INFO] [1784881990.461046]: [single_shot] done. summary_csv=/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/replays/final_d_replay_manual_20260724_163157/fresh_trial_00/summary.csv summary_json=/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/replays/final_d_replay_manual_20260724_163157/fresh_trial_00/summary.json
+Results written to: /home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/replays/final_d_replay_manual_20260724_163157/fresh_trial_00
+Summary CSV: /home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/replays/final_d_replay_manual_20260724_163157/fresh_trial_00/summary.csv
+Summary JSON: /home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/results/replays/final_d_replay_manual_20260724_163157/fresh_trial_00/summary.json

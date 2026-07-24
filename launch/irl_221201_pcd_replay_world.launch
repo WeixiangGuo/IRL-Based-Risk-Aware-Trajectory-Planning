@@ -1,0 +1,37 @@
+<launch>
+  <arg name="scene_config" default="$(find airgrasp_minco_irl)/config/irl_221201_scene.yaml"/>
+  <arg name="frame_id" default="world"/>
+  <arg name="publish_point_clouds" default="false"/>
+  <arg name="sphere_radius" default="0.25"/>
+  <arg name="initial_d1" default="0.0"/>
+  <arg name="initial_d2" default="0.0"/>
+  <arg name="safety_zone_buffer" default="0.0"/>
+
+  <arg name="pcd_path" default="$(find airgrasp_minco_irl)/data/map/irl_221201_cloud_registered_raw_cropped.pcd"/>
+  <arg name="pcd_topic" default="/scene/irl_221201_map_vis_no_ceiling"/>
+  <arg name="pcd_z_min" default="-0.30"/>
+  <arg name="pcd_z_max" default="2.00"/>
+  <arg name="pcd_max_points" default="180000"/>
+  <arg name="pcd_hz" default="1.0"/>
+
+  <include file="$(find airgrasp_minco_irl)/launch/two_pillar_world.launch">
+    <arg name="scene_config" value="$(arg scene_config)"/>
+    <arg name="frame_id" value="$(arg frame_id)"/>
+    <arg name="publish_point_clouds" value="$(arg publish_point_clouds)"/>
+    <arg name="sphere_radius" value="$(arg sphere_radius)"/>
+    <arg name="initial_d1" value="$(arg initial_d1)"/>
+    <arg name="initial_d2" value="$(arg initial_d2)"/>
+    <arg name="safety_zone_buffer" value="$(arg safety_zone_buffer)"/>
+    <arg name="safety_zone_visualization" value="true"/>
+  </include>
+
+  <include file="$(find airgrasp_minco_irl)/launch/irl_221201_map_visualization.launch">
+    <arg name="pcd_path" value="$(arg pcd_path)"/>
+    <arg name="topic" value="$(arg pcd_topic)"/>
+    <arg name="frame_id" value="$(arg frame_id)"/>
+    <arg name="z_min" value="$(arg pcd_z_min)"/>
+    <arg name="z_max" value="$(arg pcd_z_max)"/>
+    <arg name="max_points" value="$(arg pcd_max_points)"/>
+    <arg name="hz" value="$(arg pcd_hz)"/>
+  </include>
+</launch>

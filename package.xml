@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>airgrasp_minco_irl</name>
+  <version>0.0.0</version>
+  <description>Workspace scaffold for IRL-over-MINCO experiments in AirGrasp.</description>
+
+  <maintainer email="gwx@example.com">gwx</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>quadrotor_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+
+  <exec_depend>airgrasp_urdf</exec_depend>
+  <exec_depend>bridge_node</exec_depend>
+  <exec_depend>fake_mod</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>odom_visualization</exec_depend>
+  <exec_depend>planning</exec_depend>
+  <exec_depend>px4ctrl</exec_depend>
+  <exec_depend>quadrotor_msgs</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+</package>

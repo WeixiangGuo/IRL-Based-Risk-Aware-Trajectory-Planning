@@ -1,0 +1,33 @@
+<launch>
+  <arg name="frame_id" default="world"/>
+  <arg name="env_topic" default="/pcl_from_pcd/env_pcl"/>
+  <arg name="tgt_topic" default="/pcl_from_pcd/tgt_pcl"/>
+  <arg name="publish_point_clouds" default="false"/>
+  <arg name="safety_zone_visualization" default="true"/>
+  <arg name="scene_config" default="$(find airgrasp_minco_irl)/config/two_pillar_scene.yaml"/>
+  <arg name="safety_topic" default="/drone0/planning/irl_safety_distances"/>
+  <arg name="sphere_radius" default="0.25"/>
+  <arg name="initial_d1" default="0.0"/>
+  <arg name="initial_d2" default="0.0"/>
+  <arg name="safety_zone_buffer" default="0.0"/>
+
+  <node pkg="airgrasp_minco_irl" type="two_pillar_clouds.py" name="two_pillar_clouds" output="screen">
+    <rosparam command="load" file="$(arg scene_config)"/>
+    <param name="frame_id" value="$(arg frame_id)"/>
+    <param name="env_topic" value="$(arg env_topic)"/>
+    <param name="tgt_topic" value="$(arg tgt_topic)"/>
+    <param name="publish_point_clouds" value="$(arg publish_point_clouds)" type="bool"/>
+    <param name="safety_zone_visualization" value="$(arg safety_zone_visualization)" type="bool"/>
+    <param name="safety_topic" value="$(arg safety_topic)"/>
+    <param name="sphere_radius" value="$(arg sphere_radius)"/>
+    <param name="initial_d1" value="$(arg initial_d1)"/>
+    <param name="initial_d2" value="$(arg initial_d2)"/>
+    <param name="safety_zone_buffer" value="$(arg safety_zone_buffer)"/>
+    <param name="env_include_pillar1" value="true"/>
+    <param name="env_include_pillar2" value="true"/>
+    <param name="tgt_include_pillar1" value="false"/>
+    <param name="tgt_include_pillar2" value="false"/>
+  </node>
+
+  <include file="$(find bridge_node)/launch/pcl_sync_world_sim.launch"/>
+</launch>

@@ -1,0 +1,98 @@
+{
+  "created_at": "2026-07-24T16:15:52.020985",
+  "mode": "persistent_single_shot_planned",
+  "scene_config": "/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/config/irl_221201_scene.yaml",
+  "initial_case": {
+    "d1": 0.01,
+    "d2": 0.1
+  },
+  "sphere_radius": 0.25,
+  "obstacles_inflation": 0.4,
+  "safety_zone_buffer": 0.0,
+  "rho_astar_waypoint": 100000.0,
+  "rho_astar_waypoint_stage2": 0.0,
+  "enable_tail_constraint": false,
+  "rho_astar_waypoint_schedule": "",
+  "rho_astar_waypoint_schedule_note": "",
+  "minco_warm_start_cache": true,
+  "minco_warm_start_cache_force_reuse": true,
+  "irl_collision_weight_scale": 5.0,
+  "irl_obs_optimization_margin": 0.02,
+  "start_position": [
+    -0.261959,
+    -0.00623,
+    1.2
+  ],
+  "goal_position": [
+    8.280325,
+    -0.151455,
+    1.2
+  ],
+  "reference_path": [
+    [
+      -0.261959,
+      -0.00623,
+      1.2
+    ],
+    [
+      0.681,
+      0.153,
+      1.2
+    ],
+    [
+      1.622,
+      0.334,
+      1.2
+    ],
+    [
+      2.678514,
+      0.27934,
+      1.2
+    ],
+    [
+      3.526829,
+      0.295709,
+      1.2
+    ],
+    [
+      4.231,
+      -0.311,
+      1.2
+    ],
+    [
+      4.85,
+      -1.012,
+      1.2
+    ],
+    [
+      5.847525,
+      -0.989186,
+      1.2
+    ],
+    [
+      6.548903,
+      -0.898073,
+      1.2
+    ],
+    [
+      7.636,
+      -0.86,
+      1.2
+    ],
+    [
+      8.280325,
+      -0.151455,
+      1.2
+    ]
+  ],
+  "s_guide_enable": true,
+  "s_guide_bypass_astar": true,
+  "s_guide_endpoint_tolerance": 0.45,
+  "s_guide_mode": "fixed",
+  "s_guide_path": "-0.261959,-0.00623,1.2;0.681,0.153,1.2;1.622,0.334,1.2;2.678514,0.27934,1.2;3.526829,0.295709,1.2;4.231,-0.311,1.2;4.85,-1.012,1.2;5.847525,-0.989186,1.2;6.548903,-0.898073,1.2;7.636,-0.86,1.2;8.280325,-0.151455,1.2",
+  "s_guide_metadata": {
+    "path_spec": "-0.261959,-0.00623,1.2;0.681,0.153,1.2;1.622,0.334,1.2;2.678514,0.27934,1.2;3.526829,0.295709,1.2;4.231,-0.311,1.2;4.85,-1.012,1.2;5.847525,-0.989186,1.2;6.548903,-0.898073,1.2;7.636,-0.86,1.2;8.280325,-0.151455,1.2",
+    "mode": "fixed"
+  },
+  "trajectory_selection": "first"
+}

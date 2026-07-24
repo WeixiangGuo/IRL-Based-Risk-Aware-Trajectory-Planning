@@ -1,0 +1,2 @@
+trajectory_index,trajectory_id,point_count,path_length,chord_length,length_ratio,min_clearance_1,min_clearance_2,min_margin_1,min_margin_2,max_local_turn_deg,max_arc_turn_deg,self_intersection_count,quality_pass,quality_score,quality_reasons
+0,286,1606,9.044252434566367,8.543518375779442,1.0586098181993133,0.02493930170260017,0.13160249892997639,0.01493930170260017,0.01660249892997638,2.266020979220863,3.845123470081911,0,False,72.37613073051008,c1 0.0249 < 0.6000|c2 0.1316 < 0.2800

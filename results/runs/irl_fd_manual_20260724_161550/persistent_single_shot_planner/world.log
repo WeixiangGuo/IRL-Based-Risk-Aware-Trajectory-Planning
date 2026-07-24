@@ -1,0 +1,140 @@
+[INFO] [1784880952.963866]: [two_pillar_clouds] marker_only=True, front_end_safety_obstacles=false, safety_zone_visualization=True, pillar_radius=(0.292, 0.424), safety_topic=/drone0/planning/irl_safety_distances
+[INFO] [1784880952.967740]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.774 (d1=0.010 d2=0.100 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784880977.963948]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.774 (d1=0.025 d2=0.100 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784880981.964037]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.774 (d1=0.005 d2=0.100 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784880985.964259]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.789 (d1=0.010 d2=0.115 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784880989.463945]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.759 (d1=0.010 d2=0.085 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784880993.463935]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.789 (d1=0.010 d2=0.115 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784880996.963946]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.789 (d1=0.025 d2=0.115 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881000.964339]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.789 (d1=0.005 d2=0.115 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881004.963961]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.804 (d1=0.010 d2=0.130 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881008.963975]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.774 (d1=0.010 d2=0.100 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881012.964116]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.804 (d1=0.010 d2=0.130 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881016.464362]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.804 (d1=0.025 d2=0.130 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881020.464054]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.804 (d1=0.005 d2=0.130 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881023.963970]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.819 (d1=0.010 d2=0.145 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881027.963973]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.789 (d1=0.010 d2=0.115 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881031.964058]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.819 (d1=0.010 d2=0.145 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881035.963976]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.819 (d1=0.025 d2=0.145 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881039.964302]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.819 (d1=0.005 d2=0.145 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881043.463967]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.834 (d1=0.010 d2=0.160 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881047.463959]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.804 (d1=0.010 d2=0.130 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881051.464019]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.834 (d1=0.010 d2=0.160 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881055.463943]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.834 (d1=0.025 d2=0.160 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881058.963953]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.834 (d1=0.005 d2=0.160 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881062.963967]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.849 (d1=0.010 d2=0.175 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881066.963982]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.819 (d1=0.010 d2=0.145 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881071.463953]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.849 (d1=0.010 d2=0.175 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881074.963941]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.849 (d1=0.025 d2=0.175 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881078.963976]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.849 (d1=0.005 d2=0.175 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881082.964012]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.864 (d1=0.010 d2=0.190 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881086.464032]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.834 (d1=0.010 d2=0.160 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881090.963937]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.864 (d1=0.010 d2=0.190 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881094.963958]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.864 (d1=0.025 d2=0.190 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881098.963954]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.864 (d1=0.005 d2=0.190 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881102.463948]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.879 (d1=0.010 d2=0.205 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881106.464025]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.849 (d1=0.010 d2=0.175 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881110.964062]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.879 (d1=0.010 d2=0.205 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881114.463939]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.879 (d1=0.025 d2=0.205 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881118.464355]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.879 (d1=0.005 d2=0.205 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881122.464355]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.894 (d1=0.010 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881126.464321]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.864 (d1=0.010 d2=0.190 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[0m[INFO] [1784880952.688699900]: [bridge_node] ArmBridgeNode disabled.[0m
+[0m[INFO] [1784880952.689334814]: [bridge_node] ImgSyncNode disabled.[0m
+[0m[INFO] [1784880952.696466666]: [pcl_sync_node] Init done (World Frame Mode).
+  Sub tgt: /pcl_from_pcd/tgt_pcl
+  Sub env: /pcl_from_pcd/env_pcl
+  Pub Sync: /sync_frame_pcl_world[0m
+[0m[INFO] [1784880952.696488774]: [bridge_node] PclSyncNode enabled.[0m
+[INFO] [1784881130.964190]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.894 (d1=0.010 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881134.964005]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.894 (d1=0.025 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881138.963975]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.894 (d1=0.005 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881142.963975]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.909 (d1=0.010 d2=0.235 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881146.463984]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.879 (d1=0.010 d2=0.205 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881151.463964]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.894 (d1=0.010 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881154.963936]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.894 (d1=0.025 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881158.964079]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.894 (d1=0.005 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881162.964413]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.909 (d1=0.010 d2=0.235 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881166.963967]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.879 (d1=0.010 d2=0.205 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881171.964279]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.894 (d1=0.010 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881175.963946]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.894 (d1=0.025 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881179.464352]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.894 (d1=0.005 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881183.463982]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.909 (d1=0.010 d2=0.235 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881187.464317]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.879 (d1=0.010 d2=0.205 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881192.464009]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.894 (d1=0.010 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881196.464207]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.567 r2=0.894 (d1=0.025 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881199.964037]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.547 r2=0.894 (d1=0.005 d2=0.220 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881203.963977]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.909 (d1=0.010 d2=0.235 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[INFO] [1784881207.963941]: [two_pillar_clouds] real pillar pcl radius=(0.292, 0.424), analytic safety radii: r1=0.552 r2=0.879 (d1=0.010 d2=0.205 sphere=0.250 buffer=0.000), env_pts=0 tgt_pts=0
+[31mWARNING: disk usage in log directory [/home/gwx/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+WARNING: Package name "key_to_camPos" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+... logging to /home/gwx/.ros/log/aeb428d0-8689-11f1-97d2-d3142ad76a68/roslaunch-gwx-Lenovo-Legion-Y7000P2020-3609252.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/launch/two_pillar_world.launch
+[1mstarted roslaunch server http://gwx-Lenovo-Legion-Y7000P2020:40987/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /bridge_node/enable_pcl_sync: True
+ * /bridge_node/env_topic: /pcl_from_pcd/env...
+ * /bridge_node/out_topic: /sync_frame_pcl_w...
+ * /bridge_node/queue_size: 20
+ * /bridge_node/slop: 0.2
+ * /bridge_node/tgt_topic: /pcl_from_pcd/tgt...
+ * /bridge_node/use_world_frame_pcl: True
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /two_pillar_clouds/env_include_pillar1: True
+ * /two_pillar_clouds/env_include_pillar2: True
+ * /two_pillar_clouds/env_topic: /pcl_from_pcd/env...
+ * /two_pillar_clouds/frame_id: world
+ * /two_pillar_clouds/goal_dtheta: [0.0, 0.0, 0.0]
+ * /two_pillar_clouds/goal_position: [8.280325, -0.151...
+ * /two_pillar_clouds/goal_theta: [0.785398, -0.785...
+ * /two_pillar_clouds/goal_yaw: 0.0
+ * /two_pillar_clouds/initial_d1: 0.01
+ * /two_pillar_clouds/initial_d2: 0.1
+ * /two_pillar_clouds/pillar1_center_xy: [3.231, -0.274]
+ * /two_pillar_clouds/pillar1_radius: 0.291937
+ * /two_pillar_clouds/pillar1_rgb: [40, 180, 130]
+ * /two_pillar_clouds/pillar2_center_xy: [6.072419, -0.164...
+ * /two_pillar_clouds/pillar2_radius: 0.42432
+ * /two_pillar_clouds/pillar2_rgb: [245, 135, 65]
+ * /two_pillar_clouds/pillar_radius: 0.3
+ * /two_pillar_clouds/pillar_resolution: 0.025
+ * /two_pillar_clouds/pillar_z_max: 2.0
+ * /two_pillar_clouds/pillar_z_min: -0.3
+ * /two_pillar_clouds/publish_point_clouds: False
+ * /two_pillar_clouds/reference_path: [[-0.261959, -0.0...
+ * /two_pillar_clouds/republish_hz: 2.0
+ * /two_pillar_clouds/safety_topic: /drone0/planning/...
+ * /two_pillar_clouds/safety_zone_buffer: 0.0
+ * /two_pillar_clouds/safety_zone_visualization: True
+ * /two_pillar_clouds/scene_settle_sec: 1.0
+ * /two_pillar_clouds/sphere_radius: 0.25
+ * /two_pillar_clouds/start_dtheta: [0.0, 0.0, 0.0]
+ * /two_pillar_clouds/start_position: [-0.261959, -0.00...
+ * /two_pillar_clouds/start_theta: [0.6, -0.55, 0.0]
+ * /two_pillar_clouds/start_yaw: -0.039639
+ * /two_pillar_clouds/tgt_include_pillar1: False
+ * /two_pillar_clouds/tgt_include_pillar2: False
+ * /two_pillar_clouds/tgt_topic: /pcl_from_pcd/tgt...
+
+NODES
+  /
+    bridge_node (bridge_node/bridge_node)
+    two_pillar_clouds (airgrasp_minco_irl/two_pillar_clouds.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/launch/two_pillar_world.launch http://localhost:11311
+[1mprocess[two_pillar_clouds-1]: started with pid [3609318][0m
+[1mprocess[bridge_node-2]: started with pid [3609319][0m
+[bridge_node-2] killing on exit
+[two_pillar_clouds-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

@@ -1,0 +1,66 @@
+{
+  "case": {
+    "case_id": 1,
+    "label": "d1_plus",
+    "d1": 0.025,
+    "d2": 0.115,
+    "sphere_radius": 0.25,
+    "success": true,
+    "duration_sec": 3.8148324489593506,
+    "trajectory_selection": {
+      "selection_mode": "first",
+      "selected_trajectory_index": 0,
+      "selected_trajectory_id": 344,
+      "quality_pass": false,
+      "quality_score": 70.82653616608036,
+      "quality_reasons": "c1 0.0405 < 0.6000|c2 0.1316 < 0.2800",
+      "max_local_turn_deg": 2.255395715804983,
+      "max_arc_turn_deg": 3.9231764224591554,
+      "length_ratio": 1.0600496354823632,
+      "self_intersection_count": 0
+    },
+    "persistent_case_seq": 7
+  },
+  "failures": [],
+  "planned_trajectories": [
+    {
+      "trajectory_id": 344,
+      "stamp": 1784880997.6944826,
+      "sample_dt": 0.01,
+      "total_duration": 16.121076139458488,
+      "point_count": 1614
+    }
+  ],
+  "trajectory_selection": {
+    "selection_mode": "first",
+    "selected_trajectory_index": 0,
+    "selected_trajectory_id": 344,
+    "quality_pass": false,
+    "quality_score": 70.82653616608036,
+    "quality_reasons": "c1 0.0405 < 0.6000|c2 0.1316 < 0.2800",
+    "max_local_turn_deg": 2.255395715804983,
+    "max_arc_turn_deg": 3.9231764224591554,
+    "length_ratio": 1.0600496354823632,
+    "self_intersection_count": 0
+  },
+  "quality_rows": [
+    {
+      "trajectory_index": 0,
+      "trajectory_id": 344,
+      "point_count": 1614,
+      "path_length": 9.056553539981868,
+      "chord_length": 8.543518375779442,
+      "length_ratio": 1.0600496354823632,
+      "min_clearance_1": 0.04046381645147723,
+      "min_clearance_2": 0.131575524401284,
+      "min_margin_1": 0.015463816451477229,
+      "min_margin_2": 0.016575524401284,
+      "max_local_turn_deg": 2.255395715804983,
+      "max_arc_turn_deg": 3.9231764224591554,
+      "self_intersection_count": 0,
+      "quality_pass": false,
+      "quality_score": 70.82653616608036,
+      "quality_reasons": "c1 0.0405 < 0.6000|c2 0.1316 < 0.2800"
+    }
+  ]
+}

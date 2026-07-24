@@ -1,0 +1,53 @@
+{
+  "conversion": {
+    "airborne_duration_sec": 11.725775957107544,
+    "airborne_end_index": 3396,
+    "airborne_samples": 2346,
+    "airborne_start_index": 1051,
+    "airborne_z_threshold": 0.35,
+    "lateral_sign": 1.0,
+    "raw_goal_xyz": [
+      8.280325408781712,
+      -0.15145464826241697,
+      0.3522915794466984
+    ],
+    "raw_start_xyz": [
+      -0.26195894511798196,
+      -0.006229940282709453,
+      0.3504881290445893
+    ],
+    "raw_total_samples": 4113,
+    "raw_xy_length": 8.543518724664171,
+    "resample_count": 300,
+    "sim_goal_xyz": [
+      3.5,
+      0.0,
+      1.2
+    ],
+    "sim_start_xyz": [
+      -3.5,
+      0.0,
+      1.2
+    ],
+    "xy_scale": 0.8193345418430222,
+    "z_policy": "constant_scene_start_z"
+  },
+  "name": "irl_221201",
+  "output_demo_csv": "/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/data/demos/real_world_human_flight/irl_221201/demo_trajectory.csv",
+  "quality": {
+    "length_ratio": 1.1265550359950658,
+    "max_turn_deg": 9.037336580877708,
+    "path_length": 7.885885251965461,
+    "pillar1_interp_y": 0.33418803565072996,
+    "pillar1_surface_clearance_min": 0.03389815962983728,
+    "pillar2_interp_y": -0.8863533338892089,
+    "pillar2_surface_clearance_min": 0.5811360569241939,
+    "s_shape_convention_ok": true,
+    "turn95_deg": 4.841048031404823
+  },
+  "raw_aligned_csv": "/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/data/demos/real_world_human_flight/irl_221201/raw_aligned_trajectory.csv",
+  "scene_config": "/home/gwx/airgrasp_ws/src/airgrasp_planning/airgrasp_minco_irl/config/two_pillar_scene.yaml",
+  "source_bag": "/home/gwx/airgrasp_ws/bags/irl/irl_221201.bag",
+  "source_topic": "/drone0/odom",
+  "source_type": "real_world_human_flight_bag"
+}
