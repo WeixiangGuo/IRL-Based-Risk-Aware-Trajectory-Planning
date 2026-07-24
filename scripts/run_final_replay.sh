@@ -69,6 +69,7 @@ S_GUIDE_ENDPOINT_TOLERANCE=""                            # guide 起终点容差
 
 TRAJECTORY_SELECTION="first"                             # first / best_quality
 TRAJECTORY_COLLECTION_SEC="2.0"                          # 收集候选轨迹时间
+QUALITY_CLEARANCE_SOURCE="metadata"                      # metadata / learned_d
 QUALITY_MIN_CLEARANCE_1=""                               # 柱1最小 clearance 要求
 QUALITY_MIN_CLEARANCE_2=""                               # 柱2最小 clearance 要求
 QUALITY_MAX_PATH_LENGTH=""                               # 最大路径长度
@@ -141,6 +142,7 @@ cmd=(
   --single-shot-script "${PKG_ROOT}/scripts/run_single_shot_planning_eval.py"
   --trajectory-selection "${TRAJECTORY_SELECTION}"
   --trajectory-collection-sec "${TRAJECTORY_COLLECTION_SEC}"
+  --quality-clearance-source "${QUALITY_CLEARANCE_SOURCE}"
   --use-minco-final-trajectory-visualizer "${USE_MINCO_FINAL_TRAJECTORY_VISUALIZER}"
   --minco-final-line-width "${MINCO_FINAL_LINE_WIDTH}"
   --minco-reference-line-width "${MINCO_REFERENCE_LINE_WIDTH}"

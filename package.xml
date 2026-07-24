@@ -10,6 +10,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>geometry_msgs</build_depend>
+  <build_depend>mavros_msgs</build_depend>
   <build_depend>nav_msgs</build_depend>
   <build_depend>quadrotor_msgs</build_depend>
   <build_depend>rospy</build_depend>
@@ -21,6 +22,7 @@
   <exec_depend>bridge_node</exec_depend>
   <exec_depend>fake_mod</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>mavros_msgs</exec_depend>
   <exec_depend>nav_msgs</exec_depend>
   <exec_depend>odom_visualization</exec_depend>
   <exec_depend>planning</exec_depend>

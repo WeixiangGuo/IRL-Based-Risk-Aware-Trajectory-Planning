@@ -36,6 +36,8 @@
   <arg name="irl_minco_debug_max_markers" default="80"/>
   <arg name="irl_minco_debug_sample_dt" default="0.06"/>
   <arg name="hide_native_planning_traj" default="true"/>
+  <arg name="joint_state_est_topic" default="/joint_state_est_sim"/>
+  <arg name="position_cmd_topic" default="/position_cmd"/>
 
   <group ns="drone0">
     <node pkg="odom_visualization" name="odom_visualization" type="odom_visualization" output="screen">
@@ -51,8 +53,9 @@
       <remap from="~goal" to="/move_base_simple/goal"/>
       <remap from="~uam_state_goal_vis" to="~uam_state_goal_vis"/>
       <remap from="~uam_state_goal_cmd" to="~uam_state_goal_cmd"/>
-      <remap from="~joint_state_est" to="/joint_state_est_sim"/>
+      <remap from="~joint_state_est" to="$(arg joint_state_est_topic)"/>
       <remap from="~stick_ring_pose" to="/stick_ring_pose"/>
+      <remap from="/position_cmd" to="$(arg position_cmd_topic)"/>
       <remap if="$(arg hide_native_planning_traj)" from="~traj" to="~traj_hidden"/>
       <remap if="$(arg hide_native_planning_traj)" from="~traj_wayPts" to="~traj_wayPts_hidden"/>
       <remap if="$(arg hide_native_planning_traj)" from="~traj_yaws" to="~traj_yaws_hidden"/>

@@ -1,10 +1,17 @@
 <launch>
+  <arg name="scene_config" default="$(find airgrasp_minco_irl)/config/two_pillar_scene.yaml"/>
   <arg name="publish_mock_state" default="false"/>
+  <arg name="publish_uam_init_state" default="true"/>
+  <arg name="publish_planner_goal" default="true"/>
+  <arg name="publish_planner_hold" default="true"/>
   <arg name="node_name" default="two_pillar_scene_manager"/>
 
   <node pkg="airgrasp_minco_irl" type="two_pillar_scene_manager.py" name="$(arg node_name)" output="screen">
-    <rosparam command="load" file="$(find airgrasp_minco_irl)/config/two_pillar_scene.yaml"/>
+    <rosparam command="load" file="$(arg scene_config)"/>
     <param name="publish_mock_state" value="$(arg publish_mock_state)"/>
+    <param name="publish_uam_init_state" value="$(arg publish_uam_init_state)"/>
+    <param name="publish_planner_goal" value="$(arg publish_planner_goal)"/>
+    <param name="publish_planner_hold" value="$(arg publish_planner_hold)"/>
     <param name="goal_cmd_topic" value="/drone0/planning/uam_state_goal_cmd"/>
     <param name="goal_vis_topic" value="/drone0/planning/uam_state_goal_vis"/>
     <param name="goal_vis_mirror_topic" value="/px4ctrl/uam_state_goal_vis"/>

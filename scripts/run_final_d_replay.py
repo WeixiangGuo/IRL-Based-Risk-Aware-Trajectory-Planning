@@ -196,6 +196,18 @@ def build_single_shot_command(config, cases, child_results_dir, child_run_name):
         str(config["fixed_odom_hz"]),
         "--start-tolerance",
         str(config["start_tolerance"]),
+        "--odom-source",
+        config["odom_source"],
+        "--odom-topic",
+        config["odom_topic"],
+        "--joint-state-topic",
+        config["joint_state_topic"],
+        "--position-cmd-topic",
+        config["position_cmd_topic"],
+        "--skip-world-launch",
+        bool_text(config["skip_world_launch"]),
+        "--require-start-near",
+        bool_text(config["require_start_near"]),
         "--s-guide-enable",
         bool_text(config["s_guide_enable"]),
         "--s-guide-bypass-astar",
@@ -403,6 +415,12 @@ def build_config(args, final_result, metadata, optimizer_run_dir, d1, d2):
         s_guide_path = None
 
     quality_gates = metadata.get("quality_gates") or {}
+    if args.quality_clearance_source == "learned_d":
+        default_quality_min_clearance_1 = d1
+        default_quality_min_clearance_2 = d2
+    else:
+        default_quality_min_clearance_1 = quality_gates.get("min_clearance_1", 0.60)
+        default_quality_min_clearance_2 = quality_gates.get("min_clearance_2", 0.28)
     return {
         "d1": d1,
         "d2": d2,
@@ -430,6 +448,12 @@ def build_config(args, final_result, metadata, optimizer_run_dir, d1, d2):
         "cleanup_sec": args.cleanup_sec,
         "fixed_odom_hz": args.fixed_odom_hz,
         "start_tolerance": args.start_tolerance,
+        "odom_source": args.odom_source,
+        "odom_topic": args.odom_topic,
+        "joint_state_topic": args.joint_state_topic,
+        "position_cmd_topic": args.position_cmd_topic,
+        "skip_world_launch": args.skip_world_launch,
+        "require_start_near": args.require_start_near,
         "s_guide_enable": inherited(args, metadata, best, "s_guide_enable", True),
         "s_guide_bypass_astar": inherited(args, metadata, best, "s_guide_bypass_astar", True),
         "s_guide_endpoint_tolerance": inherited(args, metadata, best, "s_guide_endpoint_tolerance", 0.45),
@@ -437,8 +461,9 @@ def build_config(args, final_result, metadata, optimizer_run_dir, d1, d2):
         "s_guide_path": s_guide_path,
         "trajectory_selection": args.trajectory_selection,
         "trajectory_collection_sec": args.trajectory_collection_sec,
-        "quality_min_clearance_1": args.quality_min_clearance_1 if args.quality_min_clearance_1 is not None else quality_gates.get("min_clearance_1", 0.60),
-        "quality_min_clearance_2": args.quality_min_clearance_2 if args.quality_min_clearance_2 is not None else quality_gates.get("min_clearance_2", 0.28),
+        "quality_clearance_source": args.quality_clearance_source,
+        "quality_min_clearance_1": args.quality_min_clearance_1 if args.quality_min_clearance_1 is not None else default_quality_min_clearance_1,
+        "quality_min_clearance_2": args.quality_min_clearance_2 if args.quality_min_clearance_2 is not None else default_quality_min_clearance_2,
         "quality_max_path_length": args.quality_max_path_length if args.quality_max_path_length is not None else quality_gates.get("max_path_length", 12.5),
         "quality_max_length_ratio": args.quality_max_length_ratio if args.quality_max_length_ratio is not None else quality_gates.get("max_length_ratio", 1.65),
         "quality_max_local_turn_deg": args.quality_max_local_turn_deg if args.quality_max_local_turn_deg is not None else quality_gates.get("max_local_turn_deg", 25.0),
@@ -507,6 +532,12 @@ def build_arg_parser():
     parser.add_argument("--cleanup-sec", type=float, default=2.0)
     parser.add_argument("--fixed-odom-hz", type=float, default=50.0)
     parser.add_argument("--start-tolerance", type=float, default=0.05)
+    parser.add_argument("--odom-source", choices=["fixed", "external"], default="fixed")
+    parser.add_argument("--odom-topic", default="/drone0/odom")
+    parser.add_argument("--joint-state-topic", default="/joint_state_est_sim")
+    parser.add_argument("--position-cmd-topic", default="/position_cmd")
+    parser.add_argument("--skip-world-launch", type=parse_bool, default=False)
+    parser.add_argument("--require-start-near", type=parse_bool, default=False)
     parser.add_argument("--s-guide-enable", type=parse_bool, default=None)
     parser.add_argument("--s-guide-bypass-astar", type=parse_bool, default=None)
     parser.add_argument("--s-guide-endpoint-tolerance", type=float, default=None)
@@ -514,6 +545,8 @@ def build_arg_parser():
     parser.add_argument("--s-guide-path", default=None)
     parser.add_argument("--trajectory-selection", choices=["first", "best_quality"], default="first")
     parser.add_argument("--trajectory-collection-sec", type=float, default=2.0)
+    parser.add_argument("--quality-clearance-source", choices=["metadata", "learned_d"], default="metadata",
+                        help="metadata uses optimizer quality gates; learned_d uses replay d1/d2 as clearance gates unless explicit values are provided.")
     parser.add_argument("--quality-min-clearance-1", type=float, default=None)
     parser.add_argument("--quality-min-clearance-2", type=float, default=None)
     parser.add_argument("--quality-max-path-length", type=float, default=None)

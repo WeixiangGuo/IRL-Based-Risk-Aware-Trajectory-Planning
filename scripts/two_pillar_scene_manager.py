@@ -122,6 +122,9 @@ class TwoPillarScene:
         self.scene_settle_sec = float(rospy.get_param("~scene_settle_sec", rospy.get_param("scene_settle_sec", 1.0)))
         self.republish_hz = float(rospy.get_param("~republish_hz", rospy.get_param("republish_hz", 2.0)))
         self.publish_mock_state = _as_bool(rospy.get_param("~publish_mock_state", False), False)
+        self.publish_uam_init_state = _as_bool(rospy.get_param("~publish_uam_init_state", True), True)
+        self.publish_planner_goal = _as_bool(rospy.get_param("~publish_planner_goal", True), True)
+        self.publish_planner_hold = _as_bool(rospy.get_param("~publish_planner_hold", True), True)
 
         self.start_position = _as_float_list(rospy.get_param("~start_position", rospy.get_param("start_position", [-3.5, 0.0, 1.2])), 3, [-3.5, 0.0, 1.2])
         self.goal_position = _as_float_list(rospy.get_param("~goal_position", rospy.get_param("goal_position", [3.5, 0.0, 1.2])), 3, [3.5, 0.0, 1.2])
@@ -161,9 +164,11 @@ class TwoPillarScene:
 
     def publish_static_scene(self):
         self.start_msg.header.stamp = rospy.Time.now()
-        self.hold_pub.publish(Bool(data=True))
+        if self.publish_planner_hold:
+            self.hold_pub.publish(Bool(data=True))
         self.cycle_idx_pub.publish(Int32(data=self.cycle_idx))
-        self.uam_init_pub.publish(self.start_msg)
+        if self.publish_uam_init_state:
+            self.uam_init_pub.publish(self.start_msg)
         self.start_pose_pub.publish(_pose_stamped(self.frame_id, self.start_position, self.start_yaw))
         self.goal_pose_pub.publish(_pose_stamped(self.frame_id, self.goal_position, self.goal_yaw))
         self.ready_pub.publish(Bool(data=True))
@@ -174,14 +179,19 @@ class TwoPillarScene:
         while not rospy.is_shutdown() and rospy.Time.now() < settle_end:
             self.publish_mock_state_once()
             settle_rate.sleep()
-        self.publish_goal("initial")
-        self.hold_pub.publish(Bool(data=False))
+        if self.publish_planner_goal:
+            self.publish_goal("initial")
+        if self.publish_planner_hold:
+            self.hold_pub.publish(Bool(data=False))
         self.goal_cycle_ready_pub.publish(Int32(data=self.cycle_idx))
         rospy.loginfo(
-            "[two_pillar_scene] start=(%.2f, %.2f, %.2f) goal=(%.2f, %.2f, %.2f), mock_state=%s",
+            "[two_pillar_scene] start=(%.2f, %.2f, %.2f) goal=(%.2f, %.2f, %.2f), mock_state=%s uam_init=%s planner_goal=%s planner_hold=%s",
             self.start_position[0], self.start_position[1], self.start_position[2],
             self.goal_position[0], self.goal_position[1], self.goal_position[2],
             self.publish_mock_state,
+            self.publish_uam_init_state,
+            self.publish_planner_goal,
+            self.publish_planner_hold,
         )
 
     def publish_goal(self, reason):

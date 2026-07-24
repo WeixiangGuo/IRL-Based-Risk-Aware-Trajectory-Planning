@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import argparse
+import copy
 import csv
 import datetime as _dt
 import json
@@ -578,9 +579,13 @@ def quality_required(mode):
 
 
 class SingleShotClient:
-    def __init__(self, scene, publish_hz):
+    def __init__(self, scene, publish_hz, odom_source="fixed", odom_topic="/drone0/odom",
+                 joint_state_topic="/joint_state_est_sim"):
         self.scene = scene
         self.publish_hz = max(float(publish_hz), 1.0)
+        self.odom_source = odom_source
+        self.odom_topic = odom_topic
+        self.joint_state_topic = joint_state_topic
         self.lock = threading.Lock()
         self.active = False
         self.case_start_wall = 0.0
@@ -588,13 +593,23 @@ class SingleShotClient:
         self.trajectories = []
         self.failures = []
         self._stop = False
+        self.publisher_thread = None
 
         self.hold_pub = rospy.Publisher("/scene/planner_hold", Bool, queue_size=1, latch=True)
-        self.odom_pub = rospy.Publisher("/drone0/odom", Odometry, queue_size=10)
-        self.joint_pub = rospy.Publisher("/joint_state_est_sim", JointState, queue_size=10)
+        self.odom_pub = None
+        self.joint_pub = None
+        if self.odom_source == "fixed":
+            self.odom_pub = rospy.Publisher(self.odom_topic, Odometry, queue_size=10)
+            self.joint_pub = rospy.Publisher(self.joint_state_topic, JointState, queue_size=10)
         self.goal_pub = rospy.Publisher("/drone0/planning/uam_state_goal_cmd", UAMFullState, queue_size=10)
         self.goal_vis_pub = rospy.Publisher("/drone0/planning/uam_state_goal_vis", UAMFullState, queue_size=10)
         self.goal_vis_mirror_pub = rospy.Publisher("/px4ctrl/uam_state_goal_vis", UAMFullState, queue_size=10)
+        self.selected_traj_pub = rospy.Publisher(
+            "/irl/selected_position_command_trajectory",
+            PositionCommandTrajectory,
+            queue_size=1,
+            latch=True,
+        )
         self.safety_pub = rospy.Publisher(
             "/drone0/planning/irl_safety_distances", Vector3, queue_size=1, latch=True
         )
@@ -608,14 +623,16 @@ class SingleShotClient:
         self.failure_sub = rospy.Subscriber(
             "/drone0/planning/planner_failure", Header, self._failure_cb, queue_size=100
         )
-        self.odom_sub = rospy.Subscriber("/drone0/odom", Odometry, self._odom_cb, queue_size=20)
-        self.publisher_thread = threading.Thread(target=self._fixed_state_loop)
-        self.publisher_thread.daemon = True
-        self.publisher_thread.start()
+        self.odom_sub = rospy.Subscriber(self.odom_topic, Odometry, self._odom_cb, queue_size=20)
+        if self.odom_source == "fixed":
+            self.publisher_thread = threading.Thread(target=self._fixed_state_loop)
+            self.publisher_thread.daemon = True
+            self.publisher_thread.start()
 
     def shutdown(self):
         self._stop = True
-        self.publisher_thread.join(timeout=1.0)
+        if self.publisher_thread is not None:
+            self.publisher_thread.join(timeout=1.0)
 
     def _odom_cb(self, msg):
         with self.lock:
@@ -647,6 +664,7 @@ class SingleShotClient:
             "sample_dt": float(msg.sample_dt),
             "total_duration": float(msg.total_duration),
             "points": points,
+            "msg": copy.deepcopy(msg),
         }
         with self.lock:
             if self.active and item["wall"] >= self.case_start_wall:
@@ -670,6 +688,8 @@ class SingleShotClient:
             rate.sleep()
 
     def publish_fixed_state(self):
+        if self.odom_source != "fixed":
+            return
         odom = Odometry()
         odom.header = Header(stamp=rospy.Time.now(), frame_id=self.scene["frame_id"])
         odom.child_frame_id = "base_link"
@@ -704,14 +724,27 @@ class SingleShotClient:
         self.goal_vis_mirror_pub.publish(msg)
         return msg.header.stamp.to_sec()
 
+    def publish_selected_trajectory(self, trajectory, repeats=3, sleep_sec=0.05):
+        if trajectory is None:
+            return False
+        msg = trajectory.get("msg")
+        if msg is None:
+            return False
+        for _ in range(max(1, repeats)):
+            self.selected_traj_pub.publish(msg)
+            rospy.sleep(sleep_sec)
+        return True
+
     def wait_for_connections(self, timeout):
         deadline = time.time() + timeout
         while time.time() < deadline and not rospy.is_shutdown():
-            if (
-                self.odom_pub.get_num_connections() > 0 and
-                self.goal_pub.get_num_connections() > 0 and
-                self.safety_pub.get_num_connections() > 0
-            ):
+            has_state_connection = True
+            if self.odom_source == "fixed":
+                has_state_connection = (
+                    self.odom_pub.get_num_connections() > 0 and
+                    self.joint_pub.get_num_connections() > 0
+                )
+            if has_state_connection and self.goal_pub.get_num_connections() > 0 and self.safety_pub.get_num_connections() > 0:
                 return True
             rospy.sleep(0.1)
         return False
@@ -723,6 +756,15 @@ class SingleShotClient:
                 pos = list(self.latest_odom) if self.latest_odom is not None else None
             if pos is not None and distance(pos, self.scene["start_position"]) <= tolerance:
                 return True
+            rospy.sleep(0.1)
+        return False
+
+    def wait_for_any_odom(self, timeout):
+        deadline = time.time() + timeout
+        while time.time() < deadline and not rospy.is_shutdown():
+            with self.lock:
+                if self.latest_odom is not None:
+                    return True
             rospy.sleep(0.1)
         return False
 
@@ -761,8 +803,10 @@ def start_processes(args, run_dir, scene, s_guide_path, cases):
     initial_d1, initial_d2 = cases[0] if cases else (0.0, 0.0)
 
     subprocess.run(["rosparam", "load", args.scene_config], check=True)
-    processes = [
-        ManagedProcess(
+    processes = []
+    if not args.skip_world_launch:
+        processes.append(
+            ManagedProcess(
             "world",
             [
                 "roslaunch",
@@ -775,7 +819,9 @@ def start_processes(args, run_dir, scene, s_guide_path, cases):
                 "safety_zone_buffer:={:.6f}".format(args.safety_zone_buffer),
             ],
             os.path.join(run_dir, "world.log"),
-        ),
+            )
+        )
+    processes.append(
         ManagedProcess(
             "planning",
             [
@@ -790,6 +836,8 @@ def start_processes(args, run_dir, scene, s_guide_path, cases):
                 "irl_collision_weight_scale:={:.6f}".format(args.irl_collision_weight_scale),
                 "irl_obs_optimization_margin:={:.6f}".format(args.irl_obs_optimization_margin),
                 "hide_native_planning_traj:={}".format(str(args.hide_native_planning_traj).lower()),
+                "joint_state_est_topic:={}".format(args.joint_state_topic),
+                "position_cmd_topic:={}".format(args.position_cmd_topic),
                 "irl_cylinder_1_x:={:.6f}".format(scene["pillar1_center_xy"][0]),
                 "irl_cylinder_1_y:={:.6f}".format(scene["pillar1_center_xy"][1]),
                 "irl_cylinder_2_x:={:.6f}".format(scene["pillar2_center_xy"][0]),
@@ -807,8 +855,8 @@ def start_processes(args, run_dir, scene, s_guide_path, cases):
             os.path.join(run_dir, "planning.log"),
             stream_debug=args.stream_planning_debug,
             stream_debug_stride=args.stream_planning_debug_stride,
-        ),
-    ]
+        )
+    )
     if args.use_minco_final_trajectory_visualizer:
         processes.append(
             ManagedProcess(
@@ -1193,6 +1241,16 @@ def build_arg_parser():
     parser.add_argument("--reset-settle-sec", type=float, default=1.0)
     parser.add_argument("--case-settle-sec", type=float, default=0.5)
     parser.add_argument("--cleanup-sec", type=float, default=2.0)
+    parser.add_argument("--odom-source", choices=["fixed", "external"], default="fixed",
+                        help="fixed publishes the scene start odom; external only subscribes to the real odom topic.")
+    parser.add_argument("--odom-topic", default="/drone0/odom")
+    parser.add_argument("--joint-state-topic", default="/joint_state_est_sim")
+    parser.add_argument("--position-cmd-topic", default="/position_cmd",
+                        help="Planner live PositionCommand output. Use a private topic when a safety gate will publish /position_cmd.")
+    parser.add_argument("--skip-world-launch", type=parse_bool, default=False,
+                        help="Do not launch the IRL world/map process; use already-running real-world/map nodes.")
+    parser.add_argument("--require-start-near", type=parse_bool, default=False,
+                        help="Fail instead of warn if current odom is not near scene start_position.")
     parser.add_argument("--fixed-odom-hz", type=float, default=50.0)
     parser.add_argument("--start-tolerance", type=float, default=0.05)
     parser.add_argument("--s-guide-enable", type=parse_bool, default=True)
@@ -1298,6 +1356,12 @@ def main():
         "irl_collision_weight_scale": args.irl_collision_weight_scale,
         "irl_obs_optimization_margin": args.irl_obs_optimization_margin,
         "hide_native_planning_traj": args.hide_native_planning_traj,
+        "odom_source": args.odom_source,
+        "odom_topic": args.odom_topic,
+        "joint_state_topic": args.joint_state_topic,
+        "position_cmd_topic": args.position_cmd_topic,
+        "skip_world_launch": args.skip_world_launch,
+        "require_start_near": args.require_start_near,
         "start_position": scene["start_position"],
         "goal_position": scene["goal_position"],
         "reference_path": scene["reference_path"],
@@ -1342,13 +1406,25 @@ def main():
             clear_native_planning_visuals(scene["frame_id"])
         if args.clear_optimizer_markers:
             clear_optimizer_markers()
-        client = SingleShotClient(scene, args.fixed_odom_hz)
+        client = SingleShotClient(
+            scene,
+            args.fixed_odom_hz,
+            odom_source=args.odom_source,
+            odom_topic=args.odom_topic,
+            joint_state_topic=args.joint_state_topic,
+        )
         client.publish_hold(True)
 
         if not client.wait_for_connections(args.startup_timeout):
             rospy.logwarn("[single_shot] planner topic connections timed out.")
-        if not client.wait_for_odom_at_start(args.start_tolerance, args.startup_timeout):
-            rospy.logwarn("[single_shot] fixed odom did not settle near start.")
+        if args.require_start_near or args.odom_source == "fixed":
+            if not client.wait_for_odom_at_start(args.start_tolerance, args.startup_timeout):
+                msg = "[single_shot] {} odom did not settle near start.".format(args.odom_source)
+                if args.require_start_near:
+                    raise RuntimeError(msg)
+                rospy.logwarn(msg)
+        elif not client.wait_for_any_odom(args.startup_timeout):
+            raise RuntimeError("[single_shot] {} odom was not received.".format(args.odom_source))
         map_ready = wait_for_map(args.map_timeout)
         if not map_ready:
             rospy.logwarn("[single_shot] /sdf_map/esdf did not arrive before timeout.")
@@ -1386,15 +1462,20 @@ def main():
                 trajectory, selection_meta = select_trajectory(
                     snapshot["trajectories"], quality_rows, args.trajectory_selection
                 )
+                case_success = trajectory is not None and (
+                    not quality_required(args.trajectory_selection) or
+                    selection_meta.get("quality_pass", False)
+                )
+                selected_traj_published = False
+                if case_success:
+                    selected_traj_published = client.publish_selected_trajectory(trajectory)
                 case_meta = {
                     "case_id": case_idx,
                     "d1": d1,
                     "d2": d2,
                     "sphere_radius": args.sphere_radius,
-                    "success": trajectory is not None and (
-                        not quality_required(args.trajectory_selection) or
-                        selection_meta.get("quality_pass", False)
-                    ),
+                    "success": case_success,
+                    "selected_trajectory_published": selected_traj_published,
                     "duration_sec": duration_sec,
                     "trajectory_selection": selection_meta,
                 }

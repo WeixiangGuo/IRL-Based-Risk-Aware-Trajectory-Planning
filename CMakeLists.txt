@@ -3,6 +3,7 @@ project(airgrasp_minco_irl)
 
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
+  mavros_msgs
   nav_msgs
   quadrotor_msgs
   rospy
@@ -22,6 +23,7 @@ catkin_install_python(PROGRAMS
   scripts/run_final_d_replay.py
   scripts/run_fd_irl_optimizer.py
   scripts/run_single_shot_planning_eval.py
+  scripts/selected_trajectory_executor.py
   scripts/two_pillar_clouds.py
   scripts/two_pillar_scene_manager.py
   scripts/visualize_demo_guide.py
