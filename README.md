@@ -1,6 +1,32 @@
-# airgrasp_minco_irl
+# AirGrasp MINCO-IRL
 
-`airgrasp_minco_irl` 是两柱场景下做 MINCO/IRL 安全距离实验的控制包。实际 MINCO 轨迹优化器仍在 `Single-Drone-Planner/planning/planning` 中，本包负责提供场景、目标、`d1/d2` 安全距离、S-guide、批量评估和 demo 数据整理。
+面向空中机械臂的语义风险感知轨迹规划：从人类飞行示范中反演不同障碍物的安全距离，并通过 MINCO 生成满足动力学与碰撞约束的可执行轨迹。
+
+本仓库是独立整理的 IRL 项目代码，不是 AirGrasp 总工程的镜像。它包含 IRL 外层优化、ROS 场景与评估工具、实飞示范数据、参考实验结果，以及规划器侧的 MINCO/IRL C++ 核心实现。
+
+## 方法概览
+
+- 输入：人类示范轨迹、障碍物语义分组和飞行场景。
+- 外层 IRL：搜索两类障碍物的安全距离 `d1/d2`，最小化示范轨迹与规划轨迹之间的模仿损失。
+- 内层规划：使用两阶段 L-BFGS/MINCO 优化碰撞、平滑性、飞行时间、姿态和机械臂状态。
+- 安全机制：优化过程中加入解析圆柱碰撞代价，并在输出轨迹上执行独立的安全裕度硬检查。
+- 执行链路：支持仿真评估、重复回放和带人工确认门的 onboard 执行。
+
+参考实飞示范对应的归档优化结果位于 `results/runs/irl_fd_manual_20260724_161550/`；该次运行得到 `d1=0.01 m`、`d2=0.22 m`，并通过最终轨迹可行性检查。
+
+## 仓库结构
+
+```text
+config/             IRL 场景、双柱场景与 S-guide 配置
+data/               仿真/实飞示范轨迹与点云地图
+launch/             ROS 场景、规划和实机可视化入口
+scripts/            数据采集、外层优化、回放和 onboard 执行
+src/                 IRL 外层优化器与自适应 guide 实现
+results/             参考优化与重复性实验结果
+planner_overlay/     MINCO/IRL 规划器侧 C++ 核心文件
+```
+
+`planner_overlay/` 按原 AirGrasp 工作区相对路径保存规划器侧实现。将其合并进兼容的 `airgrasp_planning` 工作区后，本 ROS 包才能构成完整的内外层优化链路；具体文件和集成方式见 `planner_overlay/README.md`。
 
 ## MINCO 轨迹生成数据流
 

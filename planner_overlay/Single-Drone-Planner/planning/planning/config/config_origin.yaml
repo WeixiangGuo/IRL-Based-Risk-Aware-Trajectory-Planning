@@ -1,0 +1,197 @@
+# Para and value must split with space!
+# 0: tl_mode, 1: target_list_mode, 2: eight_mode
+fsm_mode: 0
+is_use_virtual_target: 0
+is_use_fix_goal: 0
+beacon_virtual: 0
+is_app_beacon: 0
+use_map: 1
+# 0 for front, 1 for down
+use_which_img: 1
+
+Webvis_hz: 10
+Webimg_hz: -1
+
+plan_hz: 5
+ekf_predict_rate: 50
+ekf_update_rate: 10
+stop_blade_judge_hz: 50
+img_fix_time_ms: 0
+change_to_tof_dis: 0.14
+local_horizon: 12
+
+PD_Ctrl/Kp_horiz: 2.0
+PD_Ctrl/Kd_horiz: 0.0
+PD_Ctrl/Kp_vert: 2.0
+PD_Ctrl/Kd_vert: 0.0
+Traj8/vel: 1.5
+Traj8/acc: 2.0
+TrajServer/dt_to_future_ms: 0
+TrajServer/dt_odom_predict_ms: 0 
+TrajServer/landing_v: 0.15
+TrajServer/dyaw_max: 10.5
+
+# Detect
+# Detect/tag_size_0: 0.172
+# Detect/tag_size_1: 0.034
+Detect/tag_size_0: 0.24
+Detect/tag_size_1: 0.048
+# Detect/tag_size_0: 0.30
+# Detect/tag_size_1: 0.06
+beacon_dp_x: -1.1
+beacon_dp_y: 0.0
+beacon_dp_z: -0.6
+
+# Prediction
+prediction/rho_a: 1.0
+prediction/rho_domega: 3.0
+prediction/vmax: 15.0
+prediction/omega_max: 0.6
+prediction/omega_filter_t: 0.5
+prediction/acc_max: 2.5
+prediction/acc_filter_t: 1.0
+prediction/pause_debug: 0
+
+filter_t_k: 1.0
+filter_q_k: 1.0
+EKF/filtered_v_k_track: 1.0
+EKF/filtered_v_k_land: 0.75
+EKF/filtered_q_k: 1.0
+EKF/filtered_q_diff_k: 0.6
+EKF/vel_avg_filter_len: 1
+EKF/Qx: 20
+EKF/Qy: 20
+EKF/Qz: 20
+EKF/Qvx: 10
+EKF/Qvy: 10
+EKF/Qvz: 10
+EKF/Qroll: 1
+EKF/Qpitch: 1
+EKF/Qyaw: 1
+EKF/Rx: 0.2
+EKF/Ry: 0.2
+EKF/Rz: 0.2
+EKF/Rvx: 0.1
+EKF/Rvy: 0.1
+EKF/Rvz: 0.1
+EKF/Rroll: 0.01
+EKF/Rpitch: 0.01
+EKF/Ryaw: 0.01
+tag_ekf_R_coef: 1.0
+
+## Plan
+debug_switch: 1
+is_use_viewpoint: 0
+plan_estimated_duration: 0.01
+land_no_plan_time: 0.1
+short_mode_time: 0.2
+tracking_height_expect: 2.0
+tracking_dis_expect: 3.0
+tracking_angle_expect: -3.14
+tracking_dur: 3.0
+tracking_dt: 0.5
+# env
+track_angle_vmax: 0.5
+tolerance_d_astar: 0.3
+theta_clearance: 0.8
+# stop propller
+enable_land_refine: 1
+# land offset
+amax_land: 1.0
+enable_land_q: 0
+land_surface_dz: -0.12
+land_z_judge: 0.05
+land_horiz_judge: 0.12
+# land_p_x: -0.4
+# land_p_y: 0.0
+# land_p_z: -0.18
+# land_p_x: -0.5
+# land_p_y: 0.0
+# land_p_z: -0.06
+land_p_x: 0.0
+land_p_y: 0.0
+land_p_z: 0.0
+land_roll: 0.0
+land_pitch: -0.5
+# land_z_min: 0.7
+land_z_down_relative: 0.5
+land_z_up_relative: 1.5
+
+# Traj_Opt
+pause_debug: 0
+K: 8
+max_iter: 300
+vmax: 15.0
+dv_max_horiz_track: 1.5
+v_max_vert_track: 1.0
+dv_max_horiz_land: 1.5
+v_max_vert_land: 1.0
+amax: 3.5
+dyaw_max: 3.14
+thrust_max: 17.0
+thrust_min: 5.0
+omega_max: 3.5
+omega_yaw_max: 1.5
+v_plus: 0.2
+robot_l: 0.05
+robot_r: 0.25
+platform_r: 1.0
+preception_d_max: 15.5
+preception_d_min: 0.2
+eps_pz: 0.35
+is_with_perception: 1
+short_mode_with_perception: 0
+
+rhoP: 10000.0
+rhoV: 1000.0
+rhoA: 100.0
+rhoThrust: 10000.0
+rhoOmega: 1000000.0
+rhoPerchingCollision: 10000000000.0
+rhoPerchingPreception: 0.1
+
+rhoT_: 50.0
+rhoT_track: 50.0
+rhoT_land: 8000.0
+rhoVt: 20000.0
+rhoAt: 10000.0
+rhoPt: -10000.0
+
+rhoTrackingDis: 1.5
+rhoTrackingAngle: 10000.0
+# rhoTrackingVisibility: 0.0
+# rhoTrackingAngle: 0.0
+# rhoTrackingVisibility: 160.0
+rhoTrackingVisibility: 0.0
+tolerance_tracking_d: 0.0
+
+astar_waypoint_tracking_enable: 0
+rhoAstarWaypoint: 0.0
+
+rhoYaw: 1000.0
+rhoDyaw: 10.0
+
+rhoDeformConsistAngle: 0.0
+rhoDeformDis: 10.0
+rhoDeformP: 0.0
+rhoDeformVisibility: 0.0
+rhoDeformAngle: 5.0
+
+# Target List
+Target/size: 4
+
+Target/0/x: 2.0
+Target/0/y: 0.0
+Target/0/z: 0.0
+
+Target/1/x: 2.0
+Target/1/y: 0.0
+Target/1/z: 0.0
+
+Target/2/x: 2.0
+Target/2/y: 0.0
+Target/2/z: 0.0
+
+Target/3/x: 0.0
+Target/3/y: 0.0
+Target/3/z: 0.8
